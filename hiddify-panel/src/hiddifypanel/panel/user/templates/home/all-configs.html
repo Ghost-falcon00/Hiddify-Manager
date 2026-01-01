@@ -1,0 +1,127 @@
+{{_("user.home.tool.all-configs")}}
+{%set base='https://'+domain+'/'+hconfigs[ConfigEnum.proxy_path]+"/"+user.uuid+"/"%}
+
+<div class="col">
+  <table id="all-links" class="table table-bordered table-striped dt-responsive nowrap" style="width:100%">
+    <thead>
+      <tr>
+        <th>{{_('user.home.allconfig.name')}}</th>
+        <th>{{_('user.home.allconfig.type')}}</th>
+        <th>{{_('Domain')}}</th>
+        <th>{{_('user.home.allconfig.protocol')}}</th>
+        <th>{{_('user.home.allconfig.transport')}}</th>
+        <th>{{_('user.home.allconfig.security')}}</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="btn-group">
+            <a href="{{base}}full-singbox.json?asn={{asn}}" class="btn btn-light orig-link">
+              Full Singbox</a>
+          </div>
+        </td>
+        <td><span class="badge badge-danger">{{_('all')}}</span></td>
+        <td><span class="badge ">{{_('all')}}</span></td>
+        <td><span class="badge badge-info">{{_('all')}}</span></td>
+        <td><span class="badge badge-warning">{{_('all')}}</span></td>
+        <td><span class="badge badge-success">{{_('all')}}</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="btn-group">
+            <a href="{{base}}sub/?asn={{asn}}" class="btn btn-light orig-link">
+              {{_('auto')}}</a>
+          </div>
+        </td>
+        <td><span class="badge badge-danger">{{_('all')}}</span></td>
+        <td><span class="badge ">{{_('all')}}</span></td>
+        <td><span class="badge badge-info">{{_('all')}}</span></td>
+        <td><span class="badge badge-warning">{{_('all')}}</span></td>
+        <td><span class="badge badge-success">{{_('all')}}</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="btn-group">
+            <a href="clashmeta://install-config?url={{base}}clash/meta/all.yml&name=mnormal_{{db_domain.alias or db_domain.domain}}-{{asn}}-{{mode}}&asn={{asn}}&mode={{mode}}" class="btn btn-light orig-link">
+              {{_('user.home.allconfig.hiddify-managers')}}</a>
+          </div>
+        </td>
+        <td><span class="badge badge-danger">{{_('all')}}</span></td>
+        <td><span class="badge ">{{_('all')}}</span></td>
+        <td><span class="badge badge-info">{{_('all')}}</span></td>
+        <td><span class="badge badge-warning">{{_('all')}}</span></td>
+        <td><span class="badge badge-success">{{_('all')}}</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="btn-group">
+            <a href="clash://install-config?url={{base}}clash/all.yml&name=new_normal_{{db_domain.alias or db_domain.domain}}-{{asn}}-{{mode}}&asn={{asn}}&mode={{mode}}" class="btn btn-light orig-link">
+              {{_('user.home.allconfig.clash-configs')}}</a>
+          </div>
+        </td>
+        <td><span class="badge badge-danger">{{_('all')}}</span></td>
+        <td><span class="badge ">{{_('all')}}</span></td>
+        <td><span class="badge badge-info">{{_('user.home.allconfigs.expect_vless')}}</span></td>
+        <td><span class="badge badge-warning">{{_('all')}}</span></td>
+        <td><span class="badge badge-success">{{_('all')}}</span></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="btn-group">
+            <a href="{{base}}all.txt?name={{db_domain.alias or db_domain.domain}}-{{asn}}&asn={{asn}}&mode={{mode}}" class="btn btn-light orig-link">
+              {{_('user.home.allconfig.link-configs')}}</a>
+          </div>
+        </td>
+        <td><span class="badge badge-danger">{{_('all')}}</span></td>
+        <td><span class="badge ">{{_('all')}}</span></td>
+        <td><span class="badge badge-info">{{_('all')}}</span></td>
+        <td><span class="badge badge-warning">{{_('all')}}</span></td>
+        <td><span class="badge badge-success">{{_('all')}}</span></td>
+      </tr>
+      {% if hconfig(ConfigEnum.ssh_server_enable) %}
+      <tr>
+        <td>
+          <div class="btn-group">
+            <a href="{{base}}singbox.json?name={{db_domain.alias or db_domain.domain}}-{{asn}}&asn={{asn}}&mode={{mode}}" class="btn btn-light orig-link"> {{_('singbox: ssh')}}</a>
+          </div>
+        </td>
+        <td><span class="badge badge-danger">{{_('ssh')}}</span></td>
+        <td><span class="badge ">{{_('ssh')}}</span></td>
+        <td><span class="badge badge-info">{{_('ssh')}}</span></td>
+        <td><span class="badge badge-warning">{{_('ssh')}}</span></td>
+        <td><span class="badge badge-success">{{_('ssh')}}</span></td>
+      </tr>
+      {% endif %}
+      <tr>
+        <td>
+          <div class="btn-group">
+            <a href="{{base}}all.txt?name=new_link_{{db_domain.alias or db_domain.domain}}-{{asn}}-{{mode}}&asn={{asn}}&mode={{mode}}&base64=True" class="btn btn-light orig-link">
+              {{_('user.home.allconfig.link-configs')}} b64</a>
+          </div>
+        </td>
+        <td><span class="badge badge-danger">{{_('all')}}</span></td>
+        <td><span class="badge ">{{_('all')}}</span></td>
+        <td><span class="badge badge-info">{{_('all')}}</span></td>
+        <td><span class="badge badge-warning">{{_('all')}}</span></td>
+        <td><span class="badge badge-success">{{_('all')}}</span></td>
+      </tr>
+
+      {% for pinfo in link_maker.get_valid_proxies(domains) %}
+      <tr>
+        <td>
+          <div class="btn-group"><a href='{{link_maker.xray.to_link(pinfo)}}' class="btn btn-light orig-link">{{pinfo["name"].replace("_", " ")}}</a></div>
+        </td>
+        <td><span class="badge badge-danger"> {% if pinfo['dbdomain'].has_auto_ip %}Auto {%endif%}{{pinfo["mode"]}}</span></td>
+        <td><span class="badge ltr">{{pinfo['server']}}</span></td>
+        <td><span class="badge badge-info">{{pinfo["proto"]}}</span></td>
+        <td><span class="badge badge-warning">{{pinfo['transport']}}</span></td>
+        <td><span class="badge badge-success">{{pinfo['l3']}}</span></td>
+      </tr>
+
+      {% endfor %}
+
+    </tbody>
+  </table>
+</div>

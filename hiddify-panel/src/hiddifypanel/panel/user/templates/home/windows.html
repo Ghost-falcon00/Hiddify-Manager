@@ -1,0 +1,72 @@
+
+{% macro clash_dl_link() -%}
+<div class="btn-group">
+    <a class="btn btn-primary"
+        href="/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Fndroid/clash_for_windows_pkg/releases/download/0.20.21/Clash.for.Windows.Setup.0.20.21.exe"><i
+            class="fa-brands fa-windows fa-margin"></i> {{_('Windows')}}</a>
+    <a class="btn btn-secondary"
+        href="/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Fndroid/clash_for_windows_pkg/releases/download/0.20.21/Clash.for.Windows-0.20.21.dmg"><i
+            class="fa-brands fa-apple fa-margin"></i> {{_('macOS')}}</a>
+    <a class="btn btn-success"
+        href="/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Fndroid/clash_for_windows_pkg/releases/download/0.20.21/Clash.for.Windows-0.20.21-x64-linux.tar.gz"><i
+            class="fa-brands fa-linux fa-margin"></i> {{_('Linux')}}</a>
+
+</div>
+{%- endmacro -%}
+
+
+{% macro HiddifyDesktop_dl_link() -%}
+<div class="btn-group">
+    <a class="btn btn-primary"
+        href="/{{hconfigs[ConfigEnum.proxy_path]}}/gh/hiddify/HiddifyDesktop/releases/download/v13.1.4/HiddifyClashDesktop_13.1.4_x64_en-US.msi"><i
+            class="fa-brands fa-windows fa-margin"></i> {{_('Windows')}}</a>
+    <a class="btn btn-secondary"
+        href="/{{hconfigs[ConfigEnum.proxy_path]}}/gh/hiddify/HiddifyDesktop/releases/download/v13.1.4/HiddifyClashDesktop_13.1.4_x64.dmg"><i
+            class="fa-brands fa-apple fa-margin"></i> {{_('macOS')}}</a>
+    <a class="btn btn-success"
+        href="/{{hconfigs[ConfigEnum.proxy_path]}}/gh/hiddify/HiddifyDesktop/releases/download/v13.1.4/hiddify-clash-desktop_13.1.4_amd64.AppImage"><i
+            class="fa-brands fa-linux fa-margin"></i> {{_('Linux')}}</a>
+
+</div>
+{%- endmacro -%}
+
+{% macro HiddifyN_dl_link() -%}
+<div class="btn-group">
+    <a class="btn btn-primary"
+        href="/{{hconfigs[ConfigEnum.proxy_path]}}/gh/hiddify/HiddifyN/releases/latest/download/HiddifyN.zip">
+        <i class="fa-brands fa-windows fa-margin"></i> {{_('Windows')}}</a>
+    
+
+</div>
+{%- endmacro -%}
+
+
+
+<div class="col">
+    {{_("Please select one of the following applications:")}}
+    
+<details  data-widget="collapse">
+    <summary class="callout callout-success">
+    {{_("HiddigyN")}}
+    </summary>
+
+    {{_('HiddifyN intro',dl_link=HiddifyN_dl_link())}}
+
+    <div class="btn-group">
+        <a href="hiddify://install-sub?url=https%3A%2F%2F{{domain}}%2F{{hconfigs[ConfigEnum.proxy_path]}}%2F{{user.uuid}}%2Fall.txt%3Fname%3D{{(db_domain.alias or db_domain.domain|urlencode)}}-{{asn}}%26asn%3D{{asn}}%26mode%3D{{mode}}"
+          class="btn btn-light orig-link"> {{_('Click to Import')}} </a>
+      </div>
+</details>
+</div>
+<details  data-widget="collapse">
+    <summary class="callout callout-success">
+    {{_("HiddifyClash")}}
+    </summary>
+{{_("user.home.windows.intro",hiddify_desktop_links=HiddifyDesktop_dl_link(),normal_clash_link=clash_dl_link())}}
+
+
+
+{% with show_meta=True, ios=True %}
+{% include "home/clash-links.html" %}
+{% endwith %}
+</details>

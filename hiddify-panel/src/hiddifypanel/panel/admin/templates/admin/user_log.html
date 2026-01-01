@@ -1,0 +1,337 @@
+{% extends 'hiddify-flask-admin/base.html' %}
+
+{% block body %}
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">
+            <i class="fa-solid fa-file-lines"></i>
+            {{ _('Connection Logs') }} - {{ user.name }}
+        </h3>
+        <div class="card-tools">
+            <span class="badge badge-primary">UUID: {{ user.uuid[:8] }}...</span>
+            {% if user.last_online %}
+                {% set diff = (user.last_online - now).total_seconds() %}
+                {% if diff > -120 %}
+                    <span class="badge badge-success">{{ _('Online') }}</span>
+                {% else %}
+                    <span class="badge badge-warning">{{ _('Offline') }}</span>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+    
+    <div class="card-body">
+        <!-- Filters -->
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <form method="get" class="form-inline">
+                    <input type="hidden" name="user_id" value="{{ user.id }}">
+                    <label class="mr-2">{{ _('Log Level') }}:</label>
+                    <select name="log_level" class="form-control form-control-sm mr-2" onchange="this.form.submit()">
+                        <option value="">{{ _('All') }}</option>
+                        <option value="DEBUG" {% if log_level == 'DEBUG' %}selected{% endif %}>DEBUG</option>
+                        <option value="INFO" {% if log_level == 'INFO' %}selected{% endif %}>INFO</option>
+                        <option value="WARNING" {% if log_level == 'WARNING' %}selected{% endif %}>WARNING</option>
+                        <option value="ERROR" {% if log_level == 'ERROR' %}selected{% endif %}>ERROR</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col-md-4 text-center">
+                <span class="text-muted">{{ _('Total') }}: {{ total }} {{ _('logs') }}</span>
+            </div>
+            <div class="col-md-4 text-right">
+                <button class="btn btn-sm btn-success" onclick="refreshLogs()">
+                    <i class="fa-solid fa-sync"></i> {{ _('Refresh') }}
+                </button>
+                <label class="ml-3">
+                    <input type="checkbox" id="autoRefresh" onchange="toggleAutoRefresh()">
+                    {{ _('Auto-refresh') }}
+                </label>
+            </div>
+        </div>
+
+        <!-- Stats Summary -->
+        <div class="row mb-3" id="statsRow">
+            <div class="col-md-3">
+                <div class="info-box bg-info">
+                    <span class="info-box-icon"><i class="fa-solid fa-plug"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">{{ _('Connections') }}</span>
+                        <span class="info-box-number" id="statConnections">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="info-box bg-success">
+                    <span class="info-box-icon"><i class="fa-solid fa-arrow-up"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">{{ _('Sent') }}</span>
+                        <span class="info-box-number" id="statSent">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="info-box bg-warning">
+                    <span class="info-box-icon"><i class="fa-solid fa-arrow-down"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">{{ _('Received') }}</span>
+                        <span class="info-box-number" id="statReceived">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="info-box bg-danger">
+                    <span class="info-box-icon"><i class="fa-solid fa-exclamation-triangle"></i></span>
+                    <div class="info-box-content">
+                        <span class="info-box-text">{{ _('Errors') }}</span>
+                        <span class="info-box-number" id="statErrors">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logs Table -->
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-sm" id="logsTable">
+                <thead class="thead-dark">
+                    <tr>
+                        <th style="width: 160px;">{{ _('Time') }}</th>
+                        <th style="width: 100px;">{{ _('Event') }}</th>
+                        <th style="width: 80px;">{{ _('Level') }}</th>
+                        <th style="width: 130px;">{{ _('Source IP') }}</th>
+                        <th>{{ _('Destination') }}</th>
+                        <th style="width: 100px;">{{ _('Status') }}</th>
+                        <th style="width: 80px;">{{ _('Speed') }}</th>
+                        <th style="width: 80px;">{{ _('Ping') }}</th>
+                        <th style="width: 50px;">{{ _('Details') }}</th>
+                    </tr>
+                </thead>
+                <tbody id="logsBody">
+                    {% if logs %}
+                        {% for log in logs %}
+                        <tr class="log-row log-{{ log.log_level|lower }}" data-id="{{ log.id }}">
+                            <td class="text-nowrap">
+                                <small>{{ log.timestamp.strftime('%Y-%m-%d %H:%M:%S') if log.timestamp else '-' }}</small>
+                            </td>
+                            <td>
+                                {% if log.event_type == 'connect' %}
+                                    <span class="badge badge-success"><i class="fa-solid fa-plug"></i> {{ _('Connect') }}</span>
+                                {% elif log.event_type == 'disconnect' %}
+                                    <span class="badge badge-secondary"><i class="fa-solid fa-plug-circle-xmark"></i> {{ _('Disconnect') }}</span>
+                                {% elif log.event_type == 'request' %}
+                                    <span class="badge badge-info"><i class="fa-solid fa-arrow-right"></i> {{ _('Request') }}</span>
+                                {% elif log.event_type == 'error' %}
+                                    <span class="badge badge-danger"><i class="fa-solid fa-exclamation-circle"></i> {{ _('Error') }}</span>
+                                {% elif log.event_type == 'rejected' %}
+                                    <span class="badge badge-warning"><i class="fa-solid fa-ban"></i> {{ _('Rejected') }}</span>
+                                {% else %}
+                                    <span class="badge badge-light">{{ log.event_type }}</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if log.log_level == 'DEBUG' %}
+                                    <span class="badge badge-light">DEBUG</span>
+                                {% elif log.log_level == 'INFO' %}
+                                    <span class="badge badge-info">INFO</span>
+                                {% elif log.log_level == 'WARNING' %}
+                                    <span class="badge badge-warning">WARN</span>
+                                {% elif log.log_level == 'ERROR' %}
+                                    <span class="badge badge-danger">ERROR</span>
+                                {% else %}
+                                    <span class="badge badge-secondary">{{ log.log_level }}</span>
+                                {% endif %}
+                            </td>
+                            <td><code>{{ log.source_ip or '-' }}</code></td>
+                            <td class="text-truncate" style="max-width: 200px;" title="{{ log.destination or '' }}">
+                                {{ log.destination or '-' }}
+                            </td>
+                            <td>
+                                {% if log.status == 'connected' %}
+                                    <span class="text-success"><i class="fa-solid fa-check-circle"></i> {{ _('Connected') }}</span>
+                                {% elif log.status == 'disconnected' %}
+                                    <span class="text-muted"><i class="fa-solid fa-times-circle"></i> {{ _('Disconnected') }}</span>
+                                {% elif log.status == 'failed' or log.status == 'error' %}
+                                    <span class="text-danger"><i class="fa-solid fa-exclamation-circle"></i> {{ _('Failed') }}</span>
+                                {% elif log.status == 'rejected' %}
+                                    <span class="text-warning"><i class="fa-solid fa-ban"></i> {{ _('Rejected') }}</span>
+                                {% else %}
+                                    <span class="text-secondary">{{ log.status or '-' }}</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if log.connection_speed %}
+                                    {{ (log.connection_speed / 1024)|round(1) }} KB/s
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if log.latency_ms %}
+                                    {{ log.latency_ms }} ms
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
+                            <td class="text-center">
+                                {% if log.error_message or log.raw_log %}
+                                    <button class="btn btn-xs btn-outline-secondary" 
+                                            onclick="showDetails({{ log.id }}, '{{ log.error_message|e if log.error_message else '' }}', '{{ log.raw_log|e if log.raw_log else '' }}')"
+                                            title="{{ _('View Details') }}">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+                                {% else %}
+                                    -
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td colspan="9" class="text-center text-muted py-5">
+                                <i class="fa-solid fa-inbox fa-3x mb-3"></i>
+                                <p>{{ _('No logs found') }}</p>
+                                <small>{{ _('Connection logs will appear here when users connect') }}</small>
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        {% if total_pages > 1 %}
+        <nav class="mt-3">
+            <ul class="pagination justify-content-center">
+                {% if page > 1 %}
+                    <li class="page-item">
+                        <a class="page-link" href="?user_id={{ user.id }}&page={{ page - 1 }}&log_level={{ log_level }}">
+                            {{ _('Previous') }}
+                        </a>
+                    </li>
+                {% endif %}
+                
+                {% for p in range(1, total_pages + 1) %}
+                    {% if p == page %}
+                        <li class="page-item active"><span class="page-link">{{ p }}</span></li>
+                    {% elif p <= 3 or p > total_pages - 3 or (p >= page - 2 and p <= page + 2) %}
+                        <li class="page-item">
+                            <a class="page-link" href="?user_id={{ user.id }}&page={{ p }}&log_level={{ log_level }}">{{ p }}</a>
+                        </li>
+                    {% elif p == 4 or p == total_pages - 3 %}
+                        <li class="page-item disabled"><span class="page-link">...</span></li>
+                    {% endif %}
+                {% endfor %}
+                
+                {% if page < total_pages %}
+                    <li class="page-item">
+                        <a class="page-link" href="?user_id={{ user.id }}&page={{ page + 1 }}&log_level={{ log_level }}">
+                            {{ _('Next') }}
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+        {% endif %}
+    </div>
+    
+    <div class="card-footer text-muted text-center">
+        <small>{{ _('Logs are kept for 24 hours only') }}</small>
+        <a href="{{ hurl_for('flask.user.index_view') }}" class="btn btn-sm btn-outline-primary ml-3">
+            <i class="fa-solid fa-arrow-left"></i> {{ _('Back to Users') }}
+        </a>
+    </div>
+</div>
+
+<!-- Details Modal -->
+<div class="modal fade" id="detailsModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="fa-solid fa-file-lines"></i> {{ _('Log Details') }}</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="detailsContent"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .log-row.log-error { background-color: rgba(220, 53, 69, 0.1) !important; }
+    .log-row.log-warning { background-color: rgba(255, 193, 7, 0.1) !important; }
+    .log-row.log-debug { background-color: rgba(108, 117, 125, 0.05) !important; }
+    .info-box { min-height: 70px; }
+    .info-box .info-box-content { padding: 5px 10px; }
+    .info-box .info-box-icon { width: 60px; font-size: 1.5rem; }
+    code { font-size: 0.85em; }
+</style>
+{% endblock %}
+
+{% block tail_js %}
+{{ super() }}
+<script>
+    const userId = {{ user.id }};
+    const apiBaseUrl = '{{ hurl_for("admin.UserLogAdmin:api_logs", user_id=user.id) }}';
+    const statsUrl = '{{ hurl_for("admin.UserLogAdmin:api_stats", user_id=user.id) }}';
+    let autoRefreshInterval = null;
+    let latestLogId = {{ logs[0].id if logs else 0 }};
+
+    function formatBytes(bytes) {
+        if (!bytes || bytes === 0) return '0 B';
+        const k = 1024;
+        const sizes = ['B', 'KB', 'MB', 'GB'];
+        const i = Math.floor(Math.log(bytes) / Math.log(k));
+        return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+    }
+
+    function loadStats() {
+        $.get(statsUrl, function(data) {
+            $('#statConnections').text(data.event_counts.connect || 0);
+            $('#statSent').text(formatBytes(data.bytes_sent));
+            $('#statReceived').text(formatBytes(data.bytes_received));
+            $('#statErrors').text(data.event_counts.error || 0);
+        });
+    }
+
+    function refreshLogs() {
+        location.reload();
+    }
+
+    function toggleAutoRefresh() {
+        if ($('#autoRefresh').is(':checked')) {
+            autoRefreshInterval = setInterval(function() {
+                loadStats();
+                // Optionally fetch new logs
+            }, 5000);
+        } else {
+            if (autoRefreshInterval) {
+                clearInterval(autoRefreshInterval);
+                autoRefreshInterval = null;
+            }
+        }
+    }
+
+    function showDetails(id, errorMsg, rawLog) {
+        let content = '';
+        if (errorMsg) {
+            content += '<div class="alert alert-danger"><strong>{{ _("Error") }}:</strong><br>' + errorMsg + '</div>';
+        }
+        if (rawLog) {
+            content += '<div class="card"><div class="card-header">{{ _("Raw Log") }}</div>';
+            content += '<div class="card-body"><pre class="mb-0" style="white-space: pre-wrap; word-break: break-all;">' + rawLog + '</pre></div></div>';
+        }
+        if (!content) {
+            content = '<p class="text-muted">{{ _("No additional details available") }}</p>';
+        }
+        $('#detailsContent').html(content);
+        $('#detailsModal').modal('show');
+    }
+
+    $(document).ready(function() {
+        loadStats();
+    });
+</script>
+{% endblock %}

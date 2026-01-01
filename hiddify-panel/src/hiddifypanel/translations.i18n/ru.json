@@ -1,0 +1,1404 @@
+{
+  " Search\n            Settings": " Поиск\nНастройки",
+  "%(count)s records were successfully deleted.": "",
+  "%(count)s records were successfully disabled.": "%(count)s записей были успешно отключены.",
+  "%(count)s records were successfully enabled.": "%(count)s записей были успешно включены.",
+  "%(count)s records were successfully reset days.": "",
+  "%(count)s records were successfully reset usage.": "",
+  "%(expire_days)s days": "%(expire_days)s дней",
+  "%(placeholder)s": "%(placeholder)s",
+  "0 - Last day": "Последний день",
+  "<a href=\"%(user_link)s\"> %(user)s</a>": "",
+  "Access Denied!": "Доступ запрещен",
+  "Actions": "Действия",
+  "Active": "Активный",
+  "Active Users": "Активные пользователи",
+  "Add": "Добавить",
+  "Add some text that is only visible to super_admin.": "Добавьте текст, который будет виден только суперадминистратору",
+  "Add some text that is only visible to you.": "Вы можете добавить текст, который будет виден только вам.",
+  "Added by": "Добавлено",
+  "Admin Links": "",
+  "Admins": "Администраторы",
+  "Alias": "Псевдоним",
+  "All": "Все",
+  "All Users": "Все пользователи",
+  "Apply": "Применить",
+  "Are you sure you want to delete \\'%(name)s\\' recursively?": "Вы уверены что хотите рекурсивно удалить \\'%(name)s\\'?",
+  "Are you sure you want to delete \\'%(name)s\\'?": "Вы уверены что хотите удалить \\'%(name)s\\'?",
+  "Are you sure you want to delete this record?": "Вы уверены что хотите удалить эту запись?",
+  "Are you sure you want to do this action?": "Вы уверены, что хотите выполнить это действие?",
+  "Back": "Назад",
+  "Backup": "Резервное копирование",
+  "Beta": "☑️ Бета",
+  "Bridge Servers": "➖ Bridge серверы",
+  "Bug": "Баги/Предложения",
+  "CPU %(cores)s Cores": "CPU %(cores)s Ядро",
+  "Can add sub admin": "👥 Может добавлять администраторов",
+  "Change": "",
+  "Check again": "Проверить снова",
+  "Childs": "Дочерние",
+  "China": "🇨🇳 Китай",
+  "Click here to see the complete log": "Нажмите здесь, чтобы просмотреть весь журнал",
+  "Click to Import": "Импортировать",
+  "Click to Start Anti-Filter.": "<i class='fa-solid fa-play'></i> Нажмите, чтобы настроить Анти-фильтр",
+  "Close": "Закрыть",
+  "Commercial use": "Коммерческое использование",
+  "Config file is incorrect": "Конфигурационный файл неверен",
+  "Copy Link": "Копировать ссылку",
+  "Couldn't find your ip addresses": "Не удалось найти ваши IP-адреса",
+  "Count:": "Количество:",
+  "Create": "Создать",
+  "Create Directory": "Создать директорию",
+  "Create New Record": "Создать новую запись",
+  "Create Package": "Создать пакет",
+  "Current Domain": "Текущий Домен",
+  "Dear {}\n\nYour hiddify information is\nUUID: {}\nLast online date: {}\nExpire time: {}\nUsage class: {}\n": "Дорогой {}\n\nВаша информация Hiddify\nUUID: {}\nБыл в сети: {}\nИстекает : {}\nКласс использования: {}",
+  "Delete?": "Удалить?",
+  "Develop": "⚠️ Разработка",
+  "Direct": "➖ Прямые proxy",
+  "Direct mode means you want to use your server directly (for usual use), CDN means that you use your server on behind of a CDN provider.": "➡️ <b>Direct:</b> Выберите этот режим, если вы настраиваете свой домен исключительно для вашего DNS-провайдера в режиме только для DNS. (Режим CDN или прокси отключен) <br>\n🔙 <b>Старый режим Direct:</b> Этот режим аналогичен режиму Direct, но не использует gRPC для связи. Выберите «Старый режим», если вы предпочитаете настроить свой домен у своего DNS-провайдера в режиме «только DNS» без использования gRPC.\n<br>\n🔀 <b>CDN:</b> выберите этот режим, если вы используете провайдера CDN для домена вашего сервера. (Режим прокси включен)<br>\n☑️ <b>Автоматический выбор IP-адреса CDN:</b> Этот режим работает аналогично режиму CDN, но с автоматическим назначением IP-адреса на основе IP-адреса, предоставленного <a href='https://ircf.space' target='_blank' >ircf.space</a>. В режиме Auto CDN IP IP-адрес определяется из домена, а в режиме CDN возвращается домен.<br>\n♾️ <b>Relay:</b> выберите этот режим, если вы используете один или несколько промежуточных серверов. <a href='https://github.com/hiddify/hiddify-config/discussions/129' target='_blank'>Подробнее</a>\n<br>\n✴️ <b>Cloudflare Worker:</b> Этот режим позволяет автоматически создавать процессов для вашего домена в Cloudflare. Упростите настройку  и управление ими, зарегистрировав этот домен, поскольку необходимые шаги для регистрации процессов выполняются автоматически в Cloudflare.\n<br>\n🔂 <b>Reality:</b> используйте протокол Reality для создания нескольких доменов.\n<br>\n🆎 <b>Поддельный сайт:</b> выберите этот режим, если вы хотите использовать поддельный домен (например, Soft98.ir) для обхода прокси-сервера белого списка SNI. (Не рекомендуется)\n<br>",
+  "Disable": "Отключить",
+  "Disk": "Жесткий диск",
+  "Domain": "Домен",
+  "Domain (%(domain)s)-> IP=%(domain_ip)s is not matched with your ip=%(server_ip)s which is required in direct mode": "Домен (%(domain)s)-> IP = %(domain_ip)s не совпадает с вашим IP = %(server_ip)s . это требуется в режиме Direct",
+  "Domain IP=%(domain_ip)s is not matched with your ip=%(server_ip)s which is required in direct mode": "IP=%(domain_ip)s Домена не совпадает с Вашим IP Сервера, который необходим для \"Прямого Режима\"",
+  "Domain can not be resolved! there is a problem in your domain": "Не возможно определить IP адрес для домена! В вашем домене возникла проблема. Пожалуйста, проверьте настройки.",
+  "Domain cannot be resolved! Please check DNS settings": "",
+  "Domain is not REALITY friendly!": "Домен не подходит для использования с REALITY!",
+  "Domain?": "Домен?",
+  "Donation": {
+    "description": "✳️ Мне нужна ваша помощь в разработке этого проекта!\n    <br>\n    Если вы разработчик или создатель контента, свяжитесь со мной в Telegram <a href='https://t.me/MNHACKER' target='_blank'>@MNHACKER</a>\n    <br><br>\n    \n    ℹ️ Также вы можете поддержать меня финансово для дальнейшего развития этой панели.\n    <br>\n    <h5>Способы оплаты:</h5>\n     <ul>\n    <li> <div class='btn-group'>\n        <a role='button' data-copy='UQDS7pN7PDZv2dKeW27Fx4QBPJvdYqlvZfFzmnczSo6VyOql' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n    <a data-copy='UQDS7pN7PDZv2dKeW27Fx4QBPJvdYqlvZfFzmnczSo6VyOql' role='button' class='btn btn-info copy-link'>TON</a> </div></li>\n    \n    <li> <div class='btn-group'>\n        <a role='button' data-copy='ltc1qpl4sgqqsu509l92klllatgmpvna7ucvz3gn29f' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n    <a data-copy='ltc1qpl4sgqqsu509l92klllatgmpvna7ucvz3gn29f' role='button' class='btn btn-info copy-link'>Litecoin</a> </div></li>\n    \n    <li> <div class='btn-group'>\n        <a role='button' data-copy='bc1qd85x4p8ymmmgzdwr8d0xyuafnn3mx56u6mka0e' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n    <a data-copy='bc1qd85x4p8ymmmgzdwr8d0xyuafnn3mx56u6mka0e' role='button' class='btn btn-info copy-link'>Bitcoin</a> </div></li>\n    \n    <li> <div class='btn-group'>\n        <a role='button' data-copy='TPchFnmsfH2eEd1hip6D4QLqKSCYRrFGu1' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n    <a data-copy='TPchFnmsfH2eEd1hip6D4QLqKSCYRrFGu1' role='button' class='btn btn-info copy-link'>Tron</a> </div></li>\n    </ul>",
+    "title": "Пожертвование"
+  },
+  "Download App": "<i class='fa-solid fa-download'></i> Загрузить приложение",
+  "Edit": "Изменить",
+  "Edit Proxy Names": "✏️ Изменить прокси",
+  "Enable": "❇️ Включить",
+  "Error in auto cdn format": "⚠️ Ошибка в формате Auto CDN",
+  "Error! auto cdn ip can not be find, please contact admin.": "Ошибка в IP-адресе Auto CDN! Невозможно найти, обратитесь к администратору",
+  "Example Domains": "Тестируйте и предложите домеy",
+  "Expired Users": "Пользователи с истекшим сроком действия",
+  "Export": "Экспортировать",
+  "Fake": "➖ Фейковый сайт",
+  "Filter": "Фильтровать",
+  "Finished": "Законченный...",
+  "From Last Restart": "С последнего перезапуска",
+  "From when the user package will be started? Empty for start from first connection": "Укажите дату начала действия пакета. Оставьте пустым, чтобы начать с первого подключения.",
+  "Hiddify": "Hiddify",
+  "Hiddify Android": "Hiddify Android",
+  "HiddifyClash": "HiddifyClash",
+  "HiddifyN intro": "Пожалуйста, установите HiddifyN из %(dl_link)s.\nЗатем нажмите на ссылку ниже. Она сделает все автоматически\n<br />",
+  "HiddifyNG": "HiddifyNG <span class='badge badge-success'>Рекомендуется</span>",
+  "HiddifyNG intro": "📌 Установите HiddifyNG по любой из этих ссылок:\n<br />\n %(dl_link)s %(play_link)s\n<br />\nЗатем нажмите ссылку ниже и откройте ее в HiddifyNG\n<br />",
+  "HiddigyN": "Рекомендуется<span class='badge Badge-success'>HiddifyN</span>",
+  "Home Link": "",
+  "Hover the user to see the reason": "Наведите курсор на пользователя, чтобы увидеть причину",
+  "How many days this package should be available?": "На сколько дней рассчитан этот пакет?",
+  "How many?": "Сколько?",
+  "If monthly is enabled, the usage will be reset after 30 days from this date.": "Если включена ежемесячная опция, когда это число достигнет 30, счетчики использования будут сброшенны (для еженедельного и ежедневного это число равно 7 и 1)",
+  "If the application do not open automatically, please click <a class='btn btn-primary copy-link'\n                    href='%(sub)s'>this universal link</a> to copy and paste it on\n                your application, or:": "Если приложение не открывается автоматически, нажмите <a class='btn btn-primary copy-link'\n                    href='%(sub)s'>универсальную ссылку</a>, чтобы скопировать и вставить ее в ваше приложение:",
+  "Import": "Импортировать в приложение",
+  "Import in": "Импортировать",
+  "In 5 minutes": "Через 5 минут",
+  "In CDN mode, Domain IP=%(domain_ip)s should be different to your ip=%(server_ip)s": "В CDN Режиме, IP адрес Домена должен отличаться от IP адреса Вашего Сервера",
+  "Incorrect Password": "⚠️ Неверный пароль.",
+  "Install": "Установить",
+  "Install Hiddify Application": "Установка панели Hidify",
+  "Invalid IP or domain": "Неверный IP или Домен",
+  "Invalid REALITY hostnames": "Неверные имена хостов REALITY",
+  "Invalid admin link": "Неверная ссылка администратора",
+  "Iran": "🇮🇷 Иран",
+  "It seems that you are using default domain (%(domain)s) which is not recommended.": "Похоже, вы используете домен по умолчанию (%(domain)s), что не рекомендуется. Пожалуйста, измените или удалите его из раздела доменов.",
+  "It will override the root admin to the current user": "Он заменит администратора-владельца файла резервной копии на текущего администратора.",
+  "Join our Hiddify Telegram channel to get the latest updates on Hiddify.": "Присоединяйтесь к нашему каналу Hiddify в Telegram, чтобы получать последние обновления Hiddify.",
+  "Last Online": "Последнее соединение",
+  "Link is changed!": "ℹ️Ссылка изменена!",
+  "Linux": "Linux ОС",
+  "Max Active Users": "Максимальное количество активных пользователей",
+  "Max IPs": "Макс. IP-адресов",
+  "Max Users": "Максимальное количество пользователей",
+  "Mode": "Режим",
+  "Month Usage": "Ежемесячно",
+  "More Applications": "Больше приложений",
+  "Network": "Сеть",
+  "New": "Новый",
+  "No children!": "Нет дочерних",
+  "Not Secure": "",
+  "Note": "📝 Примечание",
+  "Offline more than 1 day": "Оффлайн более 1 дня",
+  "Offline more than 1 hour": "Оффлайн более 1 часа",
+  "Offline more than 1 week": "Офлайн более 1 недели",
+  "Ok": "Хорошо",
+  "Online": "",
+  "Online Users": "Пользователей в сети",
+  "Only Blocked and Local websites": "☑️ Только заблокированные и локальные сайты",
+  "Only for sublink?": "🌍 Используйте только для ссылки на подпискy",
+  "Oops! Something went wrong.": "Упс! что-то пошло не так",
+  "Open in Application": "Открыть в приложении",
+  "Others": "🇺🇳 Другие",
+  "Override Root Admin": "🔁 Переопределение администратора",
+  "Owner can not be deleted!": "Владелец не может быть удалён!",
+  "Package Days": "📆 Дни пакета",
+  "Package ended!": "Пакет закончился",
+  "Package not started yet.": "Пакет еще не запущен",
+  "Panel Link": "➖ Ссылка на панель управления",
+  "Parent Panel": "Главная панель",
+  "Please Wait": "Пожалуйста, подождите...",
+  "Please click on %(install)s to save the user page.": "Нажмите %(install)s, чтобы сохранить страницу пользователя",
+  "Please connect your telegram account to the panel to be informed about latest news.": "Пожалуйста, подключите свой аккаунт Telegram к панели, чтобы быть в курсе последних новостей",
+  "Please create an issue on Github.": "Пожалуйста создайте проблему на Github.",
+  "Please select at least one file.": "Выберите по крайней мере один файл.",
+  "Please select at least one record.": "Выберите по крайней мере одну запись.",
+  "Please select at least one user": "Пожалуйста, выберите хотя бы одного пользователя",
+  "Please select one of the following applications:": "📍 Пожалуйста, выберите одно из следующих приложений:\n<br />\n<br />",
+  "Please type your message to send to the telegram:": "✏️ Пожалуйста, напишите свое сообщение для отправки в Telegram:",
+  "Please understand that parent panel is under test and the plan and the condition of use maybe change at anytime.": "Обратите внимание, что родительская панель находится на стадии тестирования, поэтому план и условия использования могут измениться в любое время",
+  "Please wait ": "Пожалуйста, подождите",
+  "Port 80 and 443 can not be selected": "",
+  "Port is already used! in": "Порт уже используется в:",
+  "Premium Description": "Панель Hiddify предназначена для некоммерческого использования. Но если вы используете эту панель в коммерческих целях, пожалуйста, помогите проекту развиваться, сделав пожертвование. <br/>\nВ обмен на вашу финансовую поддержку мы также предоставляем специальные возможности для вашего коммерческого продукта.\n<br/>\n<br/>\nТакой как:\n<ul><li>\n<li>Возможность синхронизации с Cloudflare: то есть, добавив домен в панели, соответствующие настройки также можно сделать в Cloudflare.</li>\n<li>Возможность отображения вашего бренда на панели</li>\n<li>Возможность использования центральной панели для управления более чем 1 сервером всего в одной панели, поэтому больше не нужно регистрировать пользователей на разных серверах, а их объем будет собираться на всех серверах.\n</li>\n<ли>\nВозможность использования Telegram-бота\n</li>\n<ли>\nВозможность изменения имен прокси\n</li>\n</ul>\n\nПожалуйста, свяжитесь с <a href='tg://resolve?domain=HiddifyCommercial'>@HiddifyCommercial</a> после пожертвования.\nОтправьте сообщение, чтобы получить специальную версию для бизнес-пользователей.",
+  "ProxyPath is already used! use different proxy path": "ProxyPath уже используется! используйте другой путь прокси",
+  "QR code": "🧾 QR-код",
+  "QRCode": "<i class='fa-solid fa-qrcode'></i> QR-код",
+  "RAM": "RAM",
+  "REALITY Fallback domain is not compaitble with server names!": "REALITY Fallback Domain несовместим с именами серверов!",
+  "REALITY Fallback domain is not compatible with server names!": "",
+  "Release": "✅ Релиз",
+  "Remaining about %(relative)s, exactly %(days)s days": "Осталось около %(relative)s, ровно %(days)s дней",
+  "Remote nodes are not supported yet!": "Удаленные узлы пока не поддерживаются!",
+  "Rename File": "Переименовать файла",
+  "Reset Filters": "Сброс Фильтров",
+  "Reset Proxies": "Сбросить прокси",
+  "Reset Usage Time:": "Время сброса использования трафика:",
+  "Reset every month": "Ежемесячно",
+  "Reset package days": "📆 Сбросить пакет дней",
+  "Reset package usage": "⏳ Сбросить использование пакета",
+  "Restore": "♻️ Восстановление",
+  "Restore Domain": "🌏 Восстановить домен",
+  "Restore Domain description": "Выберите этот вариант, чтобы восстановить ваши домены",
+  "Restore File": "Восстановить файл",
+  "Restore File Description": "Выберите загруженный файл бекапа.",
+  "Restore Settings": "⚙️ Восстановить настройки",
+  "Restore Settings description": "Восстановить все описания настроек",
+  "Restore Users": "👥 Восстановление пользователей",
+  "Restore Users description": "Выберите этот вариант, чтобы восстановить всех пользователей",
+  "Root": "Root",
+  "Russia": "Россия",
+  "Save": "Сохранить",
+  "Save & Add More": "Сохранить и добавить еще",
+  "Save Link": "Сохранить ссылку",
+  "Select all records": "Выбрать все записи",
+  "Select record": "Выберите запись",
+  "Seleted Users": "Выбранные пользователи",
+  "Send Message to User's Telegram": "📣 Отправить сообщение в Telegram пользователя",
+  "Sending": "Отправка...",
+  "Should be a valid domain": "Должен быть действительный Домен",
+  "Should be a valid uuid": "Должен быть действительный  UUID",
+  "Show Domains": "Показать конфигурации доменов",
+  "Simplifies the process of employing the link elsewhere.": "Упрощает процесс использования ссылки в других местах",
+  "SingBox": "📦 SingBox",
+  "Sort by %(name)s": "Сортировать по %(name)s",
+  "Specifying CDN IP is only valid for CDN mode": "",
+  "Start Date": "Дата начала",
+  "Started %(days)s days ago": "Началось %(days)s дней назад",
+  "Started from %(relative)s": "Началось с %(relative)s",
+  "Status": "Статус",
+  "SubLink": "",
+  "Submit": "Подтвердить",
+  "Success": "Успешно",
+  "Success! Please wait around 5 minutes to make sure everything is updated.": "✔️Операция завершена успешно! Пожалуйста, подождите около 5 минут, чтобы убедиться, что все обновлено.",
+  "Telegram Bot": "Telegram-бот",
+  "Telegram Bot Link": "",
+  "Temporary Short Link": "⏱️ Временная ссылка",
+  "The message has been sent.": "Сообщение отправлено",
+  "The message was not sent to": "Сообщение не было отправлено ",
+  "The name shown in the configs for this domain.": "Имя, которое будет отображаться в конфигурациях этого домена.",
+  "This can be used for giving your users a permanent non blockable links.": "Это можно использовать для предоставления вашим пользователям постоянных неблокируемых ссылок.",
+  "This domain does not exist in the panel!": "Этого домена не существует в панели управления!",
+  "Today Usage": "Сегодня",
+  "Too many Connected IPs": "Слишком много подключенных IP-адресов",
+  "Total Usage": "Общее использование",
+  "Turn of VPN": "Выключить VPN",
+  "Unified link for all application.": "Единая ссылка для всех приложений",
+  "Upload File": "Загрузить файл",
+  "Use HiddifyNext:": "Используйте Hiddify:",
+  "User activated!": "Пользователь активирован",
+  "User is inactive": "Пользователь неактивен",
+  "V2rayNG": "Альтернатива v2rayNG <button class='btn btn-sm btn-default' onclick='show_video('android-v2rayng')'><i class='fa-solid fa-question'></i> </button>\n<br />\n<br />",
+  "V2rayNG intro": "Установите v2rayNG по любой из этих ссылок: %(dl_link)s %(play_link)s.\nЗатем скопируйте ссылку ниже и вставьте ее в v2rayNG согласно видеоинструкции <button class='btn btn-sm btn-default' onclick='show_video('android-v2rayng')'><i class='fa-solid fa -вопрос'></i> </button>.\n<br />",
+  "View in Telegram": "Посмотреть в Telegram",
+  "Want to enjoy more with telegram?": "ℹ️ Подключите свой аккаунт к Telegram",
+  "Welcome %(user)s": "Добро пожаловать %(user)s",
+  "Why Going to Premium?": "Зачем переходить на Премиум?",
+  "Will Start in %(days)s days": "Начнется через %(days)s дней",
+  "Windows": "Windows ПК",
+  "With selected": "С выбранным",
+  "Xray": "☢️ XRay",
+  "Yesterday Usage": "Вчера",
+  "You can download a json formated of configurations by clicking <a href='%(link)s' class='btn btn-primary'>here</a>": "🔄 Панель Hiddify автоматически создает резервную копию каждые 6 часов. Путь к файлам резервной копии на сервере: ⬇️\n<br>\n💿 /opt/hiddify-manager/hiddify-panel/backup/\n<br>\n<br>\n<br>\n⚠️ Вы можете скачать файл конфигураций в формате JSON, нажав кнопку ниже.\n<br>\n<br>\n<a href='%(link)s' class='btn btn-primary'>Загрузить файл резервной копии</a>",
+  "You can restore your configs from previously downloaded configs": "ℹ️ Вы можете восстановить свои конфигурации из ранее скачанного файла резервной копии.",
+  "You have too much users! You can have only %(active)s active users and %(total)s users": "У вас слишком много пользователей! У вас может быть только %(active) активных пользователей и %(total) пользователей.",
+  "You have used this domain in: ": "Вы уже используете этот домен в:",
+  "Your hiddify instance information \nDomain: {} \nUsage limit: {} GB\nCurrent usage: {} GB\nExpires at: {} \nRemaining days: {} \n\n\n Happy using 🎉 🎉 🎉 \n": "Информация о вашем экземпляре Hiddify\nДомен: {}\nЛимит: {} ГБ\nИспользовано: {} ГБ\nСрок действия истекает: {}\nОставшиеся дни: {}\n\n\nУдачи! 🎉 🎉 🎉",
+  "[Admin only visible message:] You can change this message from settings": "[Сообщение, видимое только администратору]: Вы можете изменить это сообщение в настройках",
+  "actions": "Операции",
+  "admin link": "Админ",
+  "admin": {
+    "Actions:apply_configs": "Применить конфигурацию",
+    "action_done_sucess": "✅Действие выполнено успешно. Теперь вы можете покинуть эту страницу",
+    "actions": {
+      "apply_configs": "Применить конфигурацию",
+      "reinstall": "Переустановить",
+      "reset": "Перезагрузить систему",
+      "status": "Статус",
+      "title": "Действия",
+      "update": "Обновление",
+      "viewlogs": "Просмотр журналов"
+    },
+    "config": {
+      "apply_configs": "Применить конфигурацию",
+      "title": "Настройки"
+    },
+    "define_mode": "🥇🥈🥉 Режим администратора",
+    "incomplete_setup_warning": "Похоже, вы не до конца настроили систему. <a class='btn btn-success' href='%(quick_setup)s'>Нажмите здесь</a>, чтобы завершить настройку",
+    "menu": {
+      "api": "API",
+      "config": "Настройки",
+      "domain": "Домены",
+      "home": "Панель управления",
+      "proxy": "Прокси",
+      "proxy_stats": "Прокси Статус",
+      "support": "Помощь",
+      "telegram": "Telegram",
+      "user": "Пользователи"
+    },
+    "no_user_warning": "Кажется, вы еще не создали ни одного пользователя. ссылка пользователя по умолчанию: %(default_link)s",
+    "proxy": {
+      "detailed_config": "⚙️ Подробная конфигурация",
+      "global_config": "⚙️ Глобальная конфигурация"
+    },
+    "quicksetup": {
+      "title": "Быстрая установка"
+    },
+    "quicksetup_intro": "IP-адреса вашего сервера:\n<дел>\nIPv4: %(ipv4)s <br> IPv6: %(ipv6)s\n</div>\nНаправьте ваш домен или субдомен на эти IP адреса, и введите его в поле ниже.",
+    "save_panel_link": "Обратите внимание, что доступ к вашей панели возможен только по следующей ссылке. пожалуйста, сохраните эту ссылку.\n<p><a href='%(adminlink)s' class='btn btn-secondary copy-link'><i class='fa-solid fa-copy'></i></a>\n<a href='%(adminlink)s' class='copy-link' style='word-break: Break-all;'>%(adminlink)s</a></p>",
+    "waiting_for_update": "⚠️ Подождите около 5 минут, чтобы убедиться, что все обновлено. в течение этого времени скопируйте и сохраните ссылки для прокси-серверов:"
+  },
+  "adminuser": {
+    "force_update_usage": "ℹ️Информация пользователей обновлеятся каждые 6 минут. Чтобы обновить сейчас, <a href=\"%(link)s\" class=\"btn btn-info\">Нажмите здесь</a>"
+  },
+  "all": "Все",
+  "android": "Android",
+  "app": {
+    "clash_verge_rev": {
+      "description": "",
+      "title": ""
+    },
+    "cmfa": {
+      "description": "",
+      "title": ""
+    },
+    "foxray": {
+      "description": "Описание фоксрея",
+      "title": "Фоксрей"
+    },
+    "hiddify-clash-android": {
+      "description": "Hiddify Clash Android — одно из наших клиентских приложений, которое больше не обновляется. ",
+      "title": "Hiddify Столкновение"
+    },
+    "hiddify-clash-desktop": {
+      "description": "Hiddify Clash Desktop — одно из наших клиентских приложений, которое больше не обновляется. ",
+      "title": "Hiddify Столкновение"
+    },
+    "hiddify": {
+      "next": {
+        "description": "Описание HiddifyApp",
+        "title": "HiddifyApp"
+      }
+    },
+    "hiddifyn": {
+      "description": "Описание HiddifyN",
+      "title": "HiddifyN"
+    },
+    "hiddifyng": {
+      "description": "Описание HiddifyNG",
+      "title": "HiddifyNG"
+    },
+    "loon": {
+      "description": "Описание LOON",
+      "title": "Loon"
+    },
+    "nekobox": {
+      "description": " Nekobox — клиенты на базе Singbox. ",
+      "title": "НекоБокс"
+    },
+    "shadowrocket": {
+      "description": "Описание Теневой Ракеты",
+      "title": "Shadowrocket"
+    },
+    "singbox": {
+      "description": "Приложение Sing-box — официальное приложение для протокола Sing-box.",
+      "title": "Приложение Sing-box"
+    },
+    "stash": {
+      "description": "Описание Stash ",
+      "title": "Stash "
+    },
+    "streisand": {
+      "description": "Описание Streisand",
+      "title": "Streisand"
+    },
+    "v2rayn": {
+      "title": ""
+    },
+    "v2rayng": {
+      "description": "Описание V2RayNG",
+      "title": "V2RayNG"
+    }
+  },
+  "auto": "Авто",
+  "auto_cdn_ip": "☑️ Автоматический выбор IP-адреса CDN",
+  "bot": {
+    "admin_welcome": "Добро пожаловать в админ-бот. Выберите свое действие",
+    "welcome": "Ура 🎉 🎉 🎉\nДобро пожаловать в Hiddify bot\nДля начала перейдите по ссылке на панели или введите свой UUID пользователя."
+  },
+  "cdn": "🔀 CDN (Cloudflare Proxy, ...)",
+  "cf-delete": {
+    "failed": "cf-delete.failed"
+  },
+  "child has been removed!": "Дочерний элемент удален!",
+  "child": {
+    "register-failed": "child.register-не удалось",
+    "register-success": "child.register-успех",
+    "sync-failed": "child.sync-не удалось"
+  },
+  "clickable copy": "Ссылка для социальных сетей",
+  "close": "Закрыть",
+  "cloudflare": {
+    "error": "Cloudflare.error"
+  },
+  "config": {
+    "Domain_already_used": "Домен уже существует. Использовать другой домен",
+    "Invalid_The_pattern_is_number-number": "⚠️ Конфигурация недействительна! Шаблон — это номер-номер ⚠️",
+    "Invalid_brand_link": "Некорректная ссылка. Поддерживается следующий формат: (https или http://example.com)",
+    "Invalid_domain": "Ошибка! Неверный домен. Формат домена: www.google.com.",
+    "Invalid_it_should_be_a_number_only": "⚠️ Конфигурация недействительна! Это должно быть только число ⚠️",
+    "Invalid_port": "Неверный порт. это должно быть целое число, разделенное запятыми, например. 2052,2053",
+    "Invalid_proxy_path": "Неверный Proxy Path Это должна быть строка ASCI (a-z A-Z 0-9).",
+    "Invalid_telegram_bot_token": "Неверный токен Telegram bot",
+    "admin": {
+      "description": "Раздел предназначен для настройки параметров, связанных с администратором.",
+      "label": "Настройки администратора"
+    },
+    "admin_lang": {
+      "description": "Выберите язык для раздела администрирования",
+      "label": "🗺️ Язык панели администратора"
+    },
+    "admin_secret": {
+      "description": "Admin Secret будет использоваться для доступа к панели администратора.",
+      "label": "Admin Secret"
+    },
+    "advanced": {
+      "description": "В этой части есть некоторые расширенные настройки, которые лучше не менять, если вы не опытный пользователь..",
+      "label": "Расширенные настройки"
+    },
+    "allow_invalid_sni": {
+      "description": "Если вы разрешите неверный SNI, вы можете использовать любой домен, а не исходный домен, для доступа к прокси (не рекомендуется).",
+      "label": "🆗 Разрешить неверный SNI"
+    },
+    "auto_update": {
+      "description": "Система автоматически обновится в 3:00 утра при наличии обновлений",
+      "label": "🔄 Автоматическое обновление"
+    },
+    "block_iran_sites": {
+      "description": "Блокируйте иранские сайты, чтобы предотвратить их обнаружение правительством (Экспериментальный вариант: если возникнет проблема, отключите ее и сообщите нам.)",
+      "label": "⛔️ Блокировать внутренние сайты"
+    },
+    "block_ads_enable": {
+      "description": "Блокировать рекламу и трекеры на уровне прокси. Примечание: реклама YouTube не блокируется.",
+      "label": "🚫 Блокировка рекламы"
+    },
+    "block_ads_custom": {
+      "description": "Введите домены для блокировки, по одному на строку. Пример: ads.example.com",
+      "label": "📝 Пользовательский список"
+    },
+    "block_malware_enable": {
+      "description": "Блокировать вредоносные сайты и фишинг для защиты пользователей",
+      "label": "🛡️ Блокировка вредоносных сайтов"
+    },
+    "block_social_enable": {
+      "description": "Блокировать социальные сети: Facebook, TikTok, Instagram, Twitter и др.",
+      "label": "📵 Блокировка социальных сетей"
+    },
+    "block_gambling_enable": {
+      "description": "Блокировать сайты азартных игр и ставок",
+      "label": "🎰 Блокировка азартных игр"
+    },
+    "block_adult_enable": {
+      "description": "Блокировать контент для взрослых",
+      "label": "🔞 Блокировка контента 18+"
+    },
+    "adblock": {
+      "description": "Блокировка рекламы и трекеров на уровне прокси",
+      "label": "🚫 Блокировка рекламы"
+    },
+    "branding": {
+      "description": "Параметры настройки для страницы пользователя",
+      "label": "Настройки страницы пользователя"
+    },
+    "branding_freetext": {
+      "description": "Брендинговый текст. текст этого поля будет показан в разделе поддержки на странице пользователя. вы можете использовать HTML-теги\n<p><br /><a href=\"https://htmleditor.online/full\" target=\"_blank\">HTML Editor</a></p>",
+      "label": "📢 Текст раздела поддержки"
+    },
+    "branding_site": {
+      "description": "Ссылка, которая будет отображаться в разделе поддержки на странице пользователя.\nВы также можете разместить здесь свой канал Telegram или Telegram PV",
+      "label": "🆔 Ссылка на поддержку (находится как в названии бренда, так и в разделе поддержки на странице пользователя)"
+    },
+    "branding_title": {
+      "description": "Введите индивидуальный заголовок, который будет отображаться на странице пользователя. (перед приветственным текстом пользователя)",
+      "label": "👁‍🗨 Заголовок страницы пользователя"
+    },
+    "cdn_forced_host": {
+      "description": "В этой части вы можете использовать набор определенных доменов или IP-адресов для вашего сервера, которые будут переопределяться в пользовательских ссылках.\n\nЕсли вы используете <a href='https://ircf.space/export.php'>этот шаблон </a>, соответствующий IP-адрес будет выбран в соответствии с оператором пользователя, и если вы укажете диапазон IP-адресов, IP-адрес будет выбран случайным образом из этого диапазона.\nИспользуйте <a target='_blank' href='https://ip-format.hiddify.com'>эту ссылку</a>, чтобы установить личные IP-адреса",
+      "label": "🔂 Принудительная настройка для использования следующих IP-адресов"
+    },
+    "cloudflare": {
+      "description": "Следуйте <a href='https://github.com/hiddify/hiddify-config/wiki/Get-Cloudflare-API' target='_blank'>инструкции</a> и вставьте ключ API Cloudflare.",
+      "label": "🔑 API Cloudflare"
+    },
+    "core_type": {
+      "description": "☢️ XRay: хорошее ядро\n<br>\n📦 Singbox: разработан SagerNet. Это также хорошее ядро",
+      "label": "🎛️ Ядро"
+    },
+    "country": {
+      "description": "Применяются соответствующие настройки для каждой страны в соответствии с условиями фильтрации этой страны.",
+      "label": "🌍 Страна"
+    },
+    "create_easysetup_link": {
+      "description": "config.create_easysetup_link.description",
+      "label": "config.create_easysetup_link.label"
+    },
+    "db_version": {
+      "description": "Описание версии базы данных",
+      "label": "Label версии базы данных"
+    },
+    "dbvalues": {
+      "description": "config.dbvalues.description",
+      "label": "config.dbvalues.label"
+    },
+    "decoy_domain": {
+      "description": "Поддельный сайт: имитирует сайт, когда кто-то напрямую посещает ваш домен.<br>\n⚠️ Не используйте финансовые, иранские и известные сайты или сайты с авторизацией, такие как Google, Yahoo, Wikipedia, PayPal.<br>\n⛔ Обязательно проверьте сайт и убедитесь, что это правильный сайт, иначе вы можете получить предупреждение о фишинге.<br>\n⛔⛔ Проверьте этот домен еще раз, чтобы не было проблем в будущем",
+      "label": "📺 Сайт-приманка"
+    },
+    "default_useragent_string": {
+      "description": "",
+      "label": ""
+    },
+    "dns_server": {
+      "description": "✳️ По умолчанию 1.1.1.1 <br>\n🚧 Блокировать вредоносное ПО 1.1.1.2 <br>\n🔞 Блокировать порно 1.1.1.3",
+      "label": "🖥 DNS-сервер"
+    },
+    "domain_fronting": {
+      "description": "Это используется для имитации другого веб-сайта вместо вашего в SNI. поэтому GTW не может фильтровать ваш домен\n<a href='https://github.com/hiddify/hiddify-config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87- %D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA %DB%8C%D9%86%DA%AF'>Руководство</a>. ⚠️CloudFlare не поддерживает фронтирование домена.",
+      "label": "🔒 Включение TLS Domain Fronting"
+    },
+    "domain_fronting_domain": {
+      "description": "Это используется для имитации другого веб-сайта вместо вашего в SNI. поэтому GTW не может фильтровать ваш домен",
+      "label": "ℹ️ Фронтирование домена"
+    },
+    "domain_fronting_http_enable": {
+      "description": "Включение HTTP Domain Fronting приводит к быстрой блокировке вашего  основного домена.",
+      "label": "Включить фронтирование домена HTTP"
+    },
+    "domain_fronting_tls_enable": {
+      "description": "В CloudFlare TLS Domain Fronting не поддерживается он будет использовать порт 443 для подключения к CDN",
+      "label": "🔒 Включить фронтирование домена TLS"
+    },
+    "firewall": {
+      "description": "Включение Firewall откроет используемые порты (минимум 22,443,80 и SSH) и закроет все остальные порты.",
+      "label": "🛡️ Firewall"
+    },
+    "first_setup": {
+      "description": "config.first_setup.description",
+      "label": "config.first_setup.label"
+    },
+    "general": {
+      "description": "Это общие настройки системы.",
+      "label": "Общие настройки"
+    },
+    "grpc_enable": {
+      "description": "gRPC — это современная высокопроизводительная платформа удаленного вызова процедур (RPC) с открытым исходным кодом. Его можно использовать в поддерживаемых CDN.",
+      "label": "➿ Включить gRPC"
+    },
+    "h2_enable": {
+      "description": "Включить протокол HTTP/2",
+      "label": "🔵 h2"
+    },
+    "hidden": {
+      "description": "config.hidden.description",
+      "label": "config.hidden.label"
+    },
+    "hiddifycli_enable": {
+      "description": "config.hiddifycli_enable.description",
+      "label": "config.hiddifycli_enable.label"
+    },
+    "http": {
+      "description": "Конфигурации HTTP можно установить в этом разделе",
+      "label": "конфигурация HTTP"
+    },
+    "http_ports": {
+      "description": "Целые числа, разделенные запятыми, обозначающие порты, которые будут использоваться в качестве незашифрованных соединений (в любом случае будет использоваться порт 80).",
+      "label": "🔎 HTTP-порты"
+    },
+    "http_proxy_enable": {
+      "description": "Ваши пользователи смогут подключаться к системе через незашифрованный HTTP-порт. (Не рекомендуется)",
+      "label": "☑️ Разрешить соединение по HTTP"
+    },
+    "httpupgrade_enable": {
+      "description": "HTTPUpgrade завершает запрос и ответ на обновление HTTP 1.1, прежде чем использовать соединение напрямую. Он похож на WebSocket тем, что создает канал направления, который может пересылаться многими обратными прокси-серверами и CDN, без необходимости решать все проблемы, связанные с самим протоколом WebSocket.\n⚠️ Недоступно в клиентах на базе Xray. Поддерживаются только клиенты <a href=\"https://app.hiddify.com\" target=\"_blank\">Hiddify</a>, Singbox и V2fly.",
+      "label": "🆙 Включить Метод HTTP Обновления"
+    },
+    "hysteria": {
+      "description": "Hysteria — это многофункциональный инструмент прокси и ретрансляции, оптимизированный для нестабильных соединений с потерями (например, спутниковые сети, перегруженный общедоступный Wi-Fi, подключение к зарубежным серверам из Китая)",
+      "label": "Hysteria"
+    },
+    "hysteria_down_mbps": {
+      "description": "Hysteria Максимальная Скорость Входящей Загрузки",
+      "label": "⬇️ Hysteria Входящая Загрузка (mbps)"
+    },
+    "hysteria_enable": {
+      "description": "Включение протокола Hysteria на основе UDP",
+      "label": "⚪️ Включить Hysteria"
+    },
+    "hysteria_obfs_enable": {
+      "description": "Включить Hysteria Obfuscation (Salamander)",
+      "label": "🎛 Hysteria OBFS"
+    },
+    "hysteria_port": {
+      "description": "Hysteria UDP-порт например 5678",
+      "label": "Hysteria Порт"
+    },
+    "hysteria_up_mbps": {
+      "description": "Hysteria Максимальная Скорость Исходящей Загрузки",
+      "label": "⬆️ Hysteria Исходящая Загрузка (mbps)"
+    },
+    "invalid-pattern-for-warp-sites": "⚠️ Сайт, введенный в Варп, не соответствует указанному шаблону.",
+    "invalid_uuid": "Неверный UUID пользователя. пример: 6098ea35-8cb2-4a08-ba15-2be25bc49cb6",
+    "is_parent": {
+      "description": "config.is_parent.description",
+      "label": "Главная панель"
+    },
+    "kcp": {
+      "description": "В этом разделе можно настроить KCP.",
+      "label": "KCP"
+    },
+    "kcp_enable": {
+      "description": "Это протокол на базе UDP.",
+      "label": "KCP"
+    },
+    "kcp_ports": {
+      "description": "Целые числа, разделенные запятыми, обозначающие порты, которые будут использоваться в качестве соединения KCP.",
+      "label": "Порты KCP"
+    },
+    "lang": {
+      "description": "Выберите язык пользовательского интерфейса, чтобы персонализировать свой опыт использования пользовательской зоны.",
+      "label": "🗺️ Язык раздела пользователя"
+    },
+    "last_hash": {
+      "description": "config.last_hash.description",
+      "label": "config.last_hash.label"
+    },
+    "last_priodic_usage_check": {
+      "description": "config.last_priodic_usage_check.description",
+      "label": "config.last_priodic_usage_check.label"
+    },
+    "license": {
+      "description": "Для коммерческого использования этого продукта вам необходимо приобрести его лицензию.",
+      "label": "License  Code"
+    },
+    "log_level": {
+      "description": "config.log_level.description",
+      "label": "config.log_level.label"
+    },
+    "mux": {
+      "description": "Настройки конфигурации MUX (Multiplex)",
+      "label": "Настройки MUX"
+    },
+    "mux_brutal_down_mbps": {
+      "description": "TCP-Brutal Максимальная Скорость Входящей Загрузки",
+      "label": "⬇️ MUX Brutal Входящая Загрузка (mbps)"
+    },
+    "mux_brutal_enable": {
+      "description": "Включить алгоритм управления перегрузкой TCP-Brutal",
+      "label": "☣️ MUX Brutal"
+    },
+    "mux_brutal_up_mbps": {
+      "description": "TCP-Brutal Максимальная Скорость Исходящей Загрузки",
+      "label": "⬆️  MUX Brutal Исходящая Загрузка (mbps)"
+    },
+    "mux_enable": {
+      "description": "MUX требует совместимые клиенты. MUX в <a href=\"https://app.hiddify.com\" target=\"_blank\">Hiddify</a> и Singbox несовместимы с XRay",
+      "label": "Ⓜ️ MUX (⚠️ Несовместимо с некоторыми клиентами)"
+    },
+    "mux_max_connections": {
+      "description": "Максимальное количество подключений. Конфликтует с максимальным количеством потоков",
+      "label": "⛓ Максимальное количество подключений MUX"
+    },
+    "mux_max_streams": {
+      "description": "Максимальное количество мультиплексированных потоков в соединении перед открытием нового соединения",
+      "label": "↗️ Максимальное количество потоков MUX"
+    },
+    "mux_min_streams": {
+      "description": "Минимальное количество мультиплексированных потоков в соединении перед открытием нового соединения",
+      "label": "↘️ Минимальное количество потоков MUX"
+    },
+    "mux_padding_enable": {
+      "description": "Описание MUX Padding",
+      "label": "⟹ MUX Padding"
+    },
+    "mux_protocol": {
+      "description": "ℹ️Мультиплексный протокол. «sMux» используется по умолчанию<inlang-LineFeed><br>\n➖ sMux: мультиплексирование потоков<inlang-LineFeed><br>\n➖ YaMux: еще один мультиплексор<inlang-LineFeed><br>\n➖ h2Mux: мультиплексирование потоков через HTTP/2",
+      "label": "♍️ Протокол MUX"
+    },
+    "netdata": {
+      "description": "Для отображения ресурсов, используется процессор вашего сервера, но нагрузка не слишком высокая",
+      "label": "Netdata"
+    },
+    "not_found": {
+      "description": "Конфигурация не найдена",
+      "label": "Конфигурация не найдена"
+    },
+    "only_ipv4": {
+      "description": "Это отключит IPv6",
+      "label": "ℹ️ Только IPv4"
+    },
+    "package_mode": {
+      "description": "Укажите, хотите ли вы релиз версию пакета или версию в стадии разработки.",
+      "label": "🔄 Режим обновления пакетов"
+    },
+    "panel_mode": {
+      "description": "config.panel_mode.description",
+      "label": "config.panel_mode.label"
+    },
+    "parent_admin_proxy_path": {
+      "description": "config.parent_admin_proxy_path.description",
+      "label": "config.parent_admin_proxy_path.label"
+    },
+    "parent_domain": {
+      "description": "config.parent_domain.description",
+      "label": "config.parent_domain.label"
+    },
+    "parent_panel": {
+      "description": "Вы можете подключиться к главной панели, чтобы добавить пользователя в одном месте, а использование всех серверов будет добавлено автоматически. ",
+      "label": "Главная панель (мультисервер)"
+    },
+    "path_grpc": {
+      "description": "Путь gRPC в конфигурации",
+      "label": "ℹ️ Путь gRPC"
+    },
+    "path_httpupgrade": {
+      "description": "должен быть случайным",
+      "label": "ℹ️ Путь обновления HTTP"
+    },
+    "path_ss": {
+      "description": "Путь Shadowsocks в ссылках",
+      "label": "Путь Shadowsocks"
+    },
+    "path_tcp": {
+      "description": "Для ссылок Proxy",
+      "label": "ℹ️ Путь конфигурации TCP"
+    },
+    "path_trojan": {
+      "description": "Для ссылок Trojan",
+      "label": "ℹ️ Trojan путь"
+    },
+    "path_v2ray": {
+      "description": "Установить путь к конфигурации V2Ray",
+      "label": "Путь для V2Ray"
+    },
+    "path_vless": {
+      "description": "Для пути VLess",
+      "label": "ℹ️ Путь VLess"
+    },
+    "path_vmess": {
+      "description": "Для ссылок VMess",
+      "label": "ℹ️ Путь VMess"
+    },
+    "path_ws": {
+      "description": "Укажите путь для Websocket",
+      "label": "ℹ️ Путь запросов к веб-сокетам"
+    },
+    "path_xhttp": {
+      "description": "Эта опция определяет путь для XHTTP.",
+      "label": "ℹ️ Путь для XHTTP"
+    },
+    "proxies": {
+      "description": "Определите специфичные настройки прокси",
+      "label": "Настройки прокси"
+    },
+    "proxy_path": {
+      "description": "Мы используем секретный путь прокси, чтобы скрыть наши прокси от обнаружения",
+      "label": "ℹ️ Секретный путь прокси"
+    },
+    "proxy_path_admin": {
+      "description": "Мы используем секретный путь прокси, чтобы скрыть наши прокси для правительств и ботов.",
+      "label": "🔐 Путь прокси для администраторов"
+    },
+    "proxy_path_client": {
+      "description": "Секретный путь прокси скрывает прокси от правительств и ботов",
+      "label": "🔏 Путь прокси для клиентов"
+    },
+    "quic_enable": {
+      "description": "Включить протокол QUIC",
+      "label": "🟡 QUIC"
+    },
+    "reality": {
+      "description": "REALITY функция устранения TLS Fingerprint со стороны севрера",
+      "label": "Reality"
+    },
+    "reality_enable": {
+      "description": "Включить протокол Reality",
+      "label": "🔴 Reality"
+    },
+    "reality_fallback_domain": {
+      "description": "При попытке контролирующих органов посетить сайт вытащенный из запроса, он будет перенаправлен на этот домен.",
+      "label": "🌍 Резервный домен Reality"
+    },
+    "reality_port": {
+      "description": "",
+      "label": ""
+    },
+    "reality_private_key": {
+      "description": "Не меняйте это",
+      "label": "🔑 Private Key"
+    },
+    "reality_public_key": {
+      "description": "Не меняйте это",
+      "label": "🔑 Public Key"
+    },
+    "reality_server_names": {
+      "description": "Вы можете добавить несколько имен серверов, разделяя их запятыми ",
+      "label": "🌎 Имена серверов Reality"
+    },
+    "reality_short_ids": {
+      "description": "Не меняйте это",
+      "label": "🆔 Short IDs"
+    },
+    "restls": {
+      "description": "config.restls.description",
+      "label": "RestTLS"
+    },
+    "restls1_2_domain": {
+      "description": "config.restls1_2_domain.description",
+      "label": "config.restls1_2_domain.label"
+    },
+    "restls1_3_domain": {
+      "description": "config.restls1_3_domain.description",
+      "label": "config.restls1_3_domain.label"
+    },
+    "shadowsocks": {
+      "description": "Shadowsocks - это быстрый прокси-туннель, который помогает вам обходить фаерволы",
+      "label": "Shadowsocks"
+    },
+    "shadowsocks2022_enable": {
+      "description": "Shadowsocks 2022 - это защищенный протокол прокси для трафика TCP и UDP. Прокси-трафик неотличим от случайного потока байтов и, следовательно, может обходить фаерволы и интернет-цензоров, которые полагаются на DPI (глубокий анализ пакетов).",
+      "label": "⭕️ Shadowsocks 2022"
+    },
+    "shadowsocks2022_method": {
+      "description": "Этот метод также использвуется в ShadowTLS и SSFakeTLS",
+      "label": "🔐 Метод шифрования Shadowsocks"
+    },
+    "shadowsocks2022_port": {
+      "description": "Требуются открытый порт как и TCP, так и UDP",
+      "label": "↔️ Порт Shadowsocks 2022"
+    },
+    "shadowtls": {
+      "description": "Прокси-сервер для предоставления брандмауэру настоящего рукопожатия tls.\n\nОн работает как Trojan, но не требует подписания сертификата. брандмауэр увидит настоящее рукопожатие tls с действительным сертификатом, который вы выберете.",
+      "label": "ShadowTLS"
+    },
+    "shadowtls_enable": {
+      "description": "ShadowTLS — это новый протокол, помогающий скрыть трафик от DPI с помощью FakeTLS",
+      "label": "☑️ ShadowTLS"
+    },
+    "shadowtls_fakedomain": {
+      "description": "Пожалуйста, используйте хорошо известный домен в своем центре обработки данных. Например, если вы находитесь в центре обработки данных Azure, хороший пример — microsoft-update.com",
+      "label": "🌍 Поддельный домен ShadowTLS"
+    },
+    "shared_secret": {
+      "description": "Некоторые прокси в настоящее время не поддерживают учет, поэтому нам придется использовать для них секретный ключ",
+      "label": "🔐 Общий секретный ключ"
+    },
+    "show_usage_in_sublink": {
+      "description": "Этот параметр создает поддельную конфигурацию в дополнительной ссылке пользователя, которая показывает оставшийся объем трафика для пользователя.",
+      "label": "👁️‍🗨️ Показать использование в доп.ссылке"
+    },
+    "special_port": {
+      "description": "Вы можете установить индивидуальный порт для вашего сервера Reality, чтобы снизить нагрузку на систему. (Разрешить прямое подключение к прокси должно быть да)",
+      "label": "↔️ Порт Direct Reality"
+    },
+    "speed_test": {
+      "description": "Разрешите вашим пользователям выполнять тест скорости. Это помогает им определить качество связи.",
+      "label": "🚀 Тест скорости"
+    },
+    "ssfaketls": {
+      "description": "Shadowsocks FakeTLS — это простой инструмент для запутывания, который инкапсулирует данные в пакете tls.",
+      "label": "Shadowsocks FakeTLS"
+    },
+    "ssfaketls_enable": {
+      "description": "Простой протокол OBFS не рекомендуется",
+      "label": "🆎 Shadowsocks FakeTLS (Простой OBFS)"
+    },
+    "ssfaketls_fakedomain": {
+      "description": "Пожалуйста, используйте хорошо известный домен в своем центре обработки данных. например, если вы находитесь в центре обработки данных Azure, хороший пример — microsoft-update.com",
+      "label": "🌍 SS FakeTLS FakeDomain"
+    },
+    "ssh": {
+      "description": "SSH Proxy, также известный как SSH tunnel или переадресация портов SSH, представляет собой метод создания безопасного канала связи между двумя компьютерами в незащищенной сети. У нас есть отдельное приложение, которое полностью отличается от стандартногно ssh-сервера и не может выполнять какие-либо команды.",
+      "label": "SSH Proxy"
+    },
+    "ssh_host_dsa_pk": {
+      "description": "",
+      "label": ""
+    },
+    "ssh_host_dsa_pub": {
+      "description": "",
+      "label": ""
+    },
+    "ssh_host_ecdsa_pk": {
+      "description": "",
+      "label": ""
+    },
+    "ssh_host_ecdsa_pub": {
+      "description": "",
+      "label": ""
+    },
+    "ssh_host_ed25519_pk": {
+      "description": "",
+      "label": ""
+    },
+    "ssh_host_ed25519_pub": {
+      "description": "",
+      "label": ""
+    },
+    "ssh_host_rsa_pk": {
+      "description": "",
+      "label": ""
+    },
+    "ssh_host_rsa_pub": {
+      "description": "",
+      "label": ""
+    },
+    "ssh_server_enable": {
+      "description": "SSH Proxy полностью отличается от оригинального SSH Server",
+      "label": "✔️ Включить SSH Poxy"
+    },
+    "ssh_server_port": {
+      "description": "Это не ваш  SSH-сервер. Это отдельная программа",
+      "label": "↔️ SSHproxy-порт"
+    },
+    "ssh_server_redis_url": {
+      "description": "Не используется",
+      "label": "Адрес базы данных пользователей SSH"
+    },
+    "ssr": {
+      "description": "ShadowsocksR — это форк оригинального проекта Shadowsocks, который считается превосходным с точки зрения безопасности и стабильности.",
+      "label": "SSR"
+    },
+    "ssr_enable": {
+      "description": "ShadowsocksR — это форк оригинального проекта Shadowsocks, который считается превосходным с точки зрения безопасности и стабильности. Не испытано. Не поддерживает accounting",
+      "label": "SSR"
+    },
+    "ssr_fakedomain": {
+      "description": "Пожалуйста, используйте хорошо известный домен в своем центре обработки данных или хостинге. например, если вы находитесь в центре обработки данных Azure, хороший пример — microsoft-update.com",
+      "label": "Поддельный домен SSR"
+    },
+    "sub_full_clash_enable": {
+      "description": "config.sub_full_clash_enable.description",
+      "label": "config.sub_full_clash_enable.label"
+    },
+    "sub_full_clash_meta_enable": {
+      "description": "config.sub_full_clash_meta_enable.description",
+      "label": "config.sub_full_clash_meta_enable.label"
+    },
+    "sub_full_links_b64_enable": {
+      "description": "config.sub_full_links_b64_enable.description",
+      "label": "config.sub_full_links_b64_enable.label"
+    },
+    "sub_full_links_enable": {
+      "description": "config.sub_full_links_enable.description",
+      "label": "config.sub_full_links_enable.label"
+    },
+    "sub_full_singbox_enable": {
+      "description": "config.sub_full_singbox_enable.description",
+      "label": "config.sub_full_singbox_enable.label"
+    },
+    "sub_full_xray_json_enable": {
+      "description": "Полная ссылка XRay предоставляет комплексные возможности настройки параметров, специфичных для XRay. Сюда входит пользовательская фрагментация и мультиплексирование (мультиплексирование) в таких приложениях, как v2rayNG, которые поддерживают протоколы XRay для точного управления настройкой прокси-сервера XRay.",
+      "label": "⚙️ Ссылка на полную конфигурацию XRay"
+    },
+    "sub_singbox_ssh_enable": {
+      "description": "config.sub_singbox_ssh_enable.description",
+      "label": "config.sub_singbox_ssh_enable.label"
+    },
+    "tcp_enable": {
+      "description": "Включает протокол TCP",
+      "label": "🟠 TCP"
+    },
+    "telegram": {
+      "description": "Прокси-сервер, разработанный для Telegram для обхода фильтрации Telegram",
+      "label": "📱 Telegram Прокси"
+    },
+    "telegram_bot": {
+      "description": "Настройки Telegram бота для резервного копирования и уведомлений пользователей",
+      "label": "🤖 Telegram Бот"
+    },
+    "telegram_bot_info": {
+      "description": "⚠️ Для активации этих функций сначала настройте <strong>Токен Telegram бота</strong> в разделе <strong>Telegram Прокси</strong>. Без действительного токена автоматическое резервное копирование и уведомления пользователей работать не будут.",
+      "label": "ℹ️ Важное уведомление"
+    },
+    "telegram_adtag": {
+      "description": "Это используется для отображения спонсируемого канала в списке чатов клиента. Для рекламы канала получите тег от @MTProxybot.\nвведите в этот бот код 0123456789ABCDEF0123456789ABCDEF.",
+      "label": "📍 Тег Telegram AD"
+    },
+    "telegram_bot_token": {
+      "description": "Чтобы добавить функцию бота Telegram вам нужно создать бота с @BotFather и ввести в это поле код API",
+      "label": "🔐 Токен Telegram bot"
+    },
+    "notify_expiry_enable": {
+      "description": "Отправлять автоматические уведомления пользователям, когда их подписка истекает. Только для пользователей с подключенным Telegram.",
+      "label": "📅 Уведомления об истечении"
+    },
+    "notify_expiry_days": {
+      "description": "За сколько дней до истечения отправлять уведомление. По умолчанию: 3 дня.",
+      "label": "📆 Дней до истечения"
+    },
+    "notify_usage_enable": {
+      "description": "Отправлять автоматические уведомления пользователям при достижении порога использования. Только для пользователей с подключенным Telegram.",
+      "label": "📊 Уведомления об использовании"
+    },
+    "notify_usage_percent": {
+      "description": "Процент использования данных для отправки уведомления. По умолчанию: 80%.",
+      "label": "📈 Порог использования (%)"
+    },
+    "notify_finished_enable": {
+      "description": "Отправлять автоматические уведомления пользователям, когда их подписка заканчивается. Только для пользователей с подключенным Telegram.",
+      "label": "❌ Уведомления об окончании подписки"
+    },
+    "backup_interval": {
+      "description": "Установите интервал резервного копирования в часах. Резервные копии автоматически отправляются в Telegram. Используйте 0 для отключения. Варианты: 1 (ежечасно), 2, 3, 4, 6 (по умолчанию), 8, 12, 24 (ежедневно).",
+      "label": "⏰ Интервал резервного копирования (часы)"
+    },
+    "telegram_enable": {
+      "description": "Telegram MTProto используется для инкапсуляции Telegram Proxy в качестве обычного tls-трафика<br>⚠️<span style=\"color:#d32f2f;\"><strong> Этот протокол требует прямого домена</strong></span>",
+      "label": "✔️ Включить Telegram MTProto"
+    },
+    "telegram_fakedomain": {
+      "description": "Пожалуйста, используйте хорошо известный домен в своем ДЦ или Хостинге. Например, если вы находитесь в центре обработки данных Azure, хорошим примером будет microsoft-update.com",
+      "label": "📺 Поддельный домен Telegram"
+    },
+    "telegram_lib": {
+      "description": "Вы можете переключаться между различными библиотеками Telegram. Обратите внимание, что на всех серверах работает только Python, на других могут возникнуть проблемы. Проверьте прокси после его изменения",
+      "label": "🔢 Библиотека Telegram Proxy"
+    },
+    "tls": {
+      "description": "В этом разделе можно установить конфигурации TLS",
+      "label": "Настройки TLS"
+    },
+    "tls_fragment_enable": {
+      "description": "При некоторых обстоятельствах, это позволяет обойти систему черного списка SNI. <a href=\"https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/\" target=\"_blank\">(подробнее)</a>",
+      "label": "⏯ TLS Fragment"
+    },
+    "tls_fragment_size": {
+      "description": "Размер каждого пакета",
+      "label": "🎚 Размер TLS Fragment"
+    },
+    "tls_fragment_sleep": {
+      "description": "Временная задержка между фрагментами",
+      "label": "⏱ Спящий режим TLS Fragment "
+    },
+    "tls_mixed_case": {
+      "description": "Включает фрагментацию смешанного регистра SNI по протоколу TLS",
+      "label": "🔠 Включить смешанный случай SNI по протоколу TLS"
+    },
+    "tls_padding_enable": {
+      "description": "Включает заполнение для фрагментации TLS. <a href=\"https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/#tls-padding\" target=\"_blank\">(подробнее)</a>",
+      "label": "♒️ TLS Padding"
+    },
+    "tls_padding_length": {
+      "description": "Длина отступа для TLS Padding",
+      "label": "📏 TLS Padding"
+    },
+    "tls_ports": {
+      "description": "Целые числа, разделенные запятыми, указывающие порты для использования в качестве TLS-соединения (в любом случае будет использоваться порт 443)",
+      "label": "🔎 TLS-порты"
+    },
+    "tls_trick": {
+      "description": "Конфигурации фрагментации TLS можно настроить в этом разделе",
+      "label": "TLS Trick"
+    },
+    "too_advanced": {
+      "description": "Укажите путь для Proxy. Это особенно важно, если вы используете HTTP и VMess.",
+      "label": "Очень расширенные настройки"
+    },
+    "torrent_block": {
+      "description": "В этом разделе можно настроить блокировку Torrent",
+      "label": "Конфигурация блокировки Torrent"
+    },
+    "trojan_enable": {
+      "description": "Включить Trojan протокол",
+      "label": "🟤 Trojan"
+    },
+    "tuic": {
+      "description": "Delicately-TUICed высокопроизводительный прокси работающий поверх протокола QUIC.\n\nЦель TUIC — максимально минимизировать задержку рукопожатия.",
+      "label": "TUIC"
+    },
+    "tuic_enable": {
+      "description": "Это протокол на базе UDP, аналогичный QUIC",
+      "label": "⚫️ TUIC"
+    },
+    "tuic_port": {
+      "description": "Используйте запятую для разделения портов, например,( 63000,60000 )",
+      "label": "Порты TUIС"
+    },
+    "unique_id": {
+      "description": "config.unique_id.description",
+      "label": "config.unique_id.label"
+    },
+    "use_ip_in_config": {
+      "description": "",
+      "label": ""
+    },
+    "utls": {
+      "description": "Эта опция будет имитировать разные браузеры, поэтому GFW не сможет обнаружить ваш браузер",
+      "label": "❇️ uTLS"
+    },
+    "v2ray_enable": {
+      "description": "V2ray не поддерживает учет и не предлагается к использованию",
+      "label": "♈️ V2Ray"
+    },
+    "validation-error": "В одном из полей ошибка.",
+    "validation-success": "Конфигурации успешно изменены. Нажмите %(link)s, чтобы применить их. Это может занять 2 минуты",
+    "validation-success-no-reset": "✅ Конфигурации успешно изменены",
+    "vless_enable": {
+      "description": "Включить протокол VLess",
+      "label": "⚫️ VLess"
+    },
+    "vmess_enable": {
+      "description": "Несколько человек сообщили, что VMess позволляет правительствам обнаруживать систему.  Не рекомендуется",
+      "label": "🟣 VMess"
+    },
+    "warp-https-domain-for-warp-site": "config.warp-https-домен-для-варп-сайта",
+    "warp": {
+      "description": "Warp — это инструмент, который скрывает IP-адрес вашего сервера от сайтов, которые посещают ваши пользователи.\n<br>\nНапример, если у вас возникла проблема с Google, ее можно исправить.",
+      "label": "WARP➕"
+    },
+    "warp_enable": {
+      "description": "WARP поможет вам обойти блокировку Google, Spotify и Netflix",
+      "label": "Включение WARP+"
+    },
+    "warp_mode": {
+      "description": "✴️ Все: все сайты удалены из WARP.\n<br>\n☑️ Только отечественные и заблокированные сайты: только иранские сайты и\nGoogle, Spotify, Netflix, OpenAi, IPinfo.io\nОни используют WARP+",
+      "label": "✴️ Режим WARP+"
+    },
+    "warp_plus_code": {
+      "description": "🔝 Увеличивает скорость просмотра. Чтобы получить ключ, перейдите по адресу <a href='https://t.me/hiddify_board'> здесь </a>.\nОтправить сообщение\n<br>\n⚠️ Если в этом Ключе есть ошибка, WARP будет отключен",
+      "label": "🔑 WARP Plus Key"
+    },
+    "warp_sites": {
+      "description": "Добавление дополнительных сайтов для направления через WARP (только если Warp включен)",
+      "label": "🆚 Дополнительные сайты WARP"
+    },
+    "wireguard": {
+      "description": "WireGuard - это легковесный UDP-протокол, известный своей простотой, эффективностью и высокой безопасност. Он предлагает простоту, кроссплатформенность, быструю настройку и прозрачный код.",
+      "label": "WireGuard"
+    },
+    "wireguard_enable": {
+      "description": "WireGuard - это UDP-протокол. (⚠️ Работает на <a href=\"https://app.hiddify.com/\" target=\"_blank\">Hiddify</a>)",
+      "label": "🐉 WireGuard"
+    },
+    "wireguard_ipv4": {
+      "description": "Включает IPv4 в WireGuard",
+      "label": " IPv4 в WireGuard"
+    },
+    "wireguard_ipv6": {
+      "description": "Включает IPv6 в WireGuard",
+      "label": "IPv6 в WireGuard"
+    },
+    "wireguard_noise_trick": {
+      "description": "Noise Trick создает дополнительные мусорные данные для предотвращения обнаужения и блокировки цензором",
+      "label": "💥 Шумовая уловка WireGuard"
+    },
+    "wireguard_port": {
+      "description": "Определяет порт для WireGuard ",
+      "label": "↔️ Порт WireGuard"
+    },
+    "wireguard_private_key": {
+      "description": "Для WireGuard указан закрытый ключ.",
+      "label": "Закрытый ключ WireGuard"
+    },
+    "wireguard_public_key": {
+      "description": "Для WireGuard указан открытый ключ.",
+      "label": "Открытый ключ WireGuard"
+    },
+    "ws_enable": {
+      "description": "Websocket создает туннель поверх HTTP, который будет полезно использовать в CDN",
+      "label": "🔰 Websocket"
+    },
+    "xhttp_enable": {
+      "description": "Этот протокол отправляет и получает информацию по отдельным каналам<br />\n⚠️ <strong>Не поддерживается в клиентах на базе SignBox. Поддерживаются только приложения <a href=\"https://app.hiddify.com\" target=\"_blank\">Hiddify</a> и клиенты на базе XRay</strong>",
+      "label": "🈁 XHTTP"
+    },
+    "xtls_enable": {
+      "description": "Включает протокол XTLS",
+      "label": "🟢XTLS"
+    }
+  },
+  "copy": "Копировать",
+  "daily": "⏰ Ежедневно",
+  "days": "Дни",
+  "desktop": "ПК",
+  "direct": "➡️ На прямую",
+  "domain": {
+    "cdn": "CDN",
+    "changed_in_domain_warning": "⚠️ Ваши домены изменились. пожалуйста, не забудьте скопировать ссылки администратора, иначе вы больше не сможете получить доступ к панели управления",
+    "description": "Пожалуйста, внимательно и правильно заполните это поле. В противном случае у прокси могут возникнуть проблемы. Посетите <a href='https://github.com/hiddify/hiddify-config/wiki/راهنمای-تنظیم-دامنه-و-نهایی-کردن-نصب#آموزش-ساخت-زیردام نه'> Помогите</a> Узнайте, как создать subdomain.",
+    "domain": "Домен",
+    "domain_fronting": {
+      "description": "Он используется для имитации другого веб-сайта вместо вашего веб-сайта в SNI следовательно, GTW не может отфильтровать ваш домен\n<<a href='https://github.com/hibbity/hibbity-config/wiki/Guide-for-domain-fronting '>Руководство</a>. ⚠CloudFlare не поддерживает подключение к домену.",
+      "label": "🔒 Фронтирование домена TLS"
+    },
+    "empty": {
+      "allowed_for_fake_only": "domain.empty.allowed_for_fake_only"
+    },
+    "intro": "1️⃣ В этом разделе вы можете добавить свой Домен.<inlang-LineFeed><br>\n2. Если вы хотите уменьшить вероятность использования грязного IP-адреса, вы можете добавить сервер с несколькими ретрансляторами. <a href='https://github.com/hiddify/hiddify-config/discussions/129'>Подробнее</a> .<inlang-LineFeed><br>\n3. Если у вас в Panel несколько IPv4 или IPv6, вам необходимо добавить указанный на них домен в качестве ретранслятора.",
+    "ip": "IP",
+    "mode": "Режим",
+    "reality": {
+      "asn_issue": "Выбранный домен для REALITY не находится в том же ASN. Для более эффективного использования протокола лучше найти Домен в том же ASN"
+    },
+    "resolveip": {
+      "description": "",
+      "label": ""
+    },
+    "show_domains_description": "Для посетителей пользовательской области с этим доменом, укажите, какие домены они могут видеть.\n<br>\nПредложение: Для домена с IP-адресом не попадащим под фильтры, отличного от других, выберите все остальные домены (кроме текущего). В результате, поскольку этот IP-адрес используется не для прокси-сервера, а для простого веб-сайта, этот домен и IP-адрес никогда не будут заблокированы, и ваши пользователи смогут легко обновлять свои профили."
+  },
+  "download": "Direct Download",
+  "download_domain": {
+    "description": "",
+    "label": ""
+  },
+  "fake": "🆎 Поддельный сайт",
+  "gRPC": "➿ gRPC",
+  "grpc-proxy": {
+    "description": "ℹ️ gRPC — это протокол на основе HTTP 2. Возможно, в вашей ситуации он будет быстрее!"
+  },
+  "in parent panel": "В центральной панели",
+  "install from google play": "<i class='fa-brands fa-google-play'></i> Google Play",
+  "ios": "iOS",
+  "items": "элементы",
+  "lang": {
+    "en": "🇺🇸 Английский - English ",
+    "fa": "🇮🇷 Персидский - فارسی",
+    "my": "🇲🇲 Бирманский язык - မြန်မာဘာသာ",
+    "pt": "🇵🇹 Португальский - Portugal ",
+    "ru": "🇷🇺 Русский",
+    "zh": "🇨🇳 Chinese - 简体中文"
+  },
+  "lib": {
+    "telegram": {
+      "erlang": "✴️ Erlang: хорошая производительность",
+      "go": "✅ Go: Нормальный функционал – без поддержки рекламы",
+      "python": "☑️ Python: низкая производительность"
+    }
+  },
+  "log": "📄 Log",
+  "login": {
+    "button": "Авторизоваться",
+    "password": {
+      "description": "Для дополнительной безопасности вам необходимо ввести свой пароль.",
+      "label": "Пароль"
+    },
+    "secret": {
+      "description": "Для получения доступа к этой странице введите свой секретный код (UUID)",
+      "label": "Секретный код (UUID)"
+    }
+  },
+  "macOS": "macOS",
+  "master": {
+    "page-title": "Hiddify Custom Edition - <a href='https://t.me/MNHACKER' target='_blank'>シングル</a>"
+  },
+  "monthly": "🗓️ Ежемесячно",
+  "move_to_new_link": "Страница перемещена по новой ссылке. Пожалуйста, скопируйте и сохраните новую ссылку.",
+  "next": "Следующий",
+  "no_reset": "⭐️ Без сброса",
+  "node": {
+    "diff-version": "node.diff-version",
+    "mode": {
+      "dscr": "Это поле определяет режим для узла.",
+      "label": "Режим Node "
+    },
+    "name": {
+      "dscr": "Это поле определяет имя для Node.",
+      "label": "Имя Node "
+    },
+    "uuid": {
+      "dscr": "Это поле определяет UUID для узла.",
+      "label": "UUID Node "
+    }
+  },
+  "old_xtls_direct": "🔙 Старый прямой режим (для Torjan TCP, VLess XTLS)",
+  "open": "Открыть",
+  "outdated_panel": "⚠️ Эта версия Hiddify Panel устарела. пожалуйста, обновите его из панели управления администратора.",
+  "package days?": "пакетные дни?",
+  "package size?": "Размер посылки?",
+  "parent": {
+    "invalid-parent-url": "parent.invalid-parent-url",
+    "sync-req-failed": "parent.sync-req-failed"
+  },
+  "previous": "Предыдущий",
+  "quicksetup": {
+    "cdn_domain": {
+      "description": "Настройка домена CDN не является обязательной. Используйте его только в том случае, если вы уже настроили CDN.",
+      "label": "CDN-домен"
+    },
+    "proxy_cat": {
+      "description": "Последний шаг: выберите нужные прокси. Пожалуйста, выберите минимум, насколько это возможно."
+    },
+    "setlang": {
+      "success": "Изменение языка прошло успешно."
+    }
+  },
+  "reality": "🔂 Reality",
+  "relay": "♾️ Relay (подключение через промежуточный узел)",
+  "search": "Поиск",
+  "see the log in the bellow screen": "📑 Логи отображаются на экране ниже.",
+  "serverssh": {
+    "password-login": {
+      "warning": "Ваш сервер уязвим для злоупотреблений, поскольку в вашем SSH включена проверка подлинности пароля. Чтобы защитить свой сервер, переключитесь на механизм аутентификации по ключу и отключите аутентификацию по паролю. <a href='https://github.com/hiddify/Hiddify-Manager/wiki/Disable-SSH-Password-Authentication'>читать далее...</a>"
+    }
+  },
+  "singbox: ssh": "SingBox: SSH",
+  "special_reality_grpc": "Reality gRPC",
+  "special_reality_tcp": "Reality TCP",
+  "special_reality_xhttp": "Reality xHTTP",
+  "ssh": "SSH",
+  "sub_link_only": "📳 Только для ссылки на подписку (может быть Direct, Relay или CDN)",
+  "telegram": "Telegram",
+  "test": "Тест",
+  "update": "Обновлять",
+  "user": {
+    "UUID": "UUID",
+    "current_usage_GB": "Текущее использование (GB)",
+    "define_mode": "Режим пакета для пользователя - должно ли использование сбрасываться каждый месяц, неделю и т. д.",
+    "expiry_time": "Срок действия (дней)",
+    "home": {
+      "all_configs": "Все конфигурации",
+      "allconfig": {
+        "clash-configs": "Конфликтующие Clash ",
+        "hiddify-managers": "Все настройки администраторов HiddifyManager",
+        "link-configs": "Ссылка на подписку",
+        "name": "Имя и ссылка",
+        "protocol": "Протокол",
+        "security": "Безопасность",
+        "transport": "Транспорт",
+        "type": "Тип"
+      },
+      "allconfigs": {
+        "expect_vless": "Исключить VLess"
+      },
+      "android": {
+        "intro": "Пожалуйста, установите Hiddify Android из %(dl_link)s %(play_link)s.\n\n<!--\n<div class='выноска-опасность'>\n    <b>Обновить Hiddify Android до версии 0.14</b>\n</div>-->\n<details>\n<summary>Зачем Hiddify Android?</summary>\n<div class='выноска-информация-выноска'>\n\n        Hiddify Android — это форк Clash с открытым исходным кодом, который поддерживает больше протоколов.\n        <br>\n        Его исходные коды существуют в\n        <a href='https://github.com/hiddify/HiddifyProxyAndroid'>GitHub</a>.\n        \n        <br>\n        Поэтому это безопасно.\n\n        <details>\n            <summary>Альтернатива: обычное приложение Clash</summary>\n            <div class='btn-group'>\n                <a href='https://play.google.com/store/apps/details?id=com.github.kr328.clash'\n                    class='btn btn-warning orig-link'>Clash в Google Play</a>\n            </div>\n            <div class='btn-group'>\n                <a href='/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-universal-release.apk'\n                    class='btn btn-warning orig-link'>Прямая загрузка</a>\n            </div>\n\n            <div class='alert alert-danger'>\n            Clash не поддерживает протокол VLess. поэтому нам нужно добавить для него еще одну ссылку.\n            </div>\n            \n\n        </details>\n    </div>\n</details>"
+      },
+      "branding": {
+        "linktitle": "Ссылка на страницу поддержки",
+        "title": "Поддержка"
+      },
+      "clash_configs": {
+        "all_sites": {
+          "btn": "Установите прокси для всех сайтов",
+          "description": "Используйте прокси для всех веб-сайтов, даже для локальных.\n<div class='выноска-опасность'>\n    Загрузка локальных сайтов будет медленнее и поставит под угрозу вашу конфиденциальность\n</div>",
+          "title": "Прокси для всех сайтов"
+        },
+        "alternative_for_normal_clash": "Альтернативная ссылка для Clash",
+        "foreign_sites": {
+          "btn": "Установка для зарубежных сайтов",
+          "description": "Используйте прокси для всех зарубежных сайтов (даже не заблокированных).\n<div class='выноска-предупреждение'>\nЭтот режим полезен для доступа к некоторым заблокированным сайтам.\n</div>",
+          "title": "Прокси для зарубежных сайтов"
+        },
+        "intro": "Используйте одну из следующих ссылок, в зависимости от ваших потребностей\n<br />",
+        "link_for_normal_clash": "Установить Clash",
+        "only_for_blocked_sites": {
+          "btn": "Установить только для заблокированных сайтов",
+          "description": "Предлагается этот режим. Он пересылает заблокированные сайты только через прокси.\n            <div class='вызов выноски-успех'>\n                В этом режиме вы не почувствуете изменения скорости\n            </div>",
+          "title": "Только для заблокированных сайтов"
+        }
+      },
+      "doh": "DNS по протоколу HTTPS",
+      "ios": {
+        "others": {
+          "intro": "Сначала установите одно из следующих приложений:\n\n<div class='btn-group'>\n\n<a href='https://apps.apple.com/us/app/foxray/id6448898396'\n        class='btn btn-primary orig-link'>FoXray</a>\n\n</div>\n\n<div class='btn-group'>\n\n<a href='https://apps.apple.com/us/app/fair-vpn/id1533873488'\n        class='btn btn-primary orig-link'>Честный VPN</a>\n</div>\n\n<br />\nЗатем примените следующие конфигурации:\n<br />",
+          "title": "FoXray и Fair VPN"
+        },
+        "stash": {
+          "intro": "Stash & Shadowrocket — отличные приложения. Мы считаем, что стоит купить.\n<br>\n<br />\n  <div class='btn-group'>\n        <a href='https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349' target='_blank' class='btn btn-success orig-link'>Загрузить тайник</ а>\n        </div>\n  <div class='btn-group'>\n        <a href='https://apps.apple.com/us/app/shadowrocket/id932747118' target='_blank' class='btn btn-primary orig-link'>Загрузить Shadowrocket</a>\n        </div><br>\n<br />",
+          "title": "<button class='btn btn-sm btn-default' onclick='show_video('ios-stash')'><i class='fa-solid fa-question'></i> Stash</button>\n          <button class='btn btn-sm btn-default' onclick='show_video('ios-shadowrocket')'><i class='fa-solid fa-question'></i> Shadowrocket</button>\n <span class='badge Badge-success'>Рекомендуем</span>"
+        }
+      },
+      "link": {
+        "manual-copy": "Копировать в буфер обмена: Ctrl+C, Enter",
+        "success-copy": "Ссылка скопирована в буфер обмена"
+      },
+      "qr-code": {
+        "description": "Чтобы скопировать ссылки или поделиться ими, щелкните серое поле <i class='fa-solid fa-qrcode'></i>, чтобы показать его QR-код.",
+        "display": "Отобразить QR-код"
+      },
+      "select_os": "Пожалуйста, выберите вашу операционную систему",
+      "select_tool": "Пожалуйста, выберите",
+      "share-title": "Поделиться в социальных сетях",
+      "speedtest": {
+        "download": "Скачать",
+        "intro": "Сначала проверьте скорость <b>без</b> прокси. Если скорость плохая, это значит, что этот ip вам не подходит.\nЕсли без прокси скорость была низкой, не тратьте время на тестирование этого прокси.\nВ противном случае протестируйте разные прокси этого сайта и если скорость аналогична скорости без прокси, то вы нашли лучший протокол.\n<br />",
+        "title": "Тест скорости (обнаружение грязного IP-адреса)",
+        "two_ways": "Оба способа",
+        "upload": "Загрузить"
+      },
+      "telegram": {
+        "clickbtn": "Telegram прокси",
+        "description": "Нажмите на одну из следующих ссылок, затем в телеграмме вы увидите окно, содержащее <b>Connect Proxy</b>. Нажмите на него, и все заработает\n<br />"
+      },
+      "title": "HiddifyManager",
+      "tool": {
+        "all-configs": "Все конфигурации",
+        "doh": {
+          "help": "<h4>Настройте DoH в вашем браузере</h4>\n    Существует несколько браузеров, совместимых с DNS по протоколу HTTPS (DoH). Этот протокол позволяет    зашифровать ваше соединение в соответствии с версией 1.1.1.1, чтобы защитить ваши DNS-запросы от вторжения в частную жизнь и несанкционированного доступа.\n\n    Возможно, в некоторых браузерах этот параметр уже включен.\n<br />\n    <h5>​​Mozilla Firefox</h5>\n    Выберите нужный <b>Выберите нужный</b> кнопка > <b>Настройки</b>.В общем меню, прокрутите вниз, чтобы получить доступ <b>Сетевые настройки</b>. Выбрать <b>Настройки</b>. Выбрать <b>Включить DNS по протоколу HTTPS</b>.\n<br />\n    ​<h5>​Google Chrome</h5>\n    Выберите нужный <b>three-dot</b> меню в вашем браузере > <b>Настройки</b>.\n    Выбрать <b>Конфиденциальность и безопасность</b> > <b>Безопасность</b>.\n    Прокрутите вниз и включите <b>Используйте безопасный DNS</b>.\n<br />\n    <h5>​​Microsoft Edge</h5>\n    Выберите нужный <b>three-dot?</b> меню в вашем браузере > <b>Настройки</b>.\n    Выбрать <b>Конфиденциальность, поиск и услуги</b>, и прокрутите вниз до <b>Безопасность</b>.\n    Включить <b>Use secure DNS</b>.\n   Выберите пункт Выбрать поставщика услуг.",
+          "title": "DNS через HTTPS"
+        }
+      },
+      "usage": {
+        "details": "Показать статистику использования",
+        "expire": "Срок действия:",
+        "from": "Из",
+        "monthly": "Ежемесячно",
+        "title": "⏳ Использование трафика"
+      },
+      "windows": {
+        "intro": "Сначала загрузите и установите программное обеспечение Hiddify Desktop в соответствии с вашей операционной системой.\n<br />\n%(hiddify_desktop_links)s\n\n<подробности>\n<summary>Почему Hiddify Desktop?</summary>\n<div class='callout callout-info'>\n\n        Hiddify Desktop — это безопасная версия Clash с открытым исходным кодом, которая поддерживает больше отпечатков пальцев VLESS и UTLS.\n        <br>\n<br />\n        Его исходные коды существуют в\n        <a href='https://github.com/hiddify/HiddifyDesktop'>GitHub</a>.\n        \n\n        <подробности>\n            <summary>Альтернатива: обычное столкновение</summary>\n            %(normal_clash_link)s\n\n            <div class='alert alert-danger'>\n            Clash не поддерживает снятие отпечатков пальцев браузером и протокол VLESS. Поэтому нам нужно добавить для него еще одну ссылку.\n            </div>\n            \n\n        </подробнее>\n</div>\n        </подробнее>\n<br />\nТеперь, по вашему желанию, вы можете нажать на одну из кнопок. Просматривая окно в браузере, просто нажмите кнопку <b>Открыть</b>, чтобы автоматически добавить ссылку на сервер в Hiddify Desktop."
+      }
+    },
+    "last_reset_time": "Сброс даты последнего использования",
+    "name": "Имя",
+    "password": {
+      "description": "Пароль будет использоваться для дополнительной безопасности. Вы сможете войти в HiddifyManager только после ввода пароля.",
+      "title": "Пароль",
+      "validation-lenght": "Для повышения безопасности ваш пароль должен содержать не менее 8 символов.",
+      "validation-required": "Требуется пароль. Введите пароль, чтобы продолжить."
+    },
+    "usage_limit_GB": "⌛️ Лимит (GB)",
+    "user_links": "Ссылки пользователей"
+  },
+  "vpn": {
+    "notallowed": "Пожалуйста, посетите эту страницу без использования VPN. Вам нужно получить к ней доступ из страны %(expected_country)s, но в данный момент вы получаете к ней доступ из %(your_country)s."
+  },
+  "weekly": "📅 Еженедельно",
+  "worker": "✴️ Cloudflare Worker"
+}

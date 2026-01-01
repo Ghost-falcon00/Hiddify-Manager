@@ -1,0 +1,2905 @@
+# Chinese translations for Hiddify Panel.
+# Copyright (C) 2024 Hiddify
+# This file is distributed under the same license as the Hiddify Panel project.
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh\n"
+
+msgid ""
+" Search\n"
+"            Settings"
+msgstr " 搜索<inlang-LineFeed>设置"
+
+msgid "%(count)s records were successfully deleted."
+msgstr ""
+
+msgid "%(count)s records were successfully disabled."
+msgstr "%(count)s 条记录已成功禁用。"
+
+msgid "%(count)s records were successfully enabled."
+msgstr "%(count)s 条记录已成功启用。"
+
+msgid "%(count)s records were successfully reset days."
+msgstr ""
+
+msgid "%(count)s records were successfully reset usage."
+msgstr ""
+
+msgid "%(expire_days)s days"
+msgstr "%(expire_days)s 天"
+
+msgid "%(placeholder)s"
+msgstr "%(placeholder)s"
+
+msgid "0 - Last day"
+msgstr "最后一天"
+
+msgid "<a href=\"%(user_link)s\"> %(user)s</a>"
+msgstr ""
+
+msgid "Access Denied!"
+msgstr "拒绝访问"
+
+msgid "Actions"
+msgstr "行动"
+
+msgid "Active"
+msgstr "积极"
+
+msgid "Active Users"
+msgstr "活跃用户"
+
+msgid "Add"
+msgstr "添加"
+
+msgid "Add some text that is only visible to super_admin."
+msgstr "添加一些只有超级管理员可见的文本"
+
+msgid "Add some text that is only visible to you."
+msgstr "您可以添加一些只有您可见的文本"
+
+msgid "Added by"
+msgstr "添加者"
+
+msgid "Admin Links"
+msgstr ""
+
+msgid "Admins"
+msgstr "管理员"
+
+msgid "Alias"
+msgstr "别名"
+
+msgid "All"
+msgstr "全部"
+
+msgid "All Users"
+msgstr "全部用户"
+
+msgid "Apply"
+msgstr "应用"
+
+msgid "Are you sure you want to delete \\'%(name)s\\' recursively?"
+msgstr "是否删除 \\'%(name)s\\' 递归函数？"
+
+msgid "Are you sure you want to delete \\'%(name)s\\'?"
+msgstr "是否确定删除 \\'%(name)s\\'?"
+
+msgid "Are you sure you want to delete this record?"
+msgstr "是否确认删除该记录"
+
+msgid "Are you sure you want to do this action?"
+msgstr "⚠️您确定要执行此操作吗？"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Backup"
+msgstr "备份"
+
+msgid "Beta"
+msgstr "☑️ 测试版"
+
+msgid "Bridge Servers"
+msgstr "➖ 桥接服务器"
+
+msgid "Bug"
+msgstr "错误/功能"
+
+msgid "CPU %(cores)s Cores"
+msgstr "CPU %(cores)s 核心"
+
+msgid "Can add sub admin"
+msgstr "👥 可以添加子管理员"
+
+msgid "Change"
+msgstr ""
+
+msgid "Check again"
+msgstr "再检查一遍"
+
+msgid "Childs"
+msgstr "孩子们"
+
+msgid "China"
+msgstr "🇨🇳中国"
+
+msgid "Click here to see the complete log"
+msgstr "单击此处查看完整日志"
+
+msgid "Click to Import"
+msgstr "点击导入"
+
+msgid "Click to Start Anti-Filter."
+msgstr "<i class='fa-solid fa-play'></i> 点击以设置反过滤器"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Commercial use"
+msgstr "商业用途"
+
+msgid "Config file is incorrect"
+msgstr "配置文件不正确。"
+
+msgid "Copy Link"
+msgstr "复制链接"
+
+msgid "Couldn't find your ip addresses"
+msgstr "找不到您的 IP 地址"
+
+msgid "Count:"
+msgstr "数数："
+
+msgid "Create"
+msgstr "创造"
+
+msgid "Create Directory"
+msgstr "创建目录"
+
+msgid "Create New Record"
+msgstr "创建新记录"
+
+msgid "Create Package"
+msgstr "创建包"
+
+msgid "Current Domain"
+msgstr "当前域名"
+
+msgid ""
+"Dear {}\n"
+"\n"
+"Your hiddify information is\n"
+"UUID: {}\n"
+"Last online date: {}\n"
+"Expire time: {}\n"
+"Usage class: {}\n"
+msgstr ""
+"亲爱的 {}\n"
+"\n"
+"您的 Hiddify 信息是\n"
+"UUID：{}\n"
+"最后在线日期：{}\n"
+"过期时间：{}\n"
+"使用类别：{}"
+
+msgid "Delete?"
+msgstr "删除？"
+
+msgid "Develop"
+msgstr "⚠️开发"
+
+msgid "Direct"
+msgstr "➖ 直接"
+
+msgid ""
+"Direct mode means you want to use your server directly (for usual use), CDN "
+"means that you use your server on behind of a CDN provider."
+msgstr ""
+"➡️ <b>直接：</b>如果您在仅 DNS 模式下在 DNS 提供商上专门配置域，请选择此模式。 （CDN 或代理模式关闭）<br>\n"
+"🔙 <b>旧 Direct 模式：</b> 该模式与 Direct 模式类似，但不使用 gRPC 进行通信。如果您希望在 DNS 提供商上以仅 DNS 模式配置域而不使用 gRPC，请选择旧模式。\n"
+"<br>\n"
+"🔀 <b>CDN：</b>如果您的服务器域使用 CDN 提供商，请选择此模式。 （代理模式开启）<br>\n"
+"☑️ <b>自动 CDN IP 选择器：</b>此模式的功能与 CDN 模式类似，但根据 <a href='https://ircf.space' target='_blank' 提供的 IP 进行自动 IP 分配>ircf.space</a>。 Auto CDN IP 模式下，从域名解析 IP 地址，CDN 模式下，返回域名。<br>\n"
+"♾️ <b>中继：</b>如果您使用一台或多台中间服务器，请选择此模式。 <a href='https://github.com/hiddify/hiddify-config/discussions/129' target='_blank'>了解更多</a>\n"
+"<br>\n"
+"✴️ <b>Cloudflare Worker：</b>此模式可以在 Cloudflare 中自动为您的域创建工作人员。通过注册此域来简化工作人员的设置和管理，因为工作人员注册的必要步骤是在 Cloudflare 中自动处理的。\n"
+"<br>\n"
+"🔂 <b>Reality：</b> 利用 Reality 协议创建多个域。\n"
+"<br>\n"
+"🆎 <b>假站点：</b>如果您想使用假域名（例如 Soft98.ir）绕过 SNI 白名单代理，请选择此模式。 （不建议）\n"
+"<br>"
+
+msgid "Disable"
+msgstr "禁用"
+
+msgid "Disk"
+msgstr "硬盘"
+
+msgid "Domain"
+msgstr "域名"
+
+msgid ""
+"Domain (%(domain)s)-> IP=%(domain_ip)s is not matched with your "
+"ip=%(server_ip)s which is required in direct mode"
+msgstr ""
+"域 (%(domain)s)-> IP = %(domain_ip)s 与您的 IP = %(server_ip)s 不同。这在直接模式下是必需的"
+
+msgid ""
+"Domain IP=%(domain_ip)s is not matched with your ip=%(server_ip)s which is "
+"required in direct mode"
+msgstr "域名IP=%(domain_ip)s is not matched with your ip=%(server_ip)s需要用于直连模式"
+
+msgid "Domain can not be resolved! there is a problem in your domain"
+msgstr "域名无法解析！您的域有问题。请检查您的域配置。"
+
+msgid "Domain cannot be resolved! Please check DNS settings"
+msgstr ""
+
+msgid "Domain is not REALITY friendly!"
+msgstr "域名对现实不友好！"
+
+msgid "Domain?"
+msgstr "域名？"
+
+msgid "Donation.description"
+msgstr ""
+"✳️ 我们需要你的帮助来开发这个项目\n"
+"    <br>\n"
+"    如果你是开发者或者编程人员请联系我们 <a href='mailto:info@hiddify.com'>info@hiddify.com</a>\n"
+"    <br><br>\n"
+"    \n"
+"    ℹ️ 同样我们需要财政帮以便我们长远的发展和服务器费用 (we are Non-Profit).\n"
+"    <br>\n"
+"    <h5>Payment Methods :</h5>\n"
+"    <ul>\n"
+"    <li> <div class='btn-group'>\n"
+"        <a role='button' data-copy='EQCWnykA-YhavOXgH3sf-uxtXLjy83_9n5bJPGRPE8r2247_' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+"    <a data-copy='EQCWnykA-YhavOXgH3sf-uxtXLjy83_9n5bJPGRPE8r2247_' role='button' class='btn btn-info share-link'>TON</a> </div></li>\n"
+"    \n"
+"    <li> <div class='btn-group'>\n"
+"        <a role='button' data-copy='TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+"    <a data-copy='TXZtFUxyBPMSykAWogu7C4zmbjySKqMcDE' role='button' class='btn btn-info share-link'>USDT (TRC20)</a> </div></li>\n"
+"    \n"
+"    <li> <div class='btn-group'>\n"
+"        <a role='button' data-copy='MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+"    <a data-copy='MCHoh7xwaDBBnQgANPpBtXiekagV6KpdrM' role='button' class='btn btn-info share-link'>Litecoin</a> </div></li>\n"
+"    \n"
+"    <li> <div class='btn-group'>\n"
+"        <a role='button' data-copy='0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+"    <a data-copy='0xF5CFc65ee336B377C2a37EA3BCD0CaD0d0F0CbA0' role='button' class='btn btn-info share-link'>Ethereum</a> </div></li>\n"
+"    \n"
+"    <li> <div class='btn-group'>\n"
+"        <a role='button' data-copy='bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+"    <a data-copy='bc1qkfp7n3wxu2zc9mdy20cf27d5pujj65myww8f60' role='button' class='btn btn-info share-link'>Bitcoin</a> </div></li>\n"
+"    \n"
+"    <li> <div class='btn-group'>\n"
+"        <a role='button' data-copy='DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+"    <a data-copy='DPerFS2vCu5XnE3He32BaPVTkUDcKLsEaj' role='button' class='btn btn-info share-link'>Dogecoin</a> </div></li>\n"
+"    </ul>\n"
+"    \n"
+"    <br>\n"
+"    \n"
+"    我们也需要以下帮助:\n"
+"    <ul>\n"
+"    <li>👥 向其他人分享我们的软件</li>\n"
+"   <li>📝Python开发者</li>\n"
+"    <li>📝Swift 开发者</li>\n"
+"    <li>📝Flutter 开发者</li>\n"
+"    <li>📝Go 开发者</li>\n"
+"    <li>🖥内容提供者</li>\n"
+"    </ul>\n"
+"    请联系我们 <a href='mailto:info@hiddify.com'>info@hiddify.com</a> if you can help us."
+
+msgid "Donation.title"
+msgstr "捐款"
+
+msgid "Download App"
+msgstr "下载应用程序"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Edit Proxy Names"
+msgstr "✏️ 修改代理"
+
+msgid "Enable"
+msgstr "❇️启用"
+
+msgid "Error in auto cdn format"
+msgstr "⚠️ 自动 CDN 格式错误"
+
+msgid "Error! auto cdn ip can not be find, please contact admin."
+msgstr "自动 CDN IP 错误！找不到，请联系管理员"
+
+msgid "Example Domains"
+msgstr "测试并推荐域名"
+
+msgid "Expired Users"
+msgstr "过期用户"
+
+msgid "Export"
+msgstr "导入"
+
+msgid "Fake"
+msgstr "➖ 假"
+
+msgid "Filter"
+msgstr "过滤"
+
+msgid "Finished"
+msgstr "完成的..."
+
+msgid "From Last Restart"
+msgstr "从上次重新启动开始"
+
+msgid ""
+"From when the user package will be started? Empty for start from first "
+"connection"
+msgstr "指定包的开始日期。留空以从第一个连接开始。"
+
+msgid "Hiddify"
+msgstr "希迪菲"
+
+msgid "Hiddify Android"
+msgstr "Android 系统"
+
+msgid "HiddifyClash"
+msgstr "HiddifyClash"
+
+msgid "HiddifyN intro"
+msgstr ""
+"请从 %(dl_link)s 安装 HiddifyN。\n"
+"然后点击下面的链接。它会自动完成所有事情。\n"
+"<br/>"
+
+msgid "HiddifyNG"
+msgstr "HiddifyNG <span class='badge badge-success'>推荐</span>"
+
+msgid "HiddifyNG intro"
+msgstr ""
+"📌 请从以下任一链接安装 HiddifyNG：\n"
+"<br/>\n"
+" %(dl_link)s %(play_link)s\n"
+"<br/>\n"
+"然后单击下面的链接并在 HiddifyNG 中打开它。\n"
+"<br/>"
+
+msgid "HiddigyN"
+msgstr "HiddifyN <span class='badge badge-success'>推荐</span>"
+
+msgid "Home Link"
+msgstr ""
+
+msgid "Hover the user to see the reason"
+msgstr "将鼠标悬停在用户上即可查看原因"
+
+msgid "How many days this package should be available?"
+msgstr "这个套餐有多少天？"
+
+msgid "How many?"
+msgstr "多少？"
+
+msgid ""
+"If monthly is enabled, the usage will be reset after 30 days from this date."
+msgstr "如果启用每月选项，当该数字达到 30 时，用户使用量将被重置（对于每周和每日，该数字为 7 和 1）"
+
+msgid ""
+"If the application do not open automatically, please click <a class='btn btn-primary copy-link'\n"
+"                    href='%(sub)s'>this universal link</a> to copy and paste it on\n"
+"                your application, or:"
+msgstr ""
+"如果应用没有自动开启, 请点击 <a class='btn btn-primary copy-link'\n"
+"                    href='%(sub)s'>this universal link</a> 复制并打开应用粘贴\n"
+"                你的应用, or:"
+
+msgid "Import"
+msgstr "在应用程序中导入"
+
+msgid "Import in"
+msgstr "导入"
+
+msgid "In 5 minutes"
+msgstr "5 分钟内"
+
+msgid ""
+"In CDN mode, Domain IP=%(domain_ip)s should be different to your "
+"ip=%(server_ip)s"
+msgstr "在CDN模式，域名IP=%(domain_ip)s应该与你的IP不同=%(server_ip)s"
+
+msgid "Incorrect Password"
+msgstr "⚠️密码错误"
+
+msgid "Install"
+msgstr "安装"
+
+msgid "Install Hiddify Application"
+msgstr "Hiddify 管理器安装"
+
+msgid "Invalid IP or domain"
+msgstr "错误的IP或域名"
+
+msgid "Invalid REALITY hostnames"
+msgstr "无效的 REALITY 主机名"
+
+msgid "Invalid admin link"
+msgstr "管理员链接无效"
+
+msgid "Iran"
+msgstr "🇮🇷伊朗"
+
+msgid ""
+"It seems that you are using default domain (%(domain)s) which is not "
+"recommended."
+msgstr "看来您正在使用默认域（％（domain）s），这是不推荐的。请从域部分更改或删除它。"
+
+msgid "It will override the root admin to the current user"
+msgstr "它会将备份文件的所有者管理员覆盖为当前管理员。"
+
+msgid ""
+"Join our Hiddify Telegram channel to get the latest updates on Hiddify."
+msgstr "加入我们的 Hiddify Telegram 频道，获取 Hiddify 的最新动态。"
+
+msgid "Last Online"
+msgstr "最后一次连接"
+
+msgid "Link is changed!"
+msgstr "ℹ️链接已更改！"
+
+msgid "Linux"
+msgstr "Linux"
+
+msgid "Max Active Users"
+msgstr "最大活跃用户数"
+
+msgid "Max IPs"
+msgstr "最大IP数"
+
+msgid "Max Users"
+msgstr "最大用户数"
+
+msgid "Mode"
+msgstr "模式"
+
+msgid "Month Usage"
+msgstr "每月"
+
+msgid "More Applications"
+msgstr "更多应用"
+
+msgid "Network"
+msgstr "网络"
+
+msgid "New"
+msgstr "新"
+
+msgid "No children!"
+msgstr "没有孩子"
+
+msgid "Not Secure"
+msgstr ""
+
+msgid "Note"
+msgstr "📝 注意"
+
+msgid "Offline more than 1 day"
+msgstr "离线超过1天"
+
+msgid "Offline more than 1 hour"
+msgstr "离线1小时以上"
+
+msgid "Offline more than 1 week"
+msgstr "离线超过1周"
+
+msgid "Ok"
+msgstr "好的"
+
+msgid "Online"
+msgstr ""
+
+msgid "Online Users"
+msgstr "在线用户"
+
+msgid "Only Blocked and Local websites"
+msgstr "☑️ 仅屏蔽和本地网站"
+
+msgid "Only for sublink?"
+msgstr "🌍 仅用于订阅链接"
+
+msgid "Oops! Something went wrong."
+msgstr "哎呀！出了些问题。"
+
+msgid "Open in Application"
+msgstr "在应用程序中打开"
+
+msgid "Others"
+msgstr "🇺🇳其他"
+
+msgid "Override Root Admin"
+msgstr "🔁 覆盖备份中的所有者"
+
+msgid "Owner can not be deleted!"
+msgstr "拥有者可以被删除"
+
+msgid "Package Days"
+msgstr "📆 套餐日"
+
+msgid "Package ended!"
+msgstr "套餐已结束"
+
+msgid "Package not started yet."
+msgstr "套餐还没开始。"
+
+msgid "Panel Link"
+msgstr "➖ 面板链接"
+
+msgid "Parent Panel"
+msgstr "家长小组"
+
+msgid "Please Wait"
+msgstr "请稍等..."
+
+msgid "Please click on %(install)s to save the user page."
+msgstr "单击 %(install)s 保存用户页面。"
+
+msgid ""
+"Please connect your telegram account to the panel to be informed about "
+"latest news."
+msgstr "请将您的 Telegram 帐户连接到面板以获取最新消息。"
+
+msgid "Please create an issue on Github."
+msgstr "请在 Github 上创建问题"
+
+msgid "Please select at least one file."
+msgstr "请选择至少一个文件"
+
+msgid "Please select at least one record."
+msgstr "请选择至少一条记录"
+
+msgid "Please select at least one user"
+msgstr "请至少选择一位用户"
+
+msgid "Please select one of the following applications:"
+msgstr ""
+"📍请选择以下应用程序之一：\n"
+"<br/>\n"
+"<br/>"
+
+msgid "Please type your message to send to the telegram:"
+msgstr "✏️ 请写下您要发送到 Telegram 的消息："
+
+msgid ""
+"Please understand that parent panel is under test and the plan and the "
+"condition of use maybe change at anytime."
+msgstr "请理解，家长面板正在测试中，计划和使用条件可能随时发生变化。"
+
+msgid "Please wait "
+msgstr "请稍等"
+
+msgid "Port 80 and 443 can not be selected"
+msgstr ""
+
+msgid "Port is already used! in"
+msgstr "端口已用于："
+
+msgid "Premium Description"
+msgstr ""
+"Hiddify Manager 仅供非商业用途。但如果您将此面板用于商业用途，请通过捐赠来帮助该项目发展。 <br/>\n"
+"为了换取您的财务支持，我们还为您的商业产品提供特殊设施。\n"
+"<br/>\n"
+"<br/>\n"
+"例如：\n"
+"<ul><li>\n"
+"<li>同步到Cloudflare的可能性：即通过在面板中添加域名，也可以在Cloudflare中进行相关设置</li>\n"
+"<li>可以在面板中显示您的品牌</li>\n"
+"<li>可以使用中央面板在一个面板中管理多于一台服务器，因此不再需要在不同服务器中注册用户，并且用户的数量将在所有服务器中收集。\n"
+"</li>\n"
+"<li>\n"
+"使用 Telegram 机器人的可能性\n"
+"</li>\n"
+"<li>\n"
+"能够更改代理名称\n"
+"</li>\n"
+"</ul>\n"
+"\n"
+"捐赠后请联系<a href='tg://resolve?domain=HiddifyCommercial'>@HiddifyCommercial</a>。\n"
+"发送消息获取商业用户专用版本。"
+
+msgid "ProxyPath is already used! use different proxy path"
+msgstr "ProxyPath 已被使用！使用不同的代理路径"
+
+msgid "QR code"
+msgstr "🧾 二维码"
+
+msgid "QRCode"
+msgstr "<i class='fa-solid fa-qrcode'></i> QRCode"
+
+msgid "RAM"
+msgstr "内存"
+
+msgid "REALITY Fallback domain is not compaitble with server names!"
+msgstr "REALITY 后备域与服务器名称不兼容！"
+
+msgid "REALITY Fallback domain is not compatible with server names!"
+msgstr ""
+
+msgid "Release"
+msgstr "✅ 发布"
+
+msgid "Remaining about %(relative)s, exactly %(days)s days"
+msgstr "还剩下大约 %(relative)s，正好 %(days)s 天"
+
+msgid "Remote nodes are not supported yet!"
+msgstr "尚不支持远程节点！"
+
+msgid "Rename File"
+msgstr "重新命名文件"
+
+msgid "Reset Filters"
+msgstr "重置过滤器"
+
+msgid "Reset Proxies"
+msgstr "重置代理"
+
+msgid "Reset Usage Time:"
+msgstr "流量使用重置时间："
+
+msgid "Reset every month"
+msgstr "每月"
+
+msgid "Reset package days"
+msgstr "📆 重置套餐天数"
+
+msgid "Reset package usage"
+msgstr "⏳ 重置套餐的使用情况"
+
+msgid "Restore"
+msgstr "♻️恢复"
+
+msgid "Restore Domain"
+msgstr "🌏 恢复域名"
+
+msgid "Restore Domain description"
+msgstr "选择此选项可恢复您的域"
+
+msgid "Restore File"
+msgstr "恢复文件"
+
+msgid "Restore File Description"
+msgstr "选择下载的恢复文件"
+
+msgid "Restore Settings"
+msgstr "⚙️恢复设置"
+
+msgid "Restore Settings description"
+msgstr "恢复所有设置说明"
+
+msgid "Restore Users"
+msgstr "👥 恢复用户"
+
+msgid "Restore Users description"
+msgstr "选择此选项可恢复所有用户"
+
+msgid "Root"
+msgstr "根用户"
+
+msgid "Russia"
+msgstr "俄罗斯"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Save & Add More"
+msgstr "保存并添加更多"
+
+msgid "Save Link"
+msgstr "保存链接"
+
+msgid "Select all records"
+msgstr "选择所有记录"
+
+msgid "Select record"
+msgstr "选择记录"
+
+msgid "Seleted Users"
+msgstr "选定用户"
+
+msgid "Send Message to User's Telegram"
+msgstr "📣 向用户的 Telegram 发送消息"
+
+msgid "Sending"
+msgstr "正在发送..."
+
+msgid "Should be a valid domain"
+msgstr "应该是有效域名"
+
+msgid "Should be a valid uuid"
+msgstr "应该是有效UUID"
+
+msgid "Show Domains"
+msgstr "显示域的配置"
+
+msgid "Simplifies the process of employing the link elsewhere."
+msgstr "简化了在其他地方使用链接的过程"
+
+msgid "SingBox"
+msgstr "📦 歌盒"
+
+msgid "Sort by %(name)s"
+msgstr "以%(name)s排序"
+
+msgid "Specifying CDN IP is only valid for CDN mode"
+msgstr ""
+
+msgid "Start Date"
+msgstr "开始日期"
+
+msgid "Started %(days)s days ago"
+msgstr "已于 %(days)s 天前开始"
+
+msgid "Started from %(relative)s"
+msgstr "从 %(relative)s 开始"
+
+msgid "Status"
+msgstr "地位"
+
+msgid "SubLink"
+msgstr ""
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Success"
+msgstr "成功"
+
+msgid ""
+"Success! Please wait around 5 minutes to make sure everything is updated."
+msgstr "✔️ 成功！请等待大约 5 分钟以确保所有内容均已更新"
+
+msgid "Telegram Bot"
+msgstr "Telegram 机器人"
+
+msgid "Telegram Bot Link"
+msgstr ""
+
+msgid "Temporary Short Link"
+msgstr "⏱️临时短链接"
+
+msgid "The message has been sent."
+msgstr "消息已发送。"
+
+msgid "The message was not sent to"
+msgstr "该消息未发送至"
+
+msgid "The name shown in the configs for this domain."
+msgstr "将显示在该域的配置中的名称。"
+
+msgid ""
+"This can be used for giving your users a permanent non blockable links."
+msgstr "这可用于为您的用户提供永久的不可阻止链接。"
+
+msgid "This domain does not exist in the panel!"
+msgstr "该域名在面板中不存在！"
+
+msgid "Today Usage"
+msgstr "今天"
+
+msgid "Too many Connected IPs"
+msgstr "连接的IP太多"
+
+msgid "Total Usage"
+msgstr "总使用量"
+
+msgid "Turn of VPN"
+msgstr "关闭VPN"
+
+msgid "Unified link for all application."
+msgstr "所有应用程序的一键设置链接（推荐）"
+
+msgid "Upload File"
+msgstr "上传文件"
+
+msgid "Use HiddifyNext:"
+msgstr "使用 HiddifyNext："
+
+msgid "User activated!"
+msgstr "用户激活"
+
+msgid "User is inactive"
+msgstr "用户处于非活动状态"
+
+msgid "V2rayNG"
+msgstr ""
+"替代 v2rayNG <button class='btn btn-sm btn-default' onclick='show_video('android-v2rayng')'><i class='fa-solid fa-question'></i> </button>\n"
+"<br/>\n"
+"<br/>"
+
+msgid "V2rayNG intro"
+msgstr ""
+"请从以下任一链接安装 v2rayNG：%(dl_link)s %(play_link)s。\n"
+"然后按照视频教程复制下面的链接粘贴到v2rayNG中 <button class='btn btn-sm btn-default' onclick='show_video('android-v2rayng')'><i class='fa-solid fa -问题'></i> </按钮>。\n"
+"<br/>"
+
+msgid "View in Telegram"
+msgstr "在电报中查看"
+
+msgid "Want to enjoy more with telegram?"
+msgstr "ℹ️ 将您的帐户连接到 Telegram"
+
+msgid "Welcome %(user)s"
+msgstr "欢迎%(user)s"
+
+msgid "Why Going to Premium?"
+msgstr "为什么要选择高级版？"
+
+msgid "Will Start in %(days)s days"
+msgstr "将在 %(days)s 天内开始"
+
+msgid "Windows"
+msgstr "视窗"
+
+msgid "With selected"
+msgstr "选定"
+
+msgid "Xray"
+msgstr "☢️ XRay"
+
+msgid "Yesterday Usage"
+msgstr "昨天"
+
+msgid ""
+"You can download a json formated of configurations by clicking <a "
+"href='%(link)s' class='btn btn-primary'>here</a>"
+msgstr ""
+"🔄 Hiddify Manager 每 6 小时自动进行一次备份。备份文件在服务器上的路径：⬇️\n"
+"<br>\n"
+"/opt/hiddify-config/hiddify-panel/备份\n"
+"<br>\n"
+"<br>\n"
+"<br>\n"
+"⚠️您可以通过单击下面的按钮下载配置的 JSON 文件格式\n"
+"<br>\n"
+"<br>\n"
+"<a href='%(link)s' class='btn btn-primary'>下载备份文件</a>"
+
+msgid "You can restore your configs from previously downloaded configs"
+msgstr "ℹ️您可以从以前下载的备份文件恢复您的配置"
+
+msgid ""
+"You have too much users! You can have only %(active)s active users and "
+"%(total)s users"
+msgstr "你的用户太多了！您只能拥有 %(active)s 个活跃用户和 %(total)s 个用户"
+
+msgid "You have used this domain in: "
+msgstr "您已在以下位置使用过该域名："
+
+msgid ""
+"Your hiddify instance information \n"
+"Domain: {} \n"
+"Usage limit: {} GB\n"
+"Current usage: {} GB\n"
+"Expires at: {} \n"
+"Remaining days: {} \n"
+"\n"
+"\n"
+" Happy using 🎉 🎉 🎉 \n"
+msgstr ""
+"您的 Hiddify 实例信息\n"
+"领域： {}\n"
+"使用限制：{} GB\n"
+"当前使用情况：{} GB\n"
+"到期时间：{}\n"
+"剩余天数：{}\n"
+"\n"
+"\n"
+"祝你好运！ 🎉🎉🎉"
+
+msgid ""
+"[Admin only visible message:] You can change this message from settings"
+msgstr "[管理员专用消息]：可通过设置自定义。"
+
+msgid "actions"
+msgstr "行动"
+
+msgid "admin link"
+msgstr "行政"
+
+msgid "admin.Actions:apply_configs"
+msgstr "应用配置"
+
+msgid "admin.action_done_sucess"
+msgstr "✅ 行动成功完成。您现在可以离开此页面"
+
+msgid "admin.actions.apply_configs"
+msgstr "应用配置"
+
+msgid "admin.actions.reinstall"
+msgstr "重新安装"
+
+msgid "admin.actions.reset"
+msgstr "重启系统"
+
+msgid "admin.actions.status"
+msgstr "地位"
+
+msgid "admin.actions.title"
+msgstr "行动"
+
+msgid "admin.actions.update"
+msgstr "更新"
+
+msgid "admin.actions.viewlogs"
+msgstr "查看日志"
+
+msgid "admin.config.apply_configs"
+msgstr "应用配置"
+
+msgid "admin.config.title"
+msgstr "设置"
+
+msgid "admin.define_mode"
+msgstr "🥇🥈🥉 定义管理模式"
+
+msgid "admin.incomplete_setup_warning"
+msgstr ""
+"看来你还没有完全安装系统。 <a class='btn btn-success' "
+"href='%(quick_setup)s'>单击此处</a>完成设置。"
+
+msgid "admin.menu.api"
+msgstr "应用程序编程接口"
+
+msgid "admin.menu.config"
+msgstr "设置"
+
+msgid "admin.menu.domain"
+msgstr "域名"
+
+msgid "admin.menu.home"
+msgstr "仪表板"
+
+msgid "admin.menu.proxy"
+msgstr "代理"
+
+msgid "admin.menu.proxy_stats"
+msgstr "代理状态"
+
+msgid "admin.menu.support"
+msgstr "帮助"
+
+msgid "admin.menu.telegram"
+msgstr "电报"
+
+msgid "admin.menu.user"
+msgstr "用户"
+
+msgid "admin.no_user_warning"
+msgstr "看来您尚未创建任何用户。默认用户链接：%(default_link)s"
+
+msgid "admin.proxy.detailed_config"
+msgstr "⚙️详细配置"
+
+msgid "admin.proxy.global_config"
+msgstr "⚙️ 全局配置"
+
+msgid "admin.quicksetup.title"
+msgstr "快速设置"
+
+msgid "admin.quicksetup_intro"
+msgstr ""
+"您的服务器的 IP 是：\n"
+"<div>\n"
+"IPv4：%(ipv4)s <br> IPv6：%(ipv6)s\n"
+"</div>\n"
+"在您的域或子域上设置这些 IP，然后在下面的框中输入您的域或子域。"
+
+msgid "admin.save_panel_link"
+msgstr ""
+"请注意，您的面板只能通过以下链接访问。请保存此链接。\n"
+"<p><a href='%(adminlink)s' class='btn btn-secondary copy-link'><i class='fa-solid fa-copy'></i></a>\n"
+"<a href='%(adminlink)s' class='copy-link' style='word-break: break-all;'>%(adminlink)s</a></p>"
+
+msgid "admin.waiting_for_update"
+msgstr "⚠️ 请等待大约 5 分钟以确保所有内容均已更新。在此期间，请复制并保存您的代理链接："
+
+msgid "adminuser.force_update_usage"
+msgstr "每 6 分钟更新一次使用情况。如需立即更新，<a href=\"%(link)s\" class=\"btn btn-info\">请点击此处</a>"
+
+msgid "all"
+msgstr "全部"
+
+msgid "android"
+msgstr "安卓"
+
+msgid "app.clash_verge_rev.description"
+msgstr ""
+
+msgid "app.clash_verge_rev.title"
+msgstr ""
+
+msgid "app.cmfa.description"
+msgstr ""
+
+msgid "app.cmfa.title"
+msgstr ""
+
+msgid "app.foxray.description"
+msgstr "福克斯射线描述"
+
+msgid "app.foxray.title"
+msgstr "福克斯X射线"
+
+msgid "app.hiddify-clash-android.description"
+msgstr "Hiddify Clash Android 是我们的客户端应用程序之一，不再更新。 "
+
+msgid "app.hiddify-clash-android.title"
+msgstr "Hiddify Clash"
+
+msgid "app.hiddify-clash-desktop.description"
+msgstr "Hiddify Clash Desktop 是我们的客户端应用程序之一，不再更新。 "
+
+msgid "app.hiddify-clash-desktop.title"
+msgstr "Hiddify Clash"
+
+msgid "app.hiddify.next.description"
+msgstr "HiddifyApp 下一个说明"
+
+msgid "app.hiddify.next.title"
+msgstr "HiddifyApp"
+
+msgid "app.hiddifyn.description"
+msgstr "HiddifyN 描述"
+
+msgid "app.hiddifyn.title"
+msgstr "HiddifyN"
+
+msgid "app.hiddifyng.description"
+msgstr "HiddifyNG 描述"
+
+msgid "app.hiddifyng.title"
+msgstr "HiddifyNG"
+
+msgid "app.loon.description"
+msgstr "Loon 描述"
+
+msgid "app.loon.title"
+msgstr "Loon"
+
+msgid "app.nekobox.description"
+msgstr " Nekobox 是一款基于 Sing-box 的客户端 "
+
+msgid "app.nekobox.title"
+msgstr "NekoBox"
+
+msgid "app.shadowrocket.description"
+msgstr "小火箭描述"
+
+msgid "app.shadowrocket.title"
+msgstr "Shadowrocket"
+
+msgid "app.singbox.description"
+msgstr "Sing-box 应用程序是 Sing-box 协议的官方应用程序。"
+
+msgid "app.singbox.title"
+msgstr "Sing-box 应用程序是"
+
+msgid "app.stash.description"
+msgstr "Stash描述"
+
+msgid "app.stash.title"
+msgstr "Stash"
+
+msgid "app.streisand.description"
+msgstr "Streisand描述"
+
+msgid "app.streisand.title"
+msgstr "Streisand"
+
+msgid "app.v2rayn.title"
+msgstr ""
+
+msgid "app.v2rayng.description"
+msgstr "V2RayNG 说明"
+
+msgid "app.v2rayng.title"
+msgstr "V2RayNG"
+
+msgid "auto"
+msgstr "自动"
+
+msgid "auto_cdn_ip"
+msgstr "☑️ 自动 CDN IP 选择器"
+
+msgid "bot.admin_welcome"
+msgstr "欢迎使用管理机器人。选择你的行动"
+
+msgid "bot.welcome"
+msgstr ""
+"万岁🎉🎉🎉\n"
+"欢迎使用 Hiddify 机器人\n"
+"首先单击面板上的链接或输入您的 UUID。"
+
+msgid "cdn"
+msgstr "🔀 CDN（Cloudflare 代理，...）"
+
+msgid "cf-delete.failed"
+msgstr "cf-删除失败"
+
+msgid "child has been removed!"
+msgstr "孩子已被移走！"
+
+msgid "child.register-failed"
+msgstr "child.register-失败"
+
+msgid "child.register-success"
+msgstr "child.register-success"
+
+msgid "child.sync-failed"
+msgstr "child.sync-失败"
+
+msgid "clickable copy"
+msgstr "社交媒体链接"
+
+msgid "close"
+msgstr "关闭"
+
+msgid "cloudflare.error"
+msgstr "cloudflare.error"
+
+msgid "config.Domain_already_used"
+msgstr "域存在于域部分。使用另一个域"
+
+msgid "config.Invalid_The_pattern_is_number-number"
+msgstr "⚠️配置无效！模式是数字-数字"
+
+msgid "config.Invalid_brand_link"
+msgstr "无效的链接。它应该采用以下格式：（https 或 http://example.com）"
+
+msgid "config.Invalid_domain"
+msgstr "错误！无效域名。域名格式为 www.google.com"
+
+msgid "config.Invalid_it_should_be_a_number_only"
+msgstr "⚠️配置无效！它应该只是一个数字"
+
+msgid "config.Invalid_port"
+msgstr "端口无效。它应该是逗号分隔的整数，例如2052,2053"
+
+msgid "config.Invalid_proxy_path"
+msgstr "代理路径无效。它应该是 ASCI 字符串 (a-z A-Z 0-9)"
+
+msgid "config.Invalid_telegram_bot_token"
+msgstr "Telegram 机器人令牌无效"
+
+msgid "config.admin.description"
+msgstr "管理部分用于配置管理相关设置"
+
+msgid "config.admin.label"
+msgstr "管理设置"
+
+msgid "config.admin_lang.description"
+msgstr "选择管理区域的语言"
+
+msgid "config.admin_lang.label"
+msgstr "🗺️ 管理面板语言"
+
+msgid "config.admin_secret.description"
+msgstr "管理员密码将用于访问管理面板"
+
+msgid "config.admin_secret.label"
+msgstr "管理员密码"
+
+msgid "config.advanced.description"
+msgstr "在这一部分中，有一些高级配置，除非您是高级用户，否则最好不要更改"
+
+msgid "config.advanced.label"
+msgstr "高级设置"
+
+msgid "config.allow_invalid_sni.description"
+msgstr "如果您允许无效的SNI，您可以使用任何域而不是原始域来访问代理（不推荐）"
+
+msgid "config.allow_invalid_sni.label"
+msgstr "🆗 允许无效的 SNI"
+
+msgid "config.auto_update.description"
+msgstr "每天凌晨 3:00，我们都会检查是否有新更新。如果有新的更新可用，我们将自动更新系统"
+
+msgid "config.auto_update.label"
+msgstr "🔄 自动更新"
+
+msgid "config.block_iran_sites.description"
+msgstr "封锁国内网站以防止被政府发现"
+
+msgid "config.block_iran_sites.label"
+msgstr "⛔️ 屏蔽国内网站"
+
+msgid "config.branding.description"
+msgstr "用户页面的自定义设置"
+
+msgid "config.branding.label"
+msgstr "自定义用户页面"
+
+msgid "config.branding_freetext.description"
+msgstr "品牌文字。此框的文本将显示在用户页面的支持部分。你可以使用 HTML 标签"
+
+msgid "config.branding_freetext.label"
+msgstr "📢 支持部分文本"
+
+msgid "config.branding_site.description"
+msgstr ""
+"将在用户页面的支持部分显示的链接。\n"
+"您还可以将您的 Telegram Channel 或 Telegram PV 放在这里。"
+
+msgid "config.branding_site.label"
+msgstr "🆔 支持链接（既出现在品牌标题上，也出现在用户页面的支持部分）"
+
+msgid "config.branding_title.description"
+msgstr "输入要在用户页面上显示的自定义标题。 （在 yser 的欢迎文字之前）"
+
+msgid "config.branding_title.label"
+msgstr "👁‍🗨 用户页面标题"
+
+msgid "config.cdn_forced_host.description"
+msgstr ""
+"在此部分中，您可以使用一组特定域或 IP 来在用户链接中覆盖您的服务器。\n"
+"\n"
+"如果你使用<a href='https://ircf.space/export.php'>这个模板</a>，会根据用户的运营商选择相关的IP，如果你输入了一系列IP的IP将从该范围中随机选择。\n"
+"使用<a target='_blank' href='https://ip-format.hiddify.com'>此链接</a>设置个人 IP。"
+
+msgid "config.cdn_forced_host.label"
+msgstr "🔂 强制配置使用以下 IP"
+
+msgid "config.cloudflare.description"
+msgstr ""
+"请按照<a href='https://github.com/hiddify/hiddify-config/wiki/Get-Cloudflare-"
+"API' target='_blank'>说明</a>并粘贴 Cloudflare API 密钥"
+
+msgid "config.cloudflare.label"
+msgstr "🔑 Cloudflare API"
+
+msgid "config.core_type.description"
+msgstr ""
+"☢️ XRay：是一个完整的核心\n"
+"<br>\n"
+"📦 Singbox：由 SagerNet 开发。也是一个不错的核心"
+
+msgid "config.core_type.label"
+msgstr "🎛️核心"
+
+msgid "config.country.description"
+msgstr "它根据每个国家/地区的过滤条件应用适当的设置"
+
+msgid "config.country.label"
+msgstr "🌍国家"
+
+msgid "config.create_easysetup_link.description"
+msgstr "config.create_easysetup_link.description"
+
+msgid "config.create_easysetup_link.label"
+msgstr "config.create_easysetup_link.label"
+
+msgid "config.db_version.description"
+msgstr "数据库版本说明"
+
+msgid "config.db_version.label"
+msgstr "数据库版本标签"
+
+msgid "config.dbvalues.description"
+msgstr "config.dbvalues.description"
+
+msgid "config.dbvalues.label"
+msgstr "config.dbvalues.label"
+
+msgid "config.decoy_domain.description"
+msgstr ""
+"假网站：当有人直接访问您的域时模拟网站。<br>\n"
+"⚠️ 不要使用金融、伊朗和著名网站或需要登录的网站，例如 Google、Yahoo、Wikipedia、PayPal。<br>\n"
+"⛔ 请务必检查该网站并确保它是正确的网站，否则您可能会收到网络钓鱼警告。<br>\n"
+"⛔⛔ 再次检查该域名，以免以后出现问题"
+
+msgid "config.decoy_domain.label"
+msgstr "📺 诱饵网站"
+
+msgid "config.default_useragent_string.description"
+msgstr ""
+
+msgid "config.default_useragent_string.label"
+msgstr ""
+
+msgid "config.dns_server.description"
+msgstr ""
+"✳️默认1.1.1.1 <br>\n"
+"🚧 阻止恶意软件 1.1.1.2 <br>\n"
+"🔞 阻止色情 1.1.1.3"
+
+msgid "config.dns_server.label"
+msgstr "🖥 DNS 服务器"
+
+msgid "config.domain_fronting.description"
+msgstr ""
+"它用于在 SNI 中模拟另一个网站而不是您的网站。因此，GFW 无法过滤您的域名\n"
+"<a href='https://github.com/hiddify/hiddify-config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87- %D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA %DB%8C%D9%86%DA%AF'>指南</a>。 ⚠️CloudFlare 不支持域前置。"
+
+msgid "config.domain_fronting.label"
+msgstr "🔒 启用 TLS 域前置"
+
+msgid "config.domain_fronting_domain.description"
+msgstr "它用于在 SNI 中模拟另一个网站而不是您的网站。因此，GFW 无法过滤您的域。"
+
+msgid "config.domain_fronting_domain.label"
+msgstr "ℹ️ 域名前置"
+
+msgid "config.domain_fronting_http_enable.description"
+msgstr "启用 HTTP 域前置会导致您的域很快被阻止。"
+
+msgid "config.domain_fronting_http_enable.label"
+msgstr "启用 HTTP 域前置"
+
+msgid "config.domain_fronting_tls_enable.description"
+msgstr "在 CloudFlare 中，不支持 TLS 域前置。它将使用端口 443 连接到 CDN"
+
+msgid "config.domain_fronting_tls_enable.label"
+msgstr "🔒 启用 TLS 域前置"
+
+msgid "config.firewall.description"
+msgstr "启用防火墙将打开已使用的端口（至少 22,443,80 和 SSH）并关闭所有其他端口"
+
+msgid "config.firewall.label"
+msgstr "🛡️ 防火墙"
+
+msgid "config.first_setup.description"
+msgstr "config.first_setup.描述"
+
+msgid "config.first_setup.label"
+msgstr "配置.first_setup.label"
+
+msgid "config.general.description"
+msgstr "这是一般系统配置"
+
+msgid "config.general.label"
+msgstr "常规设置"
+
+msgid "config.grpc_enable.description"
+msgstr "gRPC 是一个现代开源高性能远程过程调用 (RPC) 框架。它可以在支持的 CDN 中使用"
+
+msgid "config.grpc_enable.label"
+msgstr "➿ gRPC"
+
+msgid "config.h2_enable.description"
+msgstr "启用 HTTP/2 协议"
+
+msgid "config.h2_enable.label"
+msgstr "🔵 h2"
+
+msgid "config.hidden.description"
+msgstr "配置.隐藏.描述"
+
+msgid "config.hidden.label"
+msgstr "配置.隐藏.标签"
+
+msgid "config.hiddifycli_enable.description"
+msgstr "config.hiddifycli_enable.description"
+
+msgid "config.hiddifycli_enable.label"
+msgstr "config.hiddifycli_enable.label"
+
+msgid "config.http.description"
+msgstr "HTTP 配置可以在此部分设置"
+
+msgid "config.http.label"
+msgstr "HTTP 配置"
+
+msgid "config.http_ports.description"
+msgstr "逗号分隔的整数，指示用作未加密连接的端口（无论如何都将使用端口 80）"
+
+msgid "config.http_ports.label"
+msgstr "🔎 HTTP 端口"
+
+msgid "config.http_proxy_enable.description"
+msgstr "通过允许此操作，您的用户可以使用未加密的 HTTP 端口连接到系统。 （不建议）"
+
+msgid "config.http_proxy_enable.label"
+msgstr "☑️ 允许 HTTP 连接"
+
+msgid "config.httpupgrade_enable.description"
+msgstr ""
+"HTTPUpgrade 在直接使用连接之前完成 HTTP 1.1 升级请求和响应。它与 WebSocket 类似，它创建了一个方向通道，可以通过许多反向代理和 CDN 转发，而无需处理围绕 WebSocket 协议本身的所有问题。<br />\n"
+"⚠️<strong>不适用于基于 Xray 的客户端。仅支持 HiddifyNext、Singbox 和 V2fly 客户端。</strong> <a href=\"https://hiddify.com/manager/basic-concepts-and-troubleshooting/Basic-Concepts/#http-upgrade\" target=\"_blank\"><strong>（阅读更多）</strong></a>"
+
+msgid "config.httpupgrade_enable.label"
+msgstr "🆙 HTTPUpgrade 方法"
+
+msgid "config.hysteria.description"
+msgstr ""
+"Hysteria 是一款功能齐全的代理和中继工具，针对有损、不稳定的连接（例如卫星网络、拥挤的公共 Wi-Fi、从中国连接到国外服务器）进行了优化"
+
+msgid "config.hysteria.label"
+msgstr "Hysteria"
+
+msgid "config.hysteria_down_mbps.description"
+msgstr "Hysteria 最大下载速度"
+
+msgid "config.hysteria_down_mbps.label"
+msgstr "⬇️ Hysteria 下载 (mbps)"
+
+msgid "config.hysteria_enable.description"
+msgstr "启用基于 UDP 的 Hysteria 协议"
+
+msgid "config.hysteria_enable.label"
+msgstr "启用歇斯底里2"
+
+msgid "config.hysteria_obfs_enable.description"
+msgstr " 启用 Hysteria 混淆（Salamander）"
+
+msgid "config.hysteria_obfs_enable.label"
+msgstr "🎛 Hysteria OBFS"
+
+msgid "config.hysteria_port.description"
+msgstr "Hysteria UDP 端口，例如 5678"
+
+msgid "config.hysteria_port.label"
+msgstr "🔍 Hysteria2 端口"
+
+msgid "config.hysteria_up_mbps.description"
+msgstr "Hysteria 最大上传速度"
+
+msgid "config.hysteria_up_mbps.label"
+msgstr "⬆️ Hysteria  上传 (mbps)"
+
+msgid "config.invalid-pattern-for-warp-sites"
+msgstr "⚠️ 输入的 Warp 站点与指定的模板不匹配"
+
+msgid "config.invalid_uuid"
+msgstr "UUID 秘密无效。示例：6098ea35-8cb2-4a08-ba15-2be25bc49cb6"
+
+msgid "config.is_parent.description"
+msgstr "config.is_parent.description"
+
+msgid "config.is_parent.label"
+msgstr "家长小组"
+
+msgid "config.kcp.description"
+msgstr "KCP 配置可以在此部分中设置。"
+
+msgid "config.kcp.label"
+msgstr "韩国共产党"
+
+msgid "config.kcp_enable.description"
+msgstr "它是基于UDP的协议"
+
+msgid "config.kcp_enable.label"
+msgstr "KCP"
+
+msgid "config.kcp_ports.description"
+msgstr "逗号分隔的整数，指示用作 KCP 连接的端口。"
+
+msgid "config.kcp_ports.label"
+msgstr "KCP 港口"
+
+msgid "config.lang.description"
+msgstr "选择用户界面的语言来个性化您在用户区域的体验。"
+
+msgid "config.lang.label"
+msgstr "🗺️ 用户区语言"
+
+msgid "config.last_hash.description"
+msgstr "config.last_hash.描述"
+
+msgid "config.last_hash.label"
+msgstr "配置.last_hash.label"
+
+msgid "config.last_priodic_usage_check.description"
+msgstr "配置.last_priodic_usage_check.description"
+
+msgid "config.last_priodic_usage_check.label"
+msgstr "config.last_priodic_usage_check.标签"
+
+msgid "config.license.description"
+msgstr "要将本产品用于商业用途，您必须购买其许可证"
+
+msgid "config.license.label"
+msgstr "许可证代码"
+
+msgid "config.log_level.description"
+msgstr "config.log_level.description"
+
+msgid "config.log_level.label"
+msgstr "config.log_level.label"
+
+msgid "config.mux.description"
+msgstr "可以在此部分设置 MUX（多路复用）配置"
+
+msgid "config.mux.label"
+msgstr "MUX设置"
+
+msgid "config.mux_brutal_down_mbps.description"
+msgstr "TCP-Brutal 最大下载速度"
+
+msgid "config.mux_brutal_down_mbps.label"
+msgstr "⬇️ MUX Brutal 下载 (mbps)"
+
+msgid "config.mux_brutal_enable.description"
+msgstr "启用 TCP-Brutal 拥塞控制算法"
+
+msgid "config.mux_brutal_enable.label"
+msgstr "☣️ MUX Brutal"
+
+msgid "config.mux_brutal_up_mbps.description"
+msgstr "TCP-Brutal 最大上传速度"
+
+msgid "config.mux_brutal_up_mbps.label"
+msgstr "⬆️ MUX Brutal 上传 (mbps)"
+
+msgid "config.mux_enable.description"
+msgstr ""
+"Mux 需要兼容的客户端。Hiddify Next 和 Singbox 中的 Mux 与 XRay 不兼容。 <a "
+"href=\"https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-"
+"MUX-works-and-its-usage/\" target=\"_blank\">（阅读更多）</a>"
+
+msgid "config.mux_enable.label"
+msgstr "Ⓜ️ MUX（⚠️ 与某些客户端不兼容）"
+
+msgid "config.mux_max_connections.description"
+msgstr "最大连接数。与最大流数冲突"
+
+msgid "config.mux_max_connections.label"
+msgstr "⛓ MUX 最大连接数"
+
+msgid "config.mux_max_streams.description"
+msgstr "打开新连接之前连接中的最大复用流数"
+
+msgid "config.mux_max_streams.label"
+msgstr "↗️ MUX 最大流"
+
+msgid "config.mux_min_streams.description"
+msgstr "打开新连接之前连接中的最小多路复用流"
+
+msgid "config.mux_min_streams.label"
+msgstr "↘️ MUX 最小流"
+
+msgid "config.mux_padding_enable.description"
+msgstr "MUX Padding 描述"
+
+msgid "config.mux_padding_enable.label"
+msgstr "⟹ MUX Padding"
+
+msgid "config.mux_protocol.description"
+msgstr ""
+"ℹ️ 多路复用协议。默认使用 'sMux'<inlang-LineFeed><br>\n"
+"➖ sMux: 流复用<inlang-LineFeed><br><inlang-LineFeed>➖ YaMux: 又一个多路复用器<inlang-LineFeed><br><inlang-LineFeed>➖ h2Mux: 通过 HTTP/2 多路复用流"
+
+msgid "config.mux_protocol.label"
+msgstr "♍️ MUX 协议"
+
+msgid "config.netdata.description"
+msgstr "用于显示资源。使用您服务器的 CPU，但不会太多。"
+
+msgid "config.netdata.label"
+msgstr "Netdata"
+
+msgid "config.not_found.description"
+msgstr "未找到配置"
+
+msgid "config.not_found.label"
+msgstr "未找到配置"
+
+msgid "config.only_ipv4.description"
+msgstr "它将禁用 IPv6"
+
+msgid "config.only_ipv4.label"
+msgstr "ℹ️仅限IPv4"
+
+msgid "config.package_mode.description"
+msgstr "指定您想要发布的包还是开发的包"
+
+msgid "config.package_mode.label"
+msgstr "🔄 包更新模式"
+
+msgid "config.panel_mode.description"
+msgstr "config.panel_mode.description"
+
+msgid "config.panel_mode.label"
+msgstr "config.panel_mode.label"
+
+msgid "config.parent_admin_proxy_path.description"
+msgstr "config.parent_admin_proxy_path.description"
+
+msgid "config.parent_admin_proxy_path.label"
+msgstr "config.parent_admin_proxy_path.label"
+
+msgid "config.parent_domain.description"
+msgstr "config.parent_domain.description"
+
+msgid "config.parent_domain.label"
+msgstr "config.parent_domain.label"
+
+msgid "config.parent_panel.description"
+msgstr "您可以连接到中央面板仅定义一个用户，所有服务器的使用情况将累积添加。"
+
+msgid "config.parent_panel.label"
+msgstr "父面板（多服务器）"
+
+msgid "config.path_grpc.description"
+msgstr "配置中的 gRPC 路径"
+
+msgid "config.path_grpc.label"
+msgstr "ℹ️ gRPC 路径"
+
+msgid "config.path_httpupgrade.description"
+msgstr "应该是随机的"
+
+msgid "config.path_httpupgrade.label"
+msgstr "ℹ️ HTTP 升级路径"
+
+msgid "config.path_ss.description"
+msgstr "链接中的 Shadowsocks 路径"
+
+msgid "config.path_ss.label"
+msgstr "Shadowsocks 路径"
+
+msgid "config.path_tcp.description"
+msgstr "对于代理链接"
+
+msgid "config.path_tcp.label"
+msgstr "ℹ️ TCP 配置路径"
+
+msgid "config.path_trojan.description"
+msgstr "对于 Trojan 链接"
+
+msgid "config.path_trojan.label"
+msgstr "ℹ️ Trojan 路径"
+
+msgid "config.path_v2ray.description"
+msgstr "设置 V2Ray 配置路径"
+
+msgid "config.path_v2ray.label"
+msgstr "V2Ray路径"
+
+msgid "config.path_vless.description"
+msgstr "对于 VLESS 路径"
+
+msgid "config.path_vless.label"
+msgstr "ℹ️ VLESS 路径"
+
+msgid "config.path_vmess.description"
+msgstr "对于 VMess 链接"
+
+msgid "config.path_vmess.label"
+msgstr "ℹ️VMess 路径"
+
+msgid "config.path_ws.description"
+msgstr "指定Websocket路径"
+
+msgid "config.path_ws.label"
+msgstr "ℹ️ Websocket 请求路径"
+
+msgid "config.path_xhttp.description"
+msgstr "此选项定义 Split HTTP 的路径"
+
+msgid "config.path_xhttp.label"
+msgstr "Split HTTP 的路径"
+
+msgid "config.proxies.description"
+msgstr "定义特定的代理设置"
+
+msgid "config.proxies.label"
+msgstr "代理设置"
+
+msgid "config.proxy_path.description"
+msgstr "我们使用秘密代理路径来隐藏我们的政府代理"
+
+msgid "config.proxy_path.label"
+msgstr "ℹ️ 秘密代理路径"
+
+msgid "config.proxy_path_admin.description"
+msgstr "我们使用秘密代理路径来向政府和机器人隐藏我们的代理"
+
+msgid "config.proxy_path_admin.label"
+msgstr "🔐 管理员的代理路径"
+
+msgid "config.proxy_path_client.description"
+msgstr "秘密代理路径隐藏了政府和机器人无法发现的代理"
+
+msgid "config.proxy_path_client.label"
+msgstr "🔏 客户端的代理路径"
+
+msgid "config.quic_enable.description"
+msgstr "启用 QUIC 协议"
+
+msgid "config.quic_enable.label"
+msgstr "🟡 QUIC"
+
+msgid "config.reality.description"
+msgstr "REALITY 消除了服务器端 TLS 指纹功能"
+
+msgid "config.reality.label"
+msgstr "Reality"
+
+msgid "config.reality_enable.description"
+msgstr "启用 Reality Protocol"
+
+msgid "config.reality_enable.label"
+msgstr "🔴 Reality"
+
+msgid "config.reality_fallback_domain.description"
+msgstr "当 GFW 访问服务器名称中的网站时，将被重定向到该域。"
+
+msgid "config.reality_fallback_domain.label"
+msgstr "🌍 现实后备域"
+
+msgid "config.reality_port.description"
+msgstr ""
+
+msgid "config.reality_port.label"
+msgstr ""
+
+msgid "config.reality_private_key.description"
+msgstr "不要改变它"
+
+msgid "config.reality_private_key.label"
+msgstr "🔑 私钥"
+
+msgid "config.reality_public_key.description"
+msgstr "不要改变它"
+
+msgid "config.reality_public_key.label"
+msgstr "🔑 公钥"
+
+msgid "config.reality_server_names.description"
+msgstr "您可以以逗号分隔的格式添加多个服务器名称"
+
+msgid "config.reality_server_names.label"
+msgstr "🌎 现实服务器名称"
+
+msgid "config.reality_short_ids.description"
+msgstr "不要改变它"
+
+msgid "config.reality_short_ids.label"
+msgstr "🆔 短 ID"
+
+msgid "config.restls.description"
+msgstr "config.restls.description"
+
+msgid "config.restls.label"
+msgstr "配置.restls.标签"
+
+msgid "config.restls1_2_domain.description"
+msgstr "config.restls1_2_domain.description"
+
+msgid "config.restls1_2_domain.label"
+msgstr "config.restls1_2_domain.label"
+
+msgid "config.restls1_3_domain.description"
+msgstr "config.restls1_3_domain.description"
+
+msgid "config.restls1_3_domain.label"
+msgstr "config.restls1_3_domain.label"
+
+msgid "config.shadowsocks.description"
+msgstr "Shadowsocks 是一款快速隧道代理，可帮助你绕过防火墙"
+
+msgid "config.shadowsocks.label"
+msgstr "Shadowsocks"
+
+msgid "config.shadowsocks2022_enable.description"
+msgstr ""
+"Shadowsocks 2022 是一种用于 TCP 和 UDP 流量的安全代理协议。代理流量与随机字节流无法区分，因此可以绕过依赖 "
+"DPI（深度数据包检测）的防火墙和互联网审查程序"
+
+msgid "config.shadowsocks2022_enable.label"
+msgstr "⭕️ Shadowsocks 2022"
+
+msgid "config.shadowsocks2022_method.description"
+msgstr "此方法也用于 ShadowTLS 和 SSFakeTLS"
+
+msgid "config.shadowsocks2022_method.label"
+msgstr "🔐 Shadowsocks 加密方法"
+
+msgid "config.shadowsocks2022_port.description"
+msgstr "需要 UDP 和 TCP 才能免费"
+
+msgid "config.shadowsocks2022_port.label"
+msgstr "↔️ Shadowsocks 2022 端口"
+
+msgid "config.shadowtls.description"
+msgstr ""
+"向防火墙公开真实的 tls 握手的代理。<inlang-LineFeed><inlang-LineFeed>它的工作原理类似于 "
+"Trojan，但不需要签名证书。防火墙将看到具有您选择的有效证书的真实 tls 握手。"
+
+msgid "config.shadowtls.label"
+msgstr "ShadowTLS"
+
+msgid "config.shadowtls_enable.description"
+msgstr "ShadowTLS 是一种新协议，但它可以使用 FakeTLS 向政府隐藏流量"
+
+msgid "config.shadowtls_enable.label"
+msgstr "☑️ShadowTLS"
+
+msgid "config.shadowtls_fakedomain.description"
+msgstr "请使用您数据中心内的知名域名。例如，如果您在 azure 数据中心，microsoft-update.com 就是一个很好的例子"
+
+msgid "config.shadowtls_fakedomain.label"
+msgstr "🌍 ShadowTLS 假域名"
+
+msgid "config.shared_secret.description"
+msgstr "一些代理目前不支持会计，因此我们必须为它们使用秘密"
+
+msgid "config.shared_secret.label"
+msgstr "🔐共享的秘密"
+
+msgid "config.show_usage_in_sublink.description"
+msgstr "此选项会在用户的子链接中创建一个假配置，显示用户的剩余音量"
+
+msgid "config.show_usage_in_sublink.label"
+msgstr "👁️‍🗨️ 在子链接中显示用法"
+
+msgid "config.special_port.description"
+msgstr "您可以为您的现实服务器设置自定义端口，以减少系统开销。（允许直接连接到代理应该是肯定的）"
+
+msgid "config.special_port.label"
+msgstr "↔️ 直接 Reality 端口"
+
+msgid "config.speed_test.description"
+msgstr "允许您的用户进行速度测试。它可以帮助他们识别链接质量"
+
+msgid "config.speed_test.label"
+msgstr "🚀 速度测试"
+
+msgid "config.ssfaketls.description"
+msgstr "Shadowsocks FakeTLS 是一个简单的混淆工具，将日期封装在 tls 数据包中"
+
+msgid "config.ssfaketls.label"
+msgstr "Shadowsocks FakeTLS"
+
+msgid "config.ssfaketls_enable.description"
+msgstr "不推荐简单的 OBFS 协议"
+
+msgid "config.ssfaketls_enable.label"
+msgstr "🆎 Shadowsocks FakeTLS（简单 OBFS）"
+
+msgid "config.ssfaketls_fakedomain.description"
+msgstr "请使用您数据中心内的知名域名。例如，如果您位于 Azure 数据中心，microsoft-update.com 就是一个很好的例子"
+
+msgid "config.ssfaketls_fakedomain.label"
+msgstr "🌍 SS FakeTLS 假域名"
+
+msgid "config.ssh.description"
+msgstr ""
+"ℹ️ SSH 代理，也称为 SSH 隧道或 SSH 端口转发，是一种通过不安全网络在两台计算机之间创建安全通信通道的安全方法。我们有一个与 ssh "
+"服务器完全不同的特定应用程序，无法执行任何命令"
+
+msgid "config.ssh.label"
+msgstr "SSH 代理"
+
+msgid "config.ssh_host_dsa_pk.description"
+msgstr ""
+
+msgid "config.ssh_host_dsa_pk.label"
+msgstr ""
+
+msgid "config.ssh_host_dsa_pub.description"
+msgstr ""
+
+msgid "config.ssh_host_dsa_pub.label"
+msgstr ""
+
+msgid "config.ssh_host_ecdsa_pk.description"
+msgstr ""
+
+msgid "config.ssh_host_ecdsa_pk.label"
+msgstr ""
+
+msgid "config.ssh_host_ecdsa_pub.description"
+msgstr ""
+
+msgid "config.ssh_host_ecdsa_pub.label"
+msgstr ""
+
+msgid "config.ssh_host_ed25519_pk.description"
+msgstr ""
+
+msgid "config.ssh_host_ed25519_pk.label"
+msgstr ""
+
+msgid "config.ssh_host_ed25519_pub.description"
+msgstr ""
+
+msgid "config.ssh_host_ed25519_pub.label"
+msgstr ""
+
+msgid "config.ssh_host_rsa_pk.description"
+msgstr ""
+
+msgid "config.ssh_host_rsa_pk.label"
+msgstr ""
+
+msgid "config.ssh_host_rsa_pub.description"
+msgstr ""
+
+msgid "config.ssh_host_rsa_pub.label"
+msgstr ""
+
+msgid "config.ssh_server_enable.description"
+msgstr "SSH Proxy 与原来的 SSH Server 完全不同"
+
+msgid "config.ssh_server_enable.label"
+msgstr "✔️ 启用 SSH 代理"
+
+msgid "config.ssh_server_port.description"
+msgstr "这与你原来的 SSH 服务器完全不同。这是一个专用程序。"
+
+msgid "config.ssh_server_port.label"
+msgstr "↔️ SSH 代理端口"
+
+msgid "config.ssh_server_redis_url.description"
+msgstr "不曾用过"
+
+msgid "config.ssh_server_redis_url.label"
+msgstr "SSH用户数据库地址"
+
+msgid "config.ssr.description"
+msgstr "ShadowsocksR是原始Shadowsocks项目的一个分支，号称在安全性和稳定性方面更胜一筹。"
+
+msgid "config.ssr.label"
+msgstr "SSR"
+
+msgid "config.ssr_enable.description"
+msgstr "ShadowsocksR 是原始 Shadowsocks 项目的 Fork，号称在安全性和稳定性方面更胜一筹。未测试。不支持记账。"
+
+msgid "config.ssr_enable.label"
+msgstr "S​​SR"
+
+msgid "config.ssr_fakedomain.description"
+msgstr "请在您的数据中心使用众所周知的域。例如，如果您在 Azure 数据中心，microsoft-update.com 就是一个很好的例子"
+
+msgid "config.ssr_fakedomain.label"
+msgstr "SSR 假域名"
+
+msgid "config.sub_full_clash_enable.description"
+msgstr "config.sub_full_clash_enable.description"
+
+msgid "config.sub_full_clash_enable.label"
+msgstr "config.sub_full_clash_enable.标签"
+
+msgid "config.sub_full_clash_meta_enable.description"
+msgstr "config.sub_full_clash_meta_enable.description"
+
+msgid "config.sub_full_clash_meta_enable.label"
+msgstr "config.sub_full_clash_meta_enable.标签"
+
+msgid "config.sub_full_links_b64_enable.description"
+msgstr "config.sub_full_links_b64_enable.description"
+
+msgid "config.sub_full_links_b64_enable.label"
+msgstr "config.sub_full_links_b64_enable.标签"
+
+msgid "config.sub_full_links_enable.description"
+msgstr "config.sub_full_links_enable.description"
+
+msgid "config.sub_full_links_enable.label"
+msgstr "config.sub_full_links_enable.label"
+
+msgid "config.sub_full_singbox_enable.description"
+msgstr "config.sub_full_singbox_enable.description"
+
+msgid "config.sub_full_singbox_enable.label"
+msgstr "config.sub_full_singbox_enable.label"
+
+msgid "config.sub_full_xray_json_enable.description"
+msgstr ""
+"XRay 全链路为 XRay 特定设置提供了全面的配置选项。这包括支持 XRay 协议的应用程序（例如 v2rayNG）中的自定义分段和多路复用 "
+"(mux)，以便对 XRay 代理设置进行精细控制。"
+
+msgid "config.sub_full_xray_json_enable.label"
+msgstr "⚙️ XRay 完整配置链接"
+
+msgid "config.sub_singbox_ssh_enable.description"
+msgstr "config.sub_singbox_ssh_enable.description"
+
+msgid "config.sub_singbox_ssh_enable.label"
+msgstr "config.sub_singbox_ssh_enable.label"
+
+msgid "config.tcp_enable.description"
+msgstr "启用 TCP 协议"
+
+msgid "config.tcp_enable.label"
+msgstr "🟠 TCP"
+
+msgid "config.telegram.description"
+msgstr "专为 Telegram 设计的代理，可绕过 Telegram 过滤"
+
+msgid "config.telegram.label"
+msgstr "Telegram 配置"
+
+msgid "config.telegram_adtag.description"
+msgstr ""
+"它用于在客户端的聊天列表中显示赞助频道。要宣传频道，请从 @MTProxybot 获取标签。\n"
+"在该机器人中输入代码 0123456789ABCDEF0123456789ABCDEF。"
+
+msgid "config.telegram_adtag.label"
+msgstr "📍 Telegram 广告标签"
+
+msgid "config.telegram_bot_token.description"
+msgstr "添加 Telegram 机器人功能。您需要使用@BotFather创建一个机器人并在此字段中输入API代码"
+
+msgid "config.telegram_bot_token.label"
+msgstr "🔐 Telegram 机器人代币"
+
+msgid "config.telegram_enable.description"
+msgstr "Telegram MTProto 用于将 Telegram Proxy 封装为 tls 流量"
+
+msgid "config.telegram_enable.label"
+msgstr "✔️ 启用 Telegram MTProto"
+
+msgid "config.telegram_fakedomain.description"
+msgstr "请使用您数据中心内的知名域名。例如，如果您位于 Azure 数据中心，microsoft-update.com 就是一个很好的例子"
+
+msgid "config.telegram_fakedomain.label"
+msgstr "📺 Telegram 假域名"
+
+msgid "config.telegram_lib.description"
+msgstr ""
+"您可以在不同的 Telegram 库之间切换。请注意，只有Python可以在所有服务器上运行，其他服务器可能会出现一些问题。更改后测试代理。"
+
+msgid "config.telegram_lib.label"
+msgstr "🔢 Telegram 代理库"
+
+msgid "config.tls.description"
+msgstr "可以在此部分设置 TLS 配置。"
+
+msgid "config.tls.label"
+msgstr "TLS 设置"
+
+msgid "config.tls_fragment_enable.description"
+msgstr ""
+"在某些情况下，它可以绕过 SNI 黑名单系统。 <a href=\"https://hiddify.com/manager/basic-"
+"concepts-and-troubleshooting/How-the-TLS-Trick-works-and-its-usage/\" "
+"target=\"_blank\">（阅读更多）</a>"
+
+msgid "config.tls_fragment_enable.label"
+msgstr "⏯ TLS Fragment"
+
+msgid "config.tls_fragment_size.description"
+msgstr "每个数据包的大小"
+
+msgid "config.tls_fragment_size.label"
+msgstr "🎚 TLS Fragment 大小"
+
+msgid "config.tls_fragment_sleep.description"
+msgstr "Fragment 之间的时间延迟"
+
+msgid "config.tls_fragment_sleep.label"
+msgstr "⏱ TLS Fragment 休眠"
+
+msgid "config.tls_mixed_case.description"
+msgstr "启用 TLS 混合 SNI 大小写碎片"
+
+msgid "config.tls_mixed_case.label"
+msgstr "🔠 TLS 混合 SNI 大小写"
+
+msgid "config.tls_padding_enable.description"
+msgstr ""
+"启用 TLS 碎片填充。 <a href=\"https://hiddify.com/manager/basic-concepts-and-"
+"troubleshooting/How-the-TLS-Trick-works-and-its-usage/#tls-padding\" "
+"target=\"_blank\">（阅读更多）</a>"
+
+msgid "config.tls_padding_enable.label"
+msgstr "♒️ TLS Padding"
+
+msgid "config.tls_padding_length.description"
+msgstr "TLS 碎片的 Padding 长度"
+
+msgid "config.tls_padding_length.label"
+msgstr "📏 TLS Padding"
+
+msgid "config.tls_ports.description"
+msgstr "逗号分隔的整数，指示用作 TLS 连接的端口（在任何情况下都将使用端口 443）"
+
+msgid "config.tls_ports.label"
+msgstr "🔎 TLS 端口"
+
+msgid "config.tls_trick.description"
+msgstr "TLS 碎片配置可在此部分设置"
+
+msgid "config.tls_trick.label"
+msgstr "TLS 技巧"
+
+msgid "config.too_advanced.description"
+msgstr "指定代理路径。如果您使用 HTTP 和 VMess，这一点尤其重要"
+
+msgid "config.too_advanced.label"
+msgstr "非常高级的设置"
+
+msgid "config.torrent_block.description"
+msgstr "可以在此部分设置 Torrent 阻止配置。"
+
+msgid "config.torrent_block.label"
+msgstr "Torrent 块配置"
+
+msgid "config.trojan_enable.description"
+msgstr "启用 Trojan 协议"
+
+msgid "config.trojan_enable.label"
+msgstr "🟤 Trojan"
+
+msgid "config.tuic.description"
+msgstr ""
+"Delicately-TUICed 高性能代理位于 QUIC 协议之上。\n"
+"\n"
+"TUIC的目标是尽可能减少握手延迟"
+
+msgid "config.tuic.label"
+msgstr "⚫️ TUIC"
+
+msgid "config.tuic_enable.description"
+msgstr "它是一个基于UDP的协议，类似于QUIC"
+
+msgid "config.tuic_enable.label"
+msgstr "启用 TUIC"
+
+msgid "config.tuic_port.description"
+msgstr "使用逗号分隔端口，例如 63000,60000"
+
+msgid "config.tuic_port.label"
+msgstr "TUIC 端口"
+
+msgid "config.unique_id.description"
+msgstr "config.unique_id.description"
+
+msgid "config.unique_id.label"
+msgstr "config.unique_id.label"
+
+msgid "config.use_ip_in_config.description"
+msgstr ""
+
+msgid "config.use_ip_in_config.label"
+msgstr ""
+
+msgid "config.utls.description"
+msgstr "此选项将模拟不同的浏览器，因此 GFW 无法检测到您的浏览"
+
+msgid "config.utls.label"
+msgstr "❇️uTLS"
+
+msgid "config.v2ray_enable.description"
+msgstr "V2ray不支持计费，不建议使用"
+
+msgid "config.v2ray_enable.label"
+msgstr "♈️ V2Ray"
+
+msgid "config.validation-error"
+msgstr "其中一个字段有错误。"
+
+msgid "config.validation-success"
+msgstr "配置已成功更改。单击 %(link)s 应用配置。申请可能需要 2 分钟"
+
+msgid "config.validation-success-no-reset"
+msgstr "✅ 配置已成功更改"
+
+msgid "config.vless_enable.description"
+msgstr "启用 VLess 协议"
+
+msgid "config.vless_enable.label"
+msgstr "⚫️ VLess"
+
+msgid "config.vmess_enable.description"
+msgstr "据多位人士透露，VMess 导致该系统被政府检测到。所以不推荐"
+
+msgid "config.vmess_enable.label"
+msgstr "🟣 VMess"
+
+msgid "config.warp-https-domain-for-warp-site"
+msgstr "config.warp-https-domain-for-warp-site"
+
+msgid "config.warp.description"
+msgstr ""
+"Warp 是一种在出站流量中隐藏服务器 IP 的工具。这意味着如果用户访问网站，则暴露的是 Warp IP，而不是我们的服务器 IP。\n"
+"<br>\n"
+"例如，如果您在 Google 上遇到验证码问题，则可能会通过这种方式修复。"
+
+msgid "config.warp.label"
+msgstr "WARP➕"
+
+msgid "config.warp_enable.description"
+msgstr "WARP 通过隐藏服务器 IP 帮助您绕过 Google、Spotify 和 Netflix 限制"
+
+msgid "config.warp_enable.label"
+msgstr "启用 WARP+"
+
+msgid "config.warp_mode.description"
+msgstr ""
+"✴️ 全部：所有站点在出站中使用 Warp IP\n"
+"<br>\n"
+"☑️ 仅国内和被阻止的网站：仅国内网站和 Google、Spotify、Netflix、OpenAi、IPinfo.io 等网站在出站中使用 Warp IP"
+
+msgid "config.warp_mode.label"
+msgstr "✴️ WARP+ 模式"
+
+msgid "config.warp_plus_code.description"
+msgstr ""
+"🔝 提高浏览速度。要获取密钥，请转到 <a href='https://1.1.1.1/'> 1.1.1.1 </a>\n"
+"应用程序并从 Cloudflare 购买原始 KEY\n"
+"<br>\n"
+"⚠️如果此Key有错误，WARP将被禁用。"
+
+msgid "config.warp_plus_code.label"
+msgstr "🔑 Warp Plus 键"
+
+msgid "config.warp_sites.description"
+msgstr "添加要通过 WARP 的其他站点（仅当 Warp 模式不为 None 时）"
+
+msgid "config.warp_sites.label"
+msgstr "🆚 其他 WARP 站点"
+
+msgid "config.wireguard.description"
+msgstr ""
+"WireGuard 是一种轻量级的基于 UDP "
+"的协议，以其简单、高效和强大的安全性而闻名。它提供快速设置、透明代码，并因其在各种操作系统中的易用性而广受欢迎"
+
+msgid "config.wireguard.label"
+msgstr "🐉 WireGuard"
+
+msgid "config.wireguard_enable.description"
+msgstr ""
+"WireGuard 是基于 UDP 的协议。（⚠️ 它在<a href=\"https://github.com/hiddify/hiddify-"
+"next\" target=\"_blank\">Hiddify Next</a>中运行）"
+
+msgid "config.wireguard_enable.label"
+msgstr "启用 WireGuard"
+
+msgid "config.wireguard_ipv4.description"
+msgstr "在 WireGuard 中启用 IPv4"
+
+msgid "config.wireguard_ipv4.label"
+msgstr " WireGuard 中的 IPv4"
+
+msgid "config.wireguard_ipv6.description"
+msgstr "在 WireGuard 中启用 IPv6"
+
+msgid "config.wireguard_ipv6.label"
+msgstr "WireGuard 中的 IPv6"
+
+msgid "config.wireguard_noise_trick.description"
+msgstr "这种方法会引入额外的噪音，以防止被 GFW 检测和阻止"
+
+msgid "config.wireguard_noise_trick.label"
+msgstr "💥 WireGuard 噪音技巧"
+
+msgid "config.wireguard_port.description"
+msgstr "定义 WireGuard 的端口 "
+
+msgid "config.wireguard_port.label"
+msgstr "↔️ WireGuard 端口"
+
+msgid "config.wireguard_private_key.description"
+msgstr "为 WireGuard 指定私钥"
+
+msgid "config.wireguard_private_key.label"
+msgstr "WireGuard 私钥"
+
+msgid "config.wireguard_public_key.description"
+msgstr "为 WireGuard 指定一个公钥"
+
+msgid "config.wireguard_public_key.label"
+msgstr "WireGuard 公钥"
+
+msgid "config.ws_enable.description"
+msgstr "Websocket 通过 HTTP 创建一个隧道，可用于 CDN"
+
+msgid "config.ws_enable.label"
+msgstr "🔰 Websocket"
+
+msgid "config.xhttp_enable.description"
+msgstr "该协议通过单独的渠道发送和接收信息 "
+
+msgid "config.xhttp_enable.label"
+msgstr "🈁 Split HTTP"
+
+msgid "config.xtls_enable.description"
+msgstr "启用 XTLS 协议"
+
+msgid "config.xtls_enable.label"
+msgstr "🟢XTLS"
+
+msgid "copy"
+msgstr "复制"
+
+msgid "daily"
+msgstr "⏰ 每日"
+
+msgid "days"
+msgstr "天"
+
+msgid "desktop"
+msgstr "桌面"
+
+msgid "direct"
+msgstr "➡️直接"
+
+msgid "domain.cdn"
+msgstr "CDN"
+
+msgid "domain.changed_in_domain_warning"
+msgstr "⚠️ 您的域名已更改。请不要忘记复制管理链接，否则您将无法再访问面板"
+
+msgid "domain.description"
+msgstr ""
+"请仔细、正确地填写此字段。否则，代理将会遇到问题。请访问<a href='https://github.com/hiddify/hiddify-"
+"config/wiki/??????-??????-??-??????-??????-??????#??????-??????????????????>帮助</a>了解如何创建子域。"
+
+msgid "domain.domain"
+msgstr "领域"
+
+msgid "domain.domain_fronting.description"
+msgstr ""
+"它用于在 SNI 中模拟另一个网站而不是您的网站。因此，GFW 无法过滤您的域名\n"
+"<a href='https://github.com/hiddify/hiddify-config/wiki/Guide-for-domain-fronting'>指南</a>。 ⚠️CloudFlare 不支持域前置。"
+
+msgid "domain.domain_fronting.label"
+msgstr "🔒 TLS 的域前端"
+
+msgid "domain.empty.allowed_for_fake_only"
+msgstr "domain.empty.allowed_for_fake_only"
+
+msgid "domain.intro"
+msgstr ""
+"1️⃣ 在此部分，您可以添加您的域。<inlang-LineFeed><br>\n"
+"2️⃣如果您想减少拥有脏IP的概率，您可以添加多个中继服务器<a href='https://github.com/hiddify/hiddify-config/discussions/129'>阅读更多</a>。<inlang-LineFeed><br>\n"
+"3️⃣如果您的面板中有多个 IPv4 或 IPv6，则必须将指向它们的域添加为中继。"
+
+msgid "domain.ip"
+msgstr "知识产权"
+
+msgid "domain.mode"
+msgstr "模式"
+
+msgid "domain.reality.asn_issue"
+msgstr "REALITY 的所选域不在同一 ASN 中。为了更好地使用该协议，最好在同一 ASN 中找到一个域"
+
+msgid "domain.resolveip.description"
+msgstr ""
+
+msgid "domain.resolveip.label"
+msgstr ""
+
+msgid "domain.show_domains_description"
+msgstr ""
+"对于访问该域的用户区的用户，指定他们可以看到哪些域的代理。\n"
+"<br>\n"
+"建议：对于IP未过滤且与其他域不同的域，选择所有其他域（当前域除外）。因此，由于该 IP 的使用不是用于代理，并且它是一个简单的网站，因此该域名和 IP 永远不会被阻止，您的用户可以轻松更新新的配置文件。"
+
+msgid "download"
+msgstr "直接下载"
+
+msgid "download_domain.description"
+msgstr ""
+
+msgid "download_domain.label"
+msgstr ""
+
+msgid "fake"
+msgstr "🆎 假网站"
+
+msgid "gRPC"
+msgstr "➿ gRPC"
+
+msgid "grpc-proxy.description"
+msgstr "ℹ️ gRPC 是一个基于 H2 的协议。也许对你来说更快！"
+
+msgid "in parent panel"
+msgstr "在中央面板"
+
+msgid "install from google play"
+msgstr "<i class='fa-brands fa-google-play'></i> Google Play"
+
+msgid "ios"
+msgstr "iOS"
+
+msgid "items"
+msgstr "项目"
+
+msgid "lang.en"
+msgstr "🇺🇸 英语 - English "
+
+msgid "lang.fa"
+msgstr "🇮🇷 波斯语 - فارسی"
+
+msgid "lang.my"
+msgstr "🇲🇲 缅甸语 - မြန်မာဘာသာ"
+
+msgid "lang.pt"
+msgstr "🇵🇹 葡萄牙語 - Português  "
+
+msgid "lang.ru"
+msgstr "🇷🇺 俄语 - Русский"
+
+msgid "lang.zh"
+msgstr "🇨🇳 Chinese - 简体中文"
+
+msgid "lib.telegram.erlang"
+msgstr "✴️ Erlang：性能良好"
+
+msgid "lib.telegram.go"
+msgstr "✅ Go：正常性能 - 不支持广告"
+
+msgid "lib.telegram.python"
+msgstr "☑️ Python：性能低下"
+
+msgid "log"
+msgstr "📄 Log"
+
+msgid "login.button"
+msgstr "登录"
+
+msgid "login.password.description"
+msgstr "为了更加安全，您需要输入密码。"
+
+msgid "login.password.label"
+msgstr "密码"
+
+msgid "login.secret.description"
+msgstr "要访问此页面，请输入您的密码（UUID）"
+
+msgid "login.secret.label"
+msgstr "密码 (UUID)"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "master.page-title"
+msgstr "HiddifyManager"
+
+msgid "monthly"
+msgstr "🗓️每月"
+
+msgid "move_to_new_link"
+msgstr "该页面已移至新链接。请复制并保存新链接。"
+
+msgid "next"
+msgstr "下一个"
+
+msgid "no_reset"
+msgstr "⭐️无需重置"
+
+msgid "node.diff-version"
+msgstr "node.diff-version"
+
+msgid "node.mode.dscr"
+msgstr "该字段定义 Node 的模式"
+
+msgid "node.mode.label"
+msgstr "Node 模式"
+
+msgid "node.name.dscr"
+msgstr "此字段定义 Node 的名称"
+
+msgid "node.name.label"
+msgstr "Node 名称"
+
+msgid "node.uuid.dscr"
+msgstr "该字段定义节点的 UUID"
+
+msgid "node.uuid.label"
+msgstr "Node UUID"
+
+msgid "old_xtls_direct"
+msgstr "🔙旧直连模式（针对木马TCP、VLess XTLS）"
+
+msgid "open"
+msgstr "打开"
+
+msgid "outdated_panel"
+msgstr "⚠️ 此版本的 Hiddify Manager 已过时。请从管理区域更新"
+
+msgid "package days?"
+msgstr "包天数？"
+
+msgid "package size?"
+msgstr "包装尺寸？"
+
+msgid "parent.invalid-parent-url"
+msgstr "parent.invalid-parent-url"
+
+msgid "parent.sync-req-failed"
+msgstr "parent.sync-req-failed"
+
+msgid "previous"
+msgstr "以前的"
+
+msgid "quicksetup.cdn_domain.description"
+msgstr "设置 CDN 域名是可选的。仅当您已经配置了 CDN 时才使用它。"
+
+msgid "quicksetup.cdn_domain.label"
+msgstr "CDN 域名"
+
+msgid "quicksetup.proxy_cat.description"
+msgstr "最后一步：请选择您想要的代理。请选择尽可能少的代理。"
+
+msgid "quicksetup.setlang.success"
+msgstr "更改语言成功。"
+
+msgid "reality"
+msgstr "🔂 Reality"
+
+msgid "relay"
+msgstr "♾️ Relay （使用中间节点连接）"
+
+msgid "search"
+msgstr "搜索"
+
+msgid "see the log in the bellow screen"
+msgstr "📑 查看以下屏幕中的日志"
+
+msgid "serverssh.password-login.warning"
+msgstr ""
+"您的服务器很容易受到滥用，因为您的 SSH "
+"中启用了密码身份验证。为了保护您的服务器，请切换到密钥身份验证机制并关闭PasswordAuthentication。<a "
+"href='https://github.com/hiddify/Hiddify-Manager/wiki/Disable-SSH-Password-"
+"Authentication'>阅读更多...</a>"
+
+msgid "singbox: ssh"
+msgstr "歌手盒：SSH"
+
+msgid "special_reality_grpc"
+msgstr "Reality gRPC"
+
+msgid "special_reality_tcp"
+msgstr "Reality TCP"
+
+msgid "special_reality_xhttp"
+msgstr "Reality xHTTP"
+
+msgid "ssh"
+msgstr "SSH"
+
+msgid "sub_link_only"
+msgstr "📳 仅适用于订阅链接（可以是 Direct、Relay 或 CDN）"
+
+msgid "telegram"
+msgstr "Telegram"
+
+msgid "test"
+msgstr "测试"
+
+msgid "update"
+msgstr "更新"
+
+msgid "user.UUID"
+msgstr "UUID"
+
+msgid "user.current_usage_GB"
+msgstr "当前使用情况（GB）"
+
+msgid "user.define_mode"
+msgstr "用户的套餐模式。使用量是否应该每月、每周等重置"
+
+msgid "user.expiry_time"
+msgstr "过期（天）"
+
+msgid "user.home.all_configs"
+msgstr "所有配置"
+
+msgid "user.home.allconfig.clash-configs"
+msgstr "Clash 配置"
+
+msgid "user.home.allconfig.hiddify-managers"
+msgstr "HiddifyManager 管理员的所有配置"
+
+msgid "user.home.allconfig.link-configs"
+msgstr "订阅链接"
+
+msgid "user.home.allconfig.name"
+msgstr "名称和链接"
+
+msgid "user.home.allconfig.protocol"
+msgstr "协议"
+
+msgid "user.home.allconfig.security"
+msgstr "安全"
+
+msgid "user.home.allconfig.transport"
+msgstr "运输"
+
+msgid "user.home.allconfig.type"
+msgstr "类型"
+
+msgid "user.home.allconfigs.expect_vless"
+msgstr "除了VLess"
+
+msgid "user.home.android.intro"
+msgstr ""
+"请从 %(dl_link)s %(play_link)s 安装 Hiddify Android。\n"
+"\n"
+"<!--\n"
+"<div class='callout callout-danger'>\n"
+"    <b>将 Hiddify Android 更新至版本 0.14</b>\n"
+"</div>-->\n"
+"<详情>\n"
+"<summary>为什么要隐藏 Android？</summary>\n"
+"<div class='callout callout-info'>\n"
+"\n"
+"        Hiddify Android 是 Clash 的开源分支，支持更多协议。\n"
+"        <br>\n"
+"        它的源代码存在于\n"
+"        <a href='https://github.com/hiddify/HiddifyProxyAndroid'>GitHub</a>。\n"
+"        \n"
+"        <br>\n"
+"        因此，它是安全的。\n"
+"\n"
+"        <详情>\n"
+"            <summary>替代方案：正常冲突</summary>\n"
+"            <div class='btn-group'>\n"
+"                <a href='https://play.google.com/store/apps/details?id=com.github.kr328.clash'\n"
+"                    class='btn btn-warning orig-link'>Google Play 中的冲突</a>\n"
+"            </div>\n"
+"            <div class='btn-group'>\n"
+"                <a href='/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-universal-release.apk'\n"
+"                    class='btn btn-warning orig-link'>直接下载</a>\n"
+"            </div>\n"
+"\n"
+"            <div class='警报警报-危险'>\n"
+"            Clash 不支持 VLess 协议。因此，我们需要为其添加另一个链接。\n"
+"            </div>\n"
+"            \n"
+"\n"
+"        </详情>\n"
+"    </div>\n"
+"</详情>"
+
+msgid "user.home.branding.linktitle"
+msgstr "支持页面链接"
+
+msgid "user.home.branding.title"
+msgstr "支持"
+
+msgid "user.home.clash_configs.all_sites.btn"
+msgstr "为所有站点安装代理。"
+
+msgid "user.home.clash_configs.all_sites.description"
+msgstr ""
+"对所有网站甚至本地网站使用代理。\n"
+"<div class='callout callout-danger'>\n"
+"    加载本地网站会变慢并且会危及您的隐私。\n"
+"</div>"
+
+msgid "user.home.clash_configs.all_sites.title"
+msgstr "所有站点的代理"
+
+msgid "user.home.clash_configs.alternative_for_normal_clash"
+msgstr "Clash 的替代链接"
+
+msgid "user.home.clash_configs.foreign_sites.btn"
+msgstr "安装国外网站"
+
+msgid "user.home.clash_configs.foreign_sites.description"
+msgstr ""
+"对所有外国站点（甚至未被阻止的站点）使用代理。\n"
+"<div class='callout callout-warning'>\n"
+"此模式在访问某些受制裁的网站时很有用。\n"
+"</div>"
+
+msgid "user.home.clash_configs.foreign_sites.title"
+msgstr "国外网站代理"
+
+msgid "user.home.clash_configs.intro"
+msgstr ""
+"现在，根据您的需求，单击以下链接之一。\n"
+"<br/>"
+
+msgid "user.home.clash_configs.link_for_normal_clash"
+msgstr "安装冲突"
+
+msgid "user.home.clash_configs.only_for_blocked_sites.btn"
+msgstr "仅针对被阻止的站点安装"
+
+msgid "user.home.clash_configs.only_for_blocked_sites.description"
+msgstr ""
+"建议使用此模式。它仅通过代理转发被阻止的站点。\n"
+"            <div class='callout callout-success'>\n"
+"                在此模式下，您不会感觉到速度有任何变化。\n"
+"            </div>"
+
+msgid "user.home.clash_configs.only_for_blocked_sites.title"
+msgstr "仅适用于被阻止的网站"
+
+msgid "user.home.doh"
+msgstr "HTTPS 上的 DNS"
+
+msgid "user.home.ios.others.intro"
+msgstr ""
+"首先安装以下应用程序之一：\n"
+"\n"
+"<div class='btn-group'>\n"
+"\n"
+"<a href='https://apps.apple.com/us/app/foxray/id6448898396'\n"
+"        class='btn btn-primary orig-link'>FoXray</a>\n"
+"\n"
+"</div>\n"
+"\n"
+"<div class='btn-group'>\n"
+"\n"
+"<a href='https://apps.apple.com/us/app/fair-vpn/id1533873488'\n"
+"        class='btn btn-primary orig-link'>公平 VPN</a>\n"
+"</div>\n"
+"\n"
+"<br/>\n"
+"然后应用以下配置：\n"
+"<br/>"
+
+msgid "user.home.ios.others.title"
+msgstr "FoXray 和 Fair VPN"
+
+msgid "user.home.ios.stash.intro"
+msgstr ""
+"Stash 和 Shadowrocket 都是很棒的应用程序。无论哪一个都值得购买。\n"
+"<br>\n"
+"<br/>\n"
+"  <div class='btn-group'>\n"
+"        <a href='https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349' target='_blank' class='btn btn-success orig-link'>下载 Stash</一个>\n"
+"        </div>\n"
+"  <div class='btn-group'>\n"
+"        <a href='https://apps.apple.com/us/app/shadowrocket/id932747118' target='_blank' class='btn btn-primary orig-link'>下载 Shadowrocket</a>\n"
+"        </div><br>\n"
+"<br/>"
+
+msgid "user.home.ios.stash.title"
+msgstr ""
+"<button class='btn btn-sm btn-default' onclick='show_video('ios-stash')'><i class='fa-solid fa-question'></i> 隐藏</button>\n"
+"          <button class='btn btn-sm btn-default' onclick='show_video('ios-shadowrocket')'><i class='fa-solid fa-question'></i> Shadowrocket</button>\n"
+" <span class='badge badge-success'>推荐</span>"
+
+msgid "user.home.link.manual-copy"
+msgstr "复制到剪贴板：Ctrl+C，Enter"
+
+msgid "user.home.link.success-copy"
+msgstr "链接已复制到剪贴板。"
+
+msgid "user.home.qr-code.description"
+msgstr "要复制或共享链接，请单击灰色的<i class='fa-solid fa-qrcode'></i>字段以显示其二维码。"
+
+msgid "user.home.qr-code.display"
+msgstr "显示二维码"
+
+msgid "user.home.select_os"
+msgstr "请选择您的操作系统。"
+
+msgid "user.home.select_tool"
+msgstr "请选择该项目。"
+
+msgid "user.home.share-title"
+msgstr "分享到社交媒体"
+
+msgid "user.home.speedtest.download"
+msgstr "下载"
+
+msgid "user.home.speedtest.intro"
+msgstr ""
+"首先，测试<b>没有</b>代理的速度。如果速度不好，则说明该 IP 在您的 ISP 上被称为“脏”。\n"
+"如果没有代理时速度较低，请不要浪费时间来测试该代理。\n"
+"否则，使用该站点的不同代理进行测试，如果速度与没有代理的速度相似，那么您已经找到了最佳协议。\n"
+"<br/>"
+
+msgid "user.home.speedtest.title"
+msgstr "速度测试（检测脏IP）"
+
+msgid "user.home.speedtest.two_ways"
+msgstr "双向"
+
+msgid "user.home.speedtest.upload"
+msgstr "上传"
+
+msgid "user.home.telegram.clickbtn"
+msgstr "电报代理"
+
+msgid "user.home.telegram.description"
+msgstr ""
+"单击以下链接之一，然后在电报中您可以看到一个包含<b>连接代理</b>的窗口。点击它，它就会起作用。\n"
+"<br/>"
+
+msgid "user.home.title"
+msgstr "HiddifyManager"
+
+msgid "user.home.tool.all-configs"
+msgstr "所有配置"
+
+msgid "user.home.tool.doh.help"
+msgstr ""
+"<h4>在浏览器上配置 DoH</h4><inlang-LineFeed>有多种浏览器兼容 DNS over HTTPS "
+"(DoH)。此协议允许<inlang-LineFeed>您对与 1.1.1.1 的连接进行加密，以保护您的 DNS "
+"查询免受隐私入侵和篡改。<inlang-LineFeed><inlang-LineFeed>某些浏览器可能已经启用此设置。<inlang-"
+"LineFeed><br /><inlang-LineFeed><h5> ​​Mozilla Firefox</h5><inlang-"
+"LineFeed>选择<b>菜单</b>按钮 "
+"&gt;<b>设置</b>。在常规菜单中，向下滚动以访问<b>网络设置</b>。选择<b>设置</b>。选择<b>启用 HTTPS 上的 DNS</b>"
+" 。<inlang-LineFeed><br /><inlang-LineFeed>​<h5>谷歌浏览器</h5><inlang-"
+"LineFeed>选择浏览器中的<b>三点</b>菜单 &gt;<b>设置</b>。<inlang-LineFeed>选择<b>“隐私和安全”</b> "
+"&gt;“<b>安全”</b> 。<inlang-LineFeed>向下滚动并启用<b>使用安全 DNS</b> 。<inlang-"
+"LineFeed><br /><inlang-LineFeed><h5>​​微软 Edge</h5><inlang-"
+"LineFeed>选择浏览器中的<b>三点</b>菜单 &gt;<b>设置</b>。<inlang-"
+"LineFeed>选择<b>“隐私”、“搜索”和服务</b>，然后向下滚动到<b>“安全”</b> 。<inlang-"
+"LineFeed>启用<b>使用安全 DNS</b> 。<inlang-LineFeed>选择选择服务提供商。"
+
+msgid "user.home.tool.doh.title"
+msgstr "HTTPS 上的 DNS"
+
+msgid "user.home.usage.details"
+msgstr "显示使用详情"
+
+msgid "user.home.usage.expire"
+msgstr "到期："
+
+msgid "user.home.usage.from"
+msgstr "的"
+
+msgid "user.home.usage.monthly"
+msgstr "每月"
+
+msgid "user.home.usage.title"
+msgstr "⏳ 流量使用"
+
+msgid "user.home.windows.intro"
+msgstr ""
+"首先，根据您的操作系统下载并安装 Hiddify Desktop 软件。\n"
+"<br/>\n"
+"%(hiddify_desktop_links)s\n"
+"\n"
+"<详情>\n"
+"<summary>为什么选择 Hiddify Desktop？</summary>\n"
+"<div class='callout callout-info'>\n"
+"\n"
+"        Hiddify Desktop 是 Clash 的一个安全开源分支，支持更多 VLESS 和 UTLS 指纹识别。\n"
+"        <br>\n"
+"<br/>\n"
+"        其源代码存在于\n"
+"        <a href='https://github.com/hiddify/HiddifyDesktop'>GitHub</a>。\n"
+"        \n"
+"\n"
+"        <详情>\n"
+"            <summary>替代方案：正常冲突</summary>\n"
+"            %(normal_clash_link)s\n"
+"\n"
+"            <div class='警报警报-危险'>\n"
+"            Clash 不支持浏览器指纹识别和 VLESS 协议。因此，我们需要为其添加另一个链接。\n"
+"            </div>\n"
+"            \n"
+"\n"
+"        </详情>\n"
+"</div>\n"
+"        </详情>\n"
+"<br/>\n"
+"现在，根据您的需要，您可以单击其中一个按钮。通过在浏览器中查看该窗口，只需单击<b>打开</b>选项即可自动将服务器链接添加到 Hiddify Desktop。"
+
+msgid "user.last_reset_time"
+msgstr "最后使用日期重置"
+
+msgid "user.name"
+msgstr "姓名"
+
+msgid "user.password.description"
+msgstr "密码将用于额外的安全保护。您只有输入密码后才能登录 HiddifyManager。"
+
+msgid "user.password.title"
+msgstr "密码"
+
+msgid "user.password.validation-lenght"
+msgstr "为了增强安全性，您的密码必须至少包含 8 个字符。"
+
+msgid "user.password.validation-required"
+msgstr "需要密码。请输入您的密码才能继续。"
+
+msgid "user.usage_limit_GB"
+msgstr "⌛️ 使用限制 (GB)"
+
+msgid "user.user_links"
+msgstr "用户链接"
+
+msgid "vpn.notallowed"
+msgstr ""
+"请不要使用 VPN 访问此页面。您需要从国家/地区 %(expected_country)s 访问，但您当前正在从 %(your_country)s "
+"访问。"
+
+msgid "weekly"
+msgstr "📅每周"
+
+msgid "worker"
+msgstr "✴️ Cloudflare Worker"

@@ -1,0 +1,222 @@
+{% set OnProxyIssue='DIRECT' if typ =="lite" else 'REJECT' %}
+{% set OnIranSites='PROXY' if typ =="all" else 'DIRECT' %}
+{% set OnNotFilteredSites='DIRECT' if typ =="lite" else 'PROXY' %}
+
+mixed-port: 7890
+allow-lan: false
+log-level: info
+secret: 
+external-controller: 127.0.0.1:9090
+# ipv6: false
+ipv6: true
+{% if meta_or_normal=='meta' %}
+#global-client-fingerprint: {{hconfigs[ConfigEnum.utls]}}
+{% endif %}
+mode: rule
+dns:
+  enable: true
+  use-hosts: true
+  # ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  listen: 127.0.0.1:6868
+{%  if meta_or_normal=='meta' %}
+  prefer-h3: true #Enable DoH support for HTTP/3,
+{%  endif %}
+  fake-ip-filter:
+     - "{{domain}}"
+     - "{{hconfigs[ConfigEnum.telegram_fakedomain]}}"
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+    - 1.0.0.1
+  nameserver:
+#    - https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/dns/dns-query
+{% if meta_or_normal=='meta' %}
+    - https://8.8.8.8/dns-query#h3=true
+    - https://1.1.1.1/dns-query#PROXY
+    - https://8.8.8.8/dns-query#PROXY
+    - https://1.0.0.1/dns-query#PROXY
+    #- https://8.8.8.8/dns-query#PROXY&h3=true
+    
+{% endif %}
+    - 8.8.8.8
+    - 1.1.1.1
+profile:
+  # Storing select records
+  store-selected: true
+
+proxy-groups:
+  - name: PROXY
+    proxies:
+      - automatic
+      - sequential 
+      {{link_maker.clash.get_clash_config_names(meta_or_normal,domains)|indent(6)}}
+      
+    # use:
+    #   %for phttp in hconfigs[ConfigEnum.http_ports].split(',')
+    #   - all_proxies_{{phttp}}
+    #   %endfor
+    #   %for ptls in hconfigs[ConfigEnum.tls_ports].split(',')
+    #   - all_proxies_{{ptls}}
+    #   %endfor
+    type: select
+
+
+  
+
+  
+
+
+
+  - name: automatic
+    type: fallback
+    url: "http://cp.cloudflare.com"
+    interval: 300
+    proxies:
+        # - "load-balance"
+        - auto
+        - sequential
+        - {{OnProxyIssue}}
+    lazy: true
+
+
+
+
+  - name: sequential
+    type: fallback
+    url: "http://cp.cloudflare.com"
+    interval: 300
+    proxies:
+      {{link_maker.clash.get_clash_config_names(meta_or_normal,domains)|indent(6)}}
+    # use:
+    #   %for phttp in hconfigs[ConfigEnum.http_ports].split(',')
+    #   - all_proxies_{{phttp}}
+    #   %endfor
+    #   %for ptls in hconfigs[ConfigEnum.tls_ports].split(',')
+    #   - all_proxies_{{ptls}}
+    #   %endfor
+
+  - name: auto
+    proxies:
+      {{link_maker.clash.get_clash_config_names(meta_or_normal,domains)|indent(6)}}
+    # use:
+    #   %for phttp in hconfigs[ConfigEnum.http_ports].split(',')
+    #   - all_proxies_{{phttp}}
+    #   %endfor
+    #   %for ptls in hconfigs[ConfigEnum.tls_ports].split(',')
+    #   - all_proxies_{{ptls}}
+    #   %endfor
+
+    type: url-test
+    url: http://cp.cloudflare.com
+    interval: 300
+    tolerance: 150
+    lazy: true
+
+
+     
+{{link_maker.clash.get_all_clash_configs(meta_or_normal,domains)}}
+
+# proxy-providers:
+#   %for t in (['http','tls'] if hconfigs[ConfigEnum.http_proxy_enable] else ['tls'])
+#   %for port in hconfigs[ConfigEnum.http_ports if t=='http' else ConfigEnum.tls_ports].split(',')
+#   %set phttp=port if t=='http' else None
+#   %set ptls=port if t=='tls' else None
+#   all_proxies_{{port}}:
+#     type: http
+#     url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/{{(user.uuid)}}/clash/{{meta_or_normal}}/proxies.yml?mode={{mode}}&ptls={{ptls}}&phttp={{phttp}}&{{hash}}"
+#     # path: {{domain}}/{{(user.uuid)}}-{{meta_or_normal}}-{{phttp}}-{{ptls}}-proxies{{hash}}.yaml
+#     path: {{domain}}/{{phttp}}-{{ptls}}-{{hash}}.yaml
+#     health-check:
+#       enable: true
+#       interval: 600
+#       url: http://www.gstatic.com/generate_204    
+#   %endfor
+#   %endfor
+rule-providers:
+{% if hconfig(ConfigEnum.country) in ["ir","zh","ru"] %}
+  geoip_{{hconfig(ConfigEnum.country)}}:
+    type: http
+    behavior: classical
+    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geoip/classical/{{hconfig(ConfigEnum.country)|replace('zh', 'cn')}}.yaml"
+    path: ./geoip/{{hconfig(ConfigEnum.country)}}.yaml
+    interval: 432000
+    
+{% endif %}
+{% if hconfig(ConfigEnum.country)=="zh" %}
+  geosite_cn:
+    type: http
+    behavior: classical
+    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo-lite/geosite/classical/cn.yaml"
+    path: ./geosite/zh.yaml
+    interval: 86400
+    
+{% endif %}
+{% if hconfig(ConfigEnum.country) in ["ir","ru"] %}
+  geosite_{{hconfig(ConfigEnum.country)}}:
+    type: http
+    behavior: classical
+    url: "https://github.com/MetaCubeX/meta-rules-dat/raw/meta/geo/geosite/classical/category-{{hconfig(ConfigEnum.country)}}.yaml"
+    path: ./geosite/{{hconfig(ConfigEnum.country)}}.yaml
+    interval: 86400
+    
+{% endif %}
+  blocked:
+    type: http
+    behavior: classical
+    url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/clash/rules/blocked-sites.yml"
+    path: ./ruleset/blocked.yaml
+    interval: 432000
+
+  tmpblocked:
+    type: http
+    behavior: classical
+    url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/clash/rules/tmp-blocked-sites.yml"
+    path: ./ruleset/tmpblocked.yaml
+    interval: 432000
+
+  open:
+    type: http
+    behavior: classical
+    url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/clash/rules/open-sites.yml"
+    path: ./ruleset/open.yaml
+    interval: 432000    
+
+  # ads:
+  #   type: http
+  #   behavior: classical
+  #   url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/clash/rules/ads-sites.yml"
+  #   path: ./ruleset/ads.yaml
+  #   interval: 432000   
+
+rules:
+  - DOMAIN,{{hconfigs[ConfigEnum.telegram_fakedomain]}},DIRECT
+  # - DOMAIN,{{domain}},DIRECT
+  # - DOMAIN,{{direct_host}},DIRECT
+  # - IP-CIDR,{{external_ip}}/32,DIRECT
+  - IP-CIDR,10.10.34.0/24,PROXY
+  - RULE-SET,tmpblocked,PROXY
+  - RULE-SET,blocked,PROXY
+  # - IP-CIDR,10.10.34.0/24,{{OnProxyIssue}}
+  # - RULE-SET,tmpblocked,{{OnProxyIssue}}
+  # - RULE-SET,blocked,{{OnProxyIssue}}
+{% if hconfig(ConfigEnum.country) in ["ir","zh","ru"] %}
+  - RULE-SET,geoip_{{hconfig(ConfigEnum.country)|replace('zh', 'cn')}},DIRECT
+  - RULE-SET,geosite_{{hconfig(ConfigEnum.country)|replace('zh', 'cn')}},DIRECT
+{% endif %}
+{% if hconfig(ConfigEnum.country)=="ir" %}
+  - RULE-SET,open,{{OnIranSites}}
+{% endif %}
+  # - RULE-SET,ads,REJECT
+  - MATCH,{{OnNotFilteredSites}}
+
+
+tun:
+  enable: true
+  stack: system # or gvisor
+  dns-hijack:
+    - any:53
+  auto-redir: true
+  auto-route: true
+  auto-detect-interface: true

@@ -1,0 +1,3110 @@
+# Russian translations for Hiddify Panel.
+# Copyright (C) 2024 Hiddify
+# This file is distributed under the same license as the Hiddify Panel project.
+#
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+
+msgid ""
+" Search\n"
+"            Settings"
+msgstr ""
+" Поиск\n"
+"Настройки"
+
+msgid "%(count)s records were successfully deleted."
+msgstr ""
+
+msgid "%(count)s records were successfully disabled."
+msgstr "%(count)s записей были успешно отключены."
+
+msgid "%(count)s records were successfully enabled."
+msgstr "%(count)s записей были успешно включены."
+
+msgid "%(count)s records were successfully reset days."
+msgstr ""
+
+msgid "%(count)s records were successfully reset usage."
+msgstr ""
+
+msgid "%(expire_days)s days"
+msgstr "%(expire_days)s дней"
+
+msgid "%(placeholder)s"
+msgstr "%(placeholder)s"
+
+msgid "0 - Last day"
+msgstr "Последний день"
+
+msgid "<a href=\"%(user_link)s\"> %(user)s</a>"
+msgstr ""
+
+msgid "Access Denied!"
+msgstr "Доступ запрещен"
+
+msgid "Actions"
+msgstr "Действия"
+
+msgid "Active"
+msgstr "Активный"
+
+msgid "Active Users"
+msgstr "Активные пользователи"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Add some text that is only visible to super_admin."
+msgstr "Добавьте текст, который будет виден только суперадминистратору"
+
+msgid "Add some text that is only visible to you."
+msgstr "Вы можете добавить текст, который будет виден только вам."
+
+msgid "Added by"
+msgstr "Добавлено"
+
+msgid "Admin Links"
+msgstr ""
+
+msgid "Admins"
+msgstr "Администраторы"
+
+msgid "Alias"
+msgstr "Псевдоним"
+
+msgid "All"
+msgstr "Все"
+
+msgid "All Users"
+msgstr "Все пользователи"
+
+msgid "Apply"
+msgstr "Применить"
+
+msgid "Are you sure you want to delete \\'%(name)s\\' recursively?"
+msgstr "Вы уверены что хотите рекурсивно удалить \\'%(name)s\\'?"
+
+msgid "Are you sure you want to delete \\'%(name)s\\'?"
+msgstr "Вы уверены что хотите удалить \\'%(name)s\\'?"
+
+msgid "Are you sure you want to delete this record?"
+msgstr "Вы уверены что хотите удалить эту запись?"
+
+msgid "Are you sure you want to do this action?"
+msgstr "Вы уверены, что хотите выполнить это действие?"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Backup"
+msgstr "Резервное копирование"
+
+msgid "Beta"
+msgstr "☑️ Бета"
+
+msgid "Bridge Servers"
+msgstr "➖ Bridge серверы"
+
+msgid "Bug"
+msgstr "Баги/Предложения"
+
+msgid "CPU %(cores)s Cores"
+msgstr "CPU %(cores)s Ядро"
+
+msgid "Can add sub admin"
+msgstr "👥 Может добавлять администраторов"
+
+msgid "Change"
+msgstr ""
+
+msgid "Check again"
+msgstr "Проверить снова"
+
+msgid "Childs"
+msgstr "Дочерние"
+
+msgid "China"
+msgstr "🇨🇳 Китай"
+
+msgid "Click here to see the complete log"
+msgstr "Нажмите здесь, чтобы просмотреть весь журнал"
+
+msgid "Click to Import"
+msgstr "Импортировать"
+
+msgid "Click to Start Anti-Filter."
+msgstr "<i class='fa-solid fa-play'></i> Нажмите, чтобы настроить Анти-фильтр"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Commercial use"
+msgstr "Коммерческое использование"
+
+msgid "Config file is incorrect"
+msgstr "Конфигурационный файл неверен"
+
+msgid "Copy Link"
+msgstr "Копировать ссылку"
+
+msgid "Couldn't find your ip addresses"
+msgstr "Не удалось найти ваши IP-адреса"
+
+msgid "Count:"
+msgstr "Количество:"
+
+msgid "Create"
+msgstr "Создать"
+
+msgid "Create Directory"
+msgstr "Создать директорию"
+
+msgid "Create New Record"
+msgstr "Создать новую запись"
+
+msgid "Create Package"
+msgstr "Создать пакет"
+
+msgid "Current Domain"
+msgstr "Текущий Домен"
+
+msgid ""
+"Dear {}\n"
+"\n"
+"Your hiddify information is\n"
+"UUID: {}\n"
+"Last online date: {}\n"
+"Expire time: {}\n"
+"Usage class: {}\n"
+msgstr ""
+"Дорогой {}\n"
+"\n"
+"Ваша информация Hiddify\n"
+"UUID: {}\n"
+"Был в сети: {}\n"
+"Истекает : {}\n"
+"Класс использования: {}"
+
+msgid "Delete?"
+msgstr "Удалить?"
+
+msgid "Develop"
+msgstr "⚠️ Разработка"
+
+msgid "Direct"
+msgstr "➖ Прямые proxy"
+
+msgid ""
+"Direct mode means you want to use your server directly (for usual use), CDN "
+"means that you use your server on behind of a CDN provider."
+msgstr ""
+"➡️ <b>Direct:</b> Выберите этот режим, если вы настраиваете свой домен исключительно для вашего DNS-провайдера в режиме только для DNS. (Режим CDN или прокси отключен) <br>\n"
+"🔙 <b>Старый режим Direct:</b> Этот режим аналогичен режиму Direct, но не использует gRPC для связи. Выберите «Старый режим», если вы предпочитаете настроить свой домен у своего DNS-провайдера в режиме «только DNS» без использования gRPC.\n"
+"<br>\n"
+"🔀 <b>CDN:</b> выберите этот режим, если вы используете провайдера CDN для домена вашего сервера. (Режим прокси включен)<br>\n"
+"☑️ <b>Автоматический выбор IP-адреса CDN:</b> Этот режим работает аналогично режиму CDN, но с автоматическим назначением IP-адреса на основе IP-адреса, предоставленного <a href='https://ircf.space' target='_blank' >ircf.space</a>. В режиме Auto CDN IP IP-адрес определяется из домена, а в режиме CDN возвращается домен.<br>\n"
+"♾️ <b>Relay:</b> выберите этот режим, если вы используете один или несколько промежуточных серверов. <a href='https://github.com/hiddify/hiddify-config/discussions/129' target='_blank'>Подробнее</a>\n"
+"<br>\n"
+"✴️ <b>Cloudflare Worker:</b> Этот режим позволяет автоматически создавать процессов для вашего домена в Cloudflare. Упростите настройку  и управление ими, зарегистрировав этот домен, поскольку необходимые шаги для регистрации процессов выполняются автоматически в Cloudflare.\n"
+"<br>\n"
+"🔂 <b>Reality:</b> используйте протокол Reality для создания нескольких доменов.\n"
+"<br>\n"
+"🆎 <b>Поддельный сайт:</b> выберите этот режим, если вы хотите использовать поддельный домен (например, Soft98.ir) для обхода прокси-сервера белого списка SNI. (Не рекомендуется)\n"
+"<br>"
+
+msgid "Disable"
+msgstr "Отключить"
+
+msgid "Disk"
+msgstr "Жесткий диск"
+
+msgid "Domain"
+msgstr "Домен"
+
+msgid ""
+"Domain (%(domain)s)-> IP=%(domain_ip)s is not matched with your "
+"ip=%(server_ip)s which is required in direct mode"
+msgstr ""
+"Домен (%(domain)s)-> IP = %(domain_ip)s не совпадает с вашим IP = "
+"%(server_ip)s . это требуется в режиме Direct"
+
+msgid ""
+"Domain IP=%(domain_ip)s is not matched with your ip=%(server_ip)s which is "
+"required in direct mode"
+msgstr ""
+"IP=%(domain_ip)s Домена не совпадает с Вашим IP Сервера, который необходим "
+"для \"Прямого Режима\""
+
+msgid "Domain can not be resolved! there is a problem in your domain"
+msgstr ""
+"Не возможно определить IP адрес для домена! В вашем домене возникла "
+"проблема. Пожалуйста, проверьте настройки."
+
+msgid "Domain cannot be resolved! Please check DNS settings"
+msgstr ""
+
+msgid "Domain is not REALITY friendly!"
+msgstr "Домен не подходит для использования с REALITY!"
+
+msgid "Domain?"
+msgstr "Домен?"
+
+msgid "Donation.description"
+msgstr ""
+"✳️ Нам нужна ваша помощь в разработке нашего проекта!\n"
+"    <br>\n"
+"    Если вы разработчик или создатель контента, свяжитесь с нами по адресу <a href='mailto:info@hiddify.com'>info@hiddify.com</a>\n"
+"    <br><br>\n"
+"    \n"
+"    ℹ️ Также нам нужна финансовая помощь для дальнейшего развития этой панели и нашего сервиса (мы некоммерческая организация).\n"
+"    <br>\n"
+"    <h5>Способы оплаты:</h5>\n"
+"     <ul>\n"
+"    <li> <div class='btn-group'>\n"
+"        <a role='button' data-copy='UQAZzGDsc_1pG9zU_894p3fq9oKYU621ceU9WXGSxK1xcUYm' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+"    <a data-copy='UQAZzGDsc_1pG9zU_894p3fq9oKYU621ceU9WXGSxK1xcUYm' role='button' class='btn btn-info share-link'>TON</a> </div></li>\n"
+"    \n"
+"    <li> <div class='btn-group'>\n"
+"        <a role='button' data-copy='ltc1qwyd2hdn5wc04fkvp2mj7glayy5galxfm3luftg' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+"    <a data-copy='ltc1qwyd2hdn5wc04fkvp2mj7glayy5galxfm3luftg' role='button' class='btn btn-info share-link'>Litecoin</a> </div></li>\n"
+"    \n"
+"    <li> <div class='btn-group'>\n"
+"        <a role='button' data-copy='bc1quepmxl4pmfvy5sdrnmd4sxgnn83xd70lu30gkx' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+"    <a data-copy='bc1quepmxl4pmfvy5sdrnmd4sxgnn83xd70lu30gkx' role='button' class='btn btn-info share-link'>Bitcoin</a> </div></li>\n"
+"    \n"
+"    <li> <div class='btn-group'>\n"
+"        <a role='button' data-copy='TMfrMgzY4DrjhyZh5s67YvCyrcHvJAkXjb' class='btn btn-secondary copy-link'><i class='fa-regular fa-copy'></i></a>    \n"
+"    <a data-copy='TMfrMgzY4DrjhyZh5s67YvCyrcHvJAkXjb' role='button' class='btn btn-info share-link'>Tron</a> </div></li>\n"
+"    </ul>\n"
+"    \n"
+"    <br>\n"
+"    \n"
+"    Другая помощь:\n"
+"    <ul>\n"
+"    <li>👥 Поделиться Hiddify Manager с друзьями</li>\n"
+"    <li>📝Python Developer</li>\n"
+"    <li>📝Swift Developer</li>\n"
+"    <li>📝Flutter Developer</li>\n"
+"    <li>📝Go Developer</li>\n"
+"    <li>🖥Content Providers</li>\n"
+"    </ul>\n"
+"   Свяжитесь с нами <a href='mailto:info@hiddify.com'>info@hiddify.com</a>."
+
+msgid "Donation.title"
+msgstr "Пожертвование"
+
+msgid "Download App"
+msgstr "<i class='fa-solid fa-download'></i> Загрузить приложение"
+
+msgid "Edit"
+msgstr "Изменить"
+
+msgid "Edit Proxy Names"
+msgstr "✏️ Изменить прокси"
+
+msgid "Enable"
+msgstr "❇️ Включить"
+
+msgid "Error in auto cdn format"
+msgstr "⚠️ Ошибка в формате Auto CDN"
+
+msgid "Error! auto cdn ip can not be find, please contact admin."
+msgstr ""
+"Ошибка в IP-адресе Auto CDN! Невозможно найти, обратитесь к администратору"
+
+msgid "Example Domains"
+msgstr "Тестируйте и предложите домеy"
+
+msgid "Expired Users"
+msgstr "Пользователи с истекшим сроком действия"
+
+msgid "Export"
+msgstr "Экспортировать"
+
+msgid "Fake"
+msgstr "➖ Фейковый сайт"
+
+msgid "Filter"
+msgstr "Фильтровать"
+
+msgid "Finished"
+msgstr "Законченный..."
+
+msgid "From Last Restart"
+msgstr "С последнего перезапуска"
+
+msgid ""
+"From when the user package will be started? Empty for start from first "
+"connection"
+msgstr ""
+"Укажите дату начала действия пакета. Оставьте пустым, чтобы начать с первого"
+" подключения."
+
+msgid "Hiddify"
+msgstr "Hiddify"
+
+msgid "Hiddify Android"
+msgstr "Hiddify Android"
+
+msgid "HiddifyClash"
+msgstr "HiddifyClash"
+
+msgid "HiddifyN intro"
+msgstr ""
+"Пожалуйста, установите HiddifyN из %(dl_link)s.\n"
+"Затем нажмите на ссылку ниже. Она сделает все автоматически\n"
+"<br />"
+
+msgid "HiddifyNG"
+msgstr "HiddifyNG <span class='badge badge-success'>Рекомендуется</span>"
+
+msgid "HiddifyNG intro"
+msgstr ""
+"📌 Установите HiddifyNG по любой из этих ссылок:\n"
+"<br />\n"
+" %(dl_link)s %(play_link)s\n"
+"<br />\n"
+"Затем нажмите ссылку ниже и откройте ее в HiddifyNG\n"
+"<br />"
+
+msgid "HiddigyN"
+msgstr "Рекомендуется<span class='badge Badge-success'>HiddifyN</span>"
+
+msgid "Home Link"
+msgstr ""
+
+msgid "Hover the user to see the reason"
+msgstr "Наведите курсор на пользователя, чтобы увидеть причину"
+
+msgid "How many days this package should be available?"
+msgstr "На сколько дней рассчитан этот пакет?"
+
+msgid "How many?"
+msgstr "Сколько?"
+
+msgid ""
+"If monthly is enabled, the usage will be reset after 30 days from this date."
+msgstr ""
+"Если включена ежемесячная опция, когда это число достигнет 30, счетчики "
+"использования будут сброшенны (для еженедельного и ежедневного это число "
+"равно 7 и 1)"
+
+msgid ""
+"If the application do not open automatically, please click <a class='btn btn-primary copy-link'\n"
+"                    href='%(sub)s'>this universal link</a> to copy and paste it on\n"
+"                your application, or:"
+msgstr ""
+"Если приложение не открывается автоматически, нажмите <a class='btn btn-primary copy-link'\n"
+"                    href='%(sub)s'>универсальную ссылку</a>, чтобы скопировать и вставить ее в ваше приложение:"
+
+msgid "Import"
+msgstr "Импортировать в приложение"
+
+msgid "Import in"
+msgstr "Импортировать"
+
+msgid "In 5 minutes"
+msgstr "Через 5 минут"
+
+msgid ""
+"In CDN mode, Domain IP=%(domain_ip)s should be different to your "
+"ip=%(server_ip)s"
+msgstr ""
+"В CDN Режиме, IP адрес Домена должен отличаться от IP адреса Вашего Сервера"
+
+msgid "Incorrect Password"
+msgstr "⚠️ Неверный пароль."
+
+msgid "Install"
+msgstr "Установить"
+
+msgid "Install Hiddify Application"
+msgstr "Установка панели Hidify"
+
+msgid "Invalid IP or domain"
+msgstr "Неверный IP или Домен"
+
+msgid "Invalid REALITY hostnames"
+msgstr "Неверные имена хостов REALITY"
+
+msgid "Invalid admin link"
+msgstr "Неверная ссылка администратора"
+
+msgid "Iran"
+msgstr "🇮🇷 Иран"
+
+msgid ""
+"It seems that you are using default domain (%(domain)s) which is not "
+"recommended."
+msgstr ""
+"Похоже, вы используете домен по умолчанию (%(domain)s), что не "
+"рекомендуется. Пожалуйста, измените или удалите его из раздела доменов."
+
+msgid "It will override the root admin to the current user"
+msgstr ""
+"Он заменит администратора-владельца файла резервной копии на текущего "
+"администратора."
+
+msgid ""
+"Join our Hiddify Telegram channel to get the latest updates on Hiddify."
+msgstr ""
+"Присоединяйтесь к нашему каналу Hiddify в Telegram, чтобы получать последние"
+" обновления Hiddify."
+
+msgid "Last Online"
+msgstr "Последнее соединение"
+
+msgid "Link is changed!"
+msgstr "ℹ️Ссылка изменена!"
+
+msgid "Linux"
+msgstr "Linux ОС"
+
+msgid "Max Active Users"
+msgstr "Максимальное количество активных пользователей"
+
+msgid "Max IPs"
+msgstr "Макс. IP-адресов"
+
+msgid "Max Users"
+msgstr "Максимальное количество пользователей"
+
+msgid "Mode"
+msgstr "Режим"
+
+msgid "Month Usage"
+msgstr "Ежемесячно"
+
+msgid "More Applications"
+msgstr "Больше приложений"
+
+msgid "Network"
+msgstr "Сеть"
+
+msgid "New"
+msgstr "Новый"
+
+msgid "No children!"
+msgstr "Нет дочерних"
+
+msgid "Not Secure"
+msgstr ""
+
+msgid "Note"
+msgstr "📝 Примечание"
+
+msgid "Offline more than 1 day"
+msgstr "Оффлайн более 1 дня"
+
+msgid "Offline more than 1 hour"
+msgstr "Оффлайн более 1 часа"
+
+msgid "Offline more than 1 week"
+msgstr "Офлайн более 1 недели"
+
+msgid "Ok"
+msgstr "Хорошо"
+
+msgid "Online"
+msgstr ""
+
+msgid "Online Users"
+msgstr "Пользователей в сети"
+
+msgid "Only Blocked and Local websites"
+msgstr "☑️ Только заблокированные и локальные сайты"
+
+msgid "Only for sublink?"
+msgstr "🌍 Используйте только для ссылки на подпискy"
+
+msgid "Oops! Something went wrong."
+msgstr "Упс! что-то пошло не так"
+
+msgid "Open in Application"
+msgstr "Открыть в приложении"
+
+msgid "Others"
+msgstr "🇺🇳 Другие"
+
+msgid "Override Root Admin"
+msgstr "🔁 Переопределение администратора"
+
+msgid "Owner can not be deleted!"
+msgstr "Владелец не может быть удалён!"
+
+msgid "Package Days"
+msgstr "📆 Дни пакета"
+
+msgid "Package ended!"
+msgstr "Пакет закончился"
+
+msgid "Package not started yet."
+msgstr "Пакет еще не запущен"
+
+msgid "Panel Link"
+msgstr "➖ Ссылка на панель управления"
+
+msgid "Parent Panel"
+msgstr "Главная панель"
+
+msgid "Please Wait"
+msgstr "Пожалуйста, подождите..."
+
+msgid "Please click on %(install)s to save the user page."
+msgstr "Нажмите %(install)s, чтобы сохранить страницу пользователя"
+
+msgid ""
+"Please connect your telegram account to the panel to be informed about "
+"latest news."
+msgstr ""
+"Пожалуйста, подключите свой аккаунт Telegram к панели, чтобы быть в курсе "
+"последних новостей"
+
+msgid "Please create an issue on Github."
+msgstr "Пожалуйста создайте проблему на Github."
+
+msgid "Please select at least one file."
+msgstr "Выберите по крайней мере один файл."
+
+msgid "Please select at least one record."
+msgstr "Выберите по крайней мере одну запись."
+
+msgid "Please select at least one user"
+msgstr "Пожалуйста, выберите хотя бы одного пользователя"
+
+msgid "Please select one of the following applications:"
+msgstr ""
+"📍 Пожалуйста, выберите одно из следующих приложений:\n"
+"<br />\n"
+"<br />"
+
+msgid "Please type your message to send to the telegram:"
+msgstr "✏️ Пожалуйста, напишите свое сообщение для отправки в Telegram:"
+
+msgid ""
+"Please understand that parent panel is under test and the plan and the "
+"condition of use maybe change at anytime."
+msgstr ""
+"Обратите внимание, что родительская панель находится на стадии тестирования,"
+" поэтому план и условия использования могут измениться в любое время"
+
+msgid "Please wait "
+msgstr "Пожалуйста, подождите"
+
+msgid "Port 80 and 443 can not be selected"
+msgstr ""
+
+msgid "Port is already used! in"
+msgstr "Порт уже используется в:"
+
+msgid "Premium Description"
+msgstr ""
+"Панель Hiddify предназначена для некоммерческого использования. Но если вы используете эту панель в коммерческих целях, пожалуйста, помогите проекту развиваться, сделав пожертвование. <br/>\n"
+"В обмен на вашу финансовую поддержку мы также предоставляем специальные возможности для вашего коммерческого продукта.\n"
+"<br/>\n"
+"<br/>\n"
+"Такой как:\n"
+"<ul><li>\n"
+"<li>Возможность синхронизации с Cloudflare: то есть, добавив домен в панели, соответствующие настройки также можно сделать в Cloudflare.</li>\n"
+"<li>Возможность отображения вашего бренда на панели</li>\n"
+"<li>Возможность использования центральной панели для управления более чем 1 сервером всего в одной панели, поэтому больше не нужно регистрировать пользователей на разных серверах, а их объем будет собираться на всех серверах.\n"
+"</li>\n"
+"<ли>\n"
+"Возможность использования Telegram-бота\n"
+"</li>\n"
+"<ли>\n"
+"Возможность изменения имен прокси\n"
+"</li>\n"
+"</ul>\n"
+"\n"
+"Пожалуйста, свяжитесь с <a href='tg://resolve?domain=HiddifyCommercial'>@HiddifyCommercial</a> после пожертвования.\n"
+"Отправьте сообщение, чтобы получить специальную версию для бизнес-пользователей."
+
+msgid "ProxyPath is already used! use different proxy path"
+msgstr "ProxyPath уже используется! используйте другой путь прокси"
+
+msgid "QR code"
+msgstr "🧾 QR-код"
+
+msgid "QRCode"
+msgstr "<i class='fa-solid fa-qrcode'></i> QR-код"
+
+msgid "RAM"
+msgstr "RAM"
+
+msgid "REALITY Fallback domain is not compaitble with server names!"
+msgstr "REALITY Fallback Domain несовместим с именами серверов!"
+
+msgid "REALITY Fallback domain is not compatible with server names!"
+msgstr ""
+
+msgid "Release"
+msgstr "✅ Релиз"
+
+msgid "Remaining about %(relative)s, exactly %(days)s days"
+msgstr "Осталось около %(relative)s, ровно %(days)s дней"
+
+msgid "Remote nodes are not supported yet!"
+msgstr "Удаленные узлы пока не поддерживаются!"
+
+msgid "Rename File"
+msgstr "Переименовать файла"
+
+msgid "Reset Filters"
+msgstr "Сброс Фильтров"
+
+msgid "Reset Proxies"
+msgstr "Сбросить прокси"
+
+msgid "Reset Usage Time:"
+msgstr "Время сброса использования трафика:"
+
+msgid "Reset every month"
+msgstr "Ежемесячно"
+
+msgid "Reset package days"
+msgstr "📆 Сбросить пакет дней"
+
+msgid "Reset package usage"
+msgstr "⏳ Сбросить использование пакета"
+
+msgid "Restore"
+msgstr "♻️ Восстановление"
+
+msgid "Restore Domain"
+msgstr "🌏 Восстановить домен"
+
+msgid "Restore Domain description"
+msgstr "Выберите этот вариант, чтобы восстановить ваши домены"
+
+msgid "Restore File"
+msgstr "Восстановить файл"
+
+msgid "Restore File Description"
+msgstr "Выберите загруженный файл бекапа."
+
+msgid "Restore Settings"
+msgstr "⚙️ Восстановить настройки"
+
+msgid "Restore Settings description"
+msgstr "Восстановить все описания настроек"
+
+msgid "Restore Users"
+msgstr "👥 Восстановление пользователей"
+
+msgid "Restore Users description"
+msgstr "Выберите этот вариант, чтобы восстановить всех пользователей"
+
+msgid "Root"
+msgstr "Root"
+
+msgid "Russia"
+msgstr "Россия"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Save & Add More"
+msgstr "Сохранить и добавить еще"
+
+msgid "Save Link"
+msgstr "Сохранить ссылку"
+
+msgid "Select all records"
+msgstr "Выбрать все записи"
+
+msgid "Select record"
+msgstr "Выберите запись"
+
+msgid "Seleted Users"
+msgstr "Выбранные пользователи"
+
+msgid "Send Message to User's Telegram"
+msgstr "📣 Отправить сообщение в Telegram пользователя"
+
+msgid "Sending"
+msgstr "Отправка..."
+
+msgid "Should be a valid domain"
+msgstr "Должен быть действительный Домен"
+
+msgid "Should be a valid uuid"
+msgstr "Должен быть действительный  UUID"
+
+msgid "Show Domains"
+msgstr "Показать конфигурации доменов"
+
+msgid "Simplifies the process of employing the link elsewhere."
+msgstr "Упрощает процесс использования ссылки в других местах"
+
+msgid "SingBox"
+msgstr "📦 SingBox"
+
+msgid "Sort by %(name)s"
+msgstr "Сортировать по %(name)s"
+
+msgid "Specifying CDN IP is only valid for CDN mode"
+msgstr ""
+
+msgid "Start Date"
+msgstr "Дата начала"
+
+msgid "Started %(days)s days ago"
+msgstr "Началось %(days)s дней назад"
+
+msgid "Started from %(relative)s"
+msgstr "Началось с %(relative)s"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "SubLink"
+msgstr ""
+
+msgid "Submit"
+msgstr "Подтвердить"
+
+msgid "Success"
+msgstr "Успешно"
+
+msgid ""
+"Success! Please wait around 5 minutes to make sure everything is updated."
+msgstr ""
+"✔️Операция завершена успешно! Пожалуйста, подождите около 5 минут, чтобы "
+"убедиться, что все обновлено."
+
+msgid "Telegram Bot"
+msgstr "Telegram-бот"
+
+msgid "Telegram Bot Link"
+msgstr ""
+
+msgid "Temporary Short Link"
+msgstr "⏱️ Временная ссылка"
+
+msgid "The message has been sent."
+msgstr "Сообщение отправлено"
+
+msgid "The message was not sent to"
+msgstr "Сообщение не было отправлено "
+
+msgid "The name shown in the configs for this domain."
+msgstr "Имя, которое будет отображаться в конфигурациях этого домена."
+
+msgid ""
+"This can be used for giving your users a permanent non blockable links."
+msgstr ""
+"Это можно использовать для предоставления вашим пользователям постоянных "
+"неблокируемых ссылок."
+
+msgid "This domain does not exist in the panel!"
+msgstr "Этого домена не существует в панели управления!"
+
+msgid "Today Usage"
+msgstr "Сегодня"
+
+msgid "Too many Connected IPs"
+msgstr "Слишком много подключенных IP-адресов"
+
+msgid "Total Usage"
+msgstr "Общее использование"
+
+msgid "Turn of VPN"
+msgstr "Выключить VPN"
+
+msgid "Unified link for all application."
+msgstr "Единая ссылка для всех приложений"
+
+msgid "Upload File"
+msgstr "Загрузить файл"
+
+msgid "Use HiddifyNext:"
+msgstr "Используйте Hiddify:"
+
+msgid "User activated!"
+msgstr "Пользователь активирован"
+
+msgid "User is inactive"
+msgstr "Пользователь неактивен"
+
+msgid "V2rayNG"
+msgstr ""
+"Альтернатива v2rayNG <button class='btn btn-sm btn-default' onclick='show_video('android-v2rayng')'><i class='fa-solid fa-question'></i> </button>\n"
+"<br />\n"
+"<br />"
+
+msgid "V2rayNG intro"
+msgstr ""
+"Установите v2rayNG по любой из этих ссылок: %(dl_link)s %(play_link)s.\n"
+"Затем скопируйте ссылку ниже и вставьте ее в v2rayNG согласно видеоинструкции <button class='btn btn-sm btn-default' onclick='show_video('android-v2rayng')'><i class='fa-solid fa -вопрос'></i> </button>.\n"
+"<br />"
+
+msgid "View in Telegram"
+msgstr "Посмотреть в Telegram"
+
+msgid "Want to enjoy more with telegram?"
+msgstr "ℹ️ Подключите свой аккаунт к Telegram"
+
+msgid "Welcome %(user)s"
+msgstr "Добро пожаловать %(user)s"
+
+msgid "Why Going to Premium?"
+msgstr "Зачем переходить на Премиум?"
+
+msgid "Will Start in %(days)s days"
+msgstr "Начнется через %(days)s дней"
+
+msgid "Windows"
+msgstr "Windows ПК"
+
+msgid "With selected"
+msgstr "С выбранным"
+
+msgid "Xray"
+msgstr "☢️ XRay"
+
+msgid "Yesterday Usage"
+msgstr "Вчера"
+
+msgid ""
+"You can download a json formated of configurations by clicking <a "
+"href='%(link)s' class='btn btn-primary'>here</a>"
+msgstr ""
+"🔄 Панель Hiddify автоматически создает резервную копию каждые 6 часов. Путь к файлам резервной копии на сервере: ⬇️\n"
+"<br>\n"
+"💿 /opt/hiddify-manager/hiddify-panel/backup/\n"
+"<br>\n"
+"<br>\n"
+"<br>\n"
+"⚠️ Вы можете скачать файл конфигураций в формате JSON, нажав кнопку ниже.\n"
+"<br>\n"
+"<br>\n"
+"<a href='%(link)s' class='btn btn-primary'>Загрузить файл резервной копии</a>"
+
+msgid "You can restore your configs from previously downloaded configs"
+msgstr ""
+"ℹ️ Вы можете восстановить свои конфигурации из ранее скачанного файла "
+"резервной копии."
+
+msgid ""
+"You have too much users! You can have only %(active)s active users and "
+"%(total)s users"
+msgstr ""
+"У вас слишком много пользователей! У вас может быть только %(active) "
+"активных пользователей и %(total) пользователей."
+
+msgid "You have used this domain in: "
+msgstr "Вы уже используете этот домен в:"
+
+msgid ""
+"Your hiddify instance information \n"
+"Domain: {} \n"
+"Usage limit: {} GB\n"
+"Current usage: {} GB\n"
+"Expires at: {} \n"
+"Remaining days: {} \n"
+"\n"
+"\n"
+" Happy using 🎉 🎉 🎉 \n"
+msgstr ""
+"Информация о вашем экземпляре Hiddify\n"
+"Домен: {}\n"
+"Лимит: {} ГБ\n"
+"Использовано: {} ГБ\n"
+"Срок действия истекает: {}\n"
+"Оставшиеся дни: {}\n"
+"\n"
+"\n"
+"Удачи! 🎉 🎉 🎉"
+
+msgid ""
+"[Admin only visible message:] You can change this message from settings"
+msgstr ""
+"[Сообщение, видимое только администратору]: Вы можете изменить это сообщение"
+" в настройках"
+
+msgid "actions"
+msgstr "Операции"
+
+msgid "admin link"
+msgstr "Админ"
+
+msgid "admin.Actions:apply_configs"
+msgstr "Применить конфигурацию"
+
+msgid "admin.action_done_sucess"
+msgstr "✅Действие выполнено успешно. Теперь вы можете покинуть эту страницу"
+
+msgid "admin.actions.apply_configs"
+msgstr "Применить конфигурацию"
+
+msgid "admin.actions.reinstall"
+msgstr "Переустановить"
+
+msgid "admin.actions.reset"
+msgstr "Перезагрузить систему"
+
+msgid "admin.actions.status"
+msgstr "Статус"
+
+msgid "admin.actions.title"
+msgstr "Действия"
+
+msgid "admin.actions.update"
+msgstr "Обновление"
+
+msgid "admin.actions.viewlogs"
+msgstr "Просмотр журналов"
+
+msgid "admin.config.apply_configs"
+msgstr "Применить конфигурацию"
+
+msgid "admin.config.title"
+msgstr "Настройки"
+
+msgid "admin.define_mode"
+msgstr "🥇🥈🥉 Режим администратора"
+
+msgid "admin.incomplete_setup_warning"
+msgstr ""
+"Похоже, вы не до конца настроили систему. <a class='btn btn-success' "
+"href='%(quick_setup)s'>Нажмите здесь</a>, чтобы завершить настройку"
+
+msgid "admin.menu.api"
+msgstr "API"
+
+msgid "admin.menu.config"
+msgstr "Настройки"
+
+msgid "admin.menu.domain"
+msgstr "Домены"
+
+msgid "admin.menu.home"
+msgstr "Панель управления"
+
+msgid "admin.menu.proxy"
+msgstr "Прокси"
+
+msgid "admin.menu.proxy_stats"
+msgstr "Прокси Статус"
+
+msgid "admin.menu.support"
+msgstr "Помощь"
+
+msgid "admin.menu.telegram"
+msgstr "Telegram"
+
+msgid "admin.menu.user"
+msgstr "Пользователи"
+
+msgid "admin.no_user_warning"
+msgstr ""
+"Кажется, вы еще не создали ни одного пользователя. ссылка пользователя по "
+"умолчанию: %(default_link)s"
+
+msgid "admin.proxy.detailed_config"
+msgstr "⚙️ Подробная конфигурация"
+
+msgid "admin.proxy.global_config"
+msgstr "⚙️ Глобальная конфигурация"
+
+msgid "admin.quicksetup.title"
+msgstr "Быстрая установка"
+
+msgid "admin.quicksetup_intro"
+msgstr ""
+"IP-адреса вашего сервера:\n"
+"<дел>\n"
+"IPv4: %(ipv4)s <br> IPv6: %(ipv6)s\n"
+"</div>\n"
+"Направьте ваш домен или субдомен на эти IP адреса, и введите его в поле ниже."
+
+msgid "admin.save_panel_link"
+msgstr ""
+"Обратите внимание, что доступ к вашей панели возможен только по следующей ссылке. пожалуйста, сохраните эту ссылку.\n"
+"<p><a href='%(adminlink)s' class='btn btn-secondary copy-link'><i class='fa-solid fa-copy'></i></a>\n"
+"<a href='%(adminlink)s' class='copy-link' style='word-break: Break-all;'>%(adminlink)s</a></p>"
+
+msgid "admin.waiting_for_update"
+msgstr ""
+"⚠️ Подождите около 5 минут, чтобы убедиться, что все обновлено. в течение "
+"этого времени скопируйте и сохраните ссылки для прокси-серверов:"
+
+msgid "adminuser.force_update_usage"
+msgstr ""
+"ℹ️Информация пользователей обновлеятся каждые 6 минут. Чтобы обновить "
+"сейчас, <a href=\"%(link)s\" class=\"btn btn-info\">Нажмите здесь</a>"
+
+msgid "all"
+msgstr "Все"
+
+msgid "android"
+msgstr "Android"
+
+msgid "app.clash_verge_rev.description"
+msgstr ""
+
+msgid "app.clash_verge_rev.title"
+msgstr ""
+
+msgid "app.cmfa.description"
+msgstr ""
+
+msgid "app.cmfa.title"
+msgstr ""
+
+msgid "app.foxray.description"
+msgstr "Описание фоксрея"
+
+msgid "app.foxray.title"
+msgstr "Фоксрей"
+
+msgid "app.hiddify-clash-android.description"
+msgstr ""
+"Hiddify Clash Android — одно из наших клиентских приложений, которое больше "
+"не обновляется. "
+
+msgid "app.hiddify-clash-android.title"
+msgstr "Hiddify Столкновение"
+
+msgid "app.hiddify-clash-desktop.description"
+msgstr ""
+"Hiddify Clash Desktop — одно из наших клиентских приложений, которое больше "
+"не обновляется. "
+
+msgid "app.hiddify-clash-desktop.title"
+msgstr "Hiddify Столкновение"
+
+msgid "app.hiddify.next.description"
+msgstr "Описание HiddifyApp"
+
+msgid "app.hiddify.next.title"
+msgstr "HiddifyApp"
+
+msgid "app.hiddifyn.description"
+msgstr "Описание HiddifyN"
+
+msgid "app.hiddifyn.title"
+msgstr "HiddifyN"
+
+msgid "app.hiddifyng.description"
+msgstr "Описание HiddifyNG"
+
+msgid "app.hiddifyng.title"
+msgstr "HiddifyNG"
+
+msgid "app.loon.description"
+msgstr "Описание LOON"
+
+msgid "app.loon.title"
+msgstr "Loon"
+
+msgid "app.nekobox.description"
+msgstr " Nekobox — клиенты на базе Singbox. "
+
+msgid "app.nekobox.title"
+msgstr "НекоБокс"
+
+msgid "app.shadowrocket.description"
+msgstr "Описание Теневой Ракеты"
+
+msgid "app.shadowrocket.title"
+msgstr "Shadowrocket"
+
+msgid "app.singbox.description"
+msgstr "Приложение Sing-box — официальное приложение для протокола Sing-box."
+
+msgid "app.singbox.title"
+msgstr "Приложение Sing-box"
+
+msgid "app.stash.description"
+msgstr "Описание Stash "
+
+msgid "app.stash.title"
+msgstr "Stash "
+
+msgid "app.streisand.description"
+msgstr "Описание Streisand"
+
+msgid "app.streisand.title"
+msgstr "Streisand"
+
+msgid "app.v2rayn.title"
+msgstr ""
+
+msgid "app.v2rayng.description"
+msgstr "Описание V2RayNG"
+
+msgid "app.v2rayng.title"
+msgstr "V2RayNG"
+
+msgid "auto"
+msgstr "Авто"
+
+msgid "auto_cdn_ip"
+msgstr "☑️ Автоматический выбор IP-адреса CDN"
+
+msgid "bot.admin_welcome"
+msgstr "Добро пожаловать в админ-бот. Выберите свое действие"
+
+msgid "bot.welcome"
+msgstr ""
+"Ура 🎉 🎉 🎉\n"
+"Добро пожаловать в Hiddify bot\n"
+"Для начала перейдите по ссылке на панели или введите свой UUID пользователя."
+
+msgid "cdn"
+msgstr "🔀 CDN (Cloudflare Proxy, ...)"
+
+msgid "cf-delete.failed"
+msgstr "cf-delete.failed"
+
+msgid "child has been removed!"
+msgstr "Дочерний элемент удален!"
+
+msgid "child.register-failed"
+msgstr "child.register-не удалось"
+
+msgid "child.register-success"
+msgstr "child.register-успех"
+
+msgid "child.sync-failed"
+msgstr "child.sync-не удалось"
+
+msgid "clickable copy"
+msgstr "Ссылка для социальных сетей"
+
+msgid "close"
+msgstr "Закрыть"
+
+msgid "cloudflare.error"
+msgstr "Cloudflare.error"
+
+msgid "config.Domain_already_used"
+msgstr "Домен уже существует. Использовать другой домен"
+
+msgid "config.Invalid_The_pattern_is_number-number"
+msgstr "⚠️ Конфигурация недействительна! Шаблон — это номер-номер ⚠️"
+
+msgid "config.Invalid_brand_link"
+msgstr ""
+"Некорректная ссылка. Поддерживается следующий формат: (https или "
+"http://example.com)"
+
+msgid "config.Invalid_domain"
+msgstr "Ошибка! Неверный домен. Формат домена: www.google.com."
+
+msgid "config.Invalid_it_should_be_a_number_only"
+msgstr "⚠️ Конфигурация недействительна! Это должно быть только число ⚠️"
+
+msgid "config.Invalid_port"
+msgstr ""
+"Неверный порт. это должно быть целое число, разделенное запятыми, например. "
+"2052,2053"
+
+msgid "config.Invalid_proxy_path"
+msgstr "Неверный Proxy Path Это должна быть строка ASCI (a-z A-Z 0-9)."
+
+msgid "config.Invalid_telegram_bot_token"
+msgstr "Неверный токен Telegram bot"
+
+msgid "config.admin.description"
+msgstr ""
+"Раздел предназначен для настройки параметров, связанных с администратором."
+
+msgid "config.admin.label"
+msgstr "Настройки администратора"
+
+msgid "config.admin_lang.description"
+msgstr "Выберите язык для раздела администрирования"
+
+msgid "config.admin_lang.label"
+msgstr "🗺️ Язык панели администратора"
+
+msgid "config.admin_secret.description"
+msgstr ""
+"Admin Secret будет использоваться для доступа к панели администратора."
+
+msgid "config.admin_secret.label"
+msgstr "Admin Secret"
+
+msgid "config.advanced.description"
+msgstr ""
+"В этой части есть некоторые расширенные настройки, которые лучше не менять, "
+"если вы не опытный пользователь.."
+
+msgid "config.advanced.label"
+msgstr "Расширенные настройки"
+
+msgid "config.allow_invalid_sni.description"
+msgstr ""
+"Если вы разрешите неверный SNI, вы можете использовать любой домен, а не "
+"исходный домен, для доступа к прокси (не рекомендуется)."
+
+msgid "config.allow_invalid_sni.label"
+msgstr "🆗 Разрешить неверный SNI"
+
+msgid "config.auto_update.description"
+msgstr "Система автоматически обновится в 3:00 утра при наличии обновлений"
+
+msgid "config.auto_update.label"
+msgstr "🔄 Автоматическое обновление"
+
+msgid "config.block_iran_sites.description"
+msgstr ""
+"Блокируйте иранские сайты, чтобы предотвратить их обнаружение правительством"
+" (Экспериментальный вариант: если возникнет проблема, отключите ее и "
+"сообщите нам.)"
+
+msgid "config.block_iran_sites.label"
+msgstr "⛔️ Блокировать внутренние сайты"
+
+msgid "config.branding.description"
+msgstr "Параметры настройки для страницы пользователя"
+
+msgid "config.branding.label"
+msgstr "Настройки страницы пользователя"
+
+msgid "config.branding_freetext.description"
+msgstr ""
+"Брендинговый текст. текст этого поля будет показан в разделе поддержки на странице пользователя. вы можете использовать HTML-теги\n"
+"<p><br /><a href=\"https://htmleditor.online/full\" target=\"_blank\">HTML Editor</a></p>"
+
+msgid "config.branding_freetext.label"
+msgstr "📢 Текст раздела поддержки"
+
+msgid "config.branding_site.description"
+msgstr ""
+"Ссылка, которая будет отображаться в разделе поддержки на странице пользователя.\n"
+"Вы также можете разместить здесь свой канал Telegram или Telegram PV"
+
+msgid "config.branding_site.label"
+msgstr ""
+"🆔 Ссылка на поддержку (находится как в названии бренда, так и в разделе "
+"поддержки на странице пользователя)"
+
+msgid "config.branding_title.description"
+msgstr ""
+"Введите индивидуальный заголовок, который будет отображаться на странице "
+"пользователя. (перед приветственным текстом пользователя)"
+
+msgid "config.branding_title.label"
+msgstr "👁‍🗨 Заголовок страницы пользователя"
+
+msgid "config.cdn_forced_host.description"
+msgstr ""
+"В этой части вы можете использовать набор определенных доменов или IP-адресов для вашего сервера, которые будут переопределяться в пользовательских ссылках.\n"
+"\n"
+"Если вы используете <a href='https://ircf.space/export.php'>этот шаблон </a>, соответствующий IP-адрес будет выбран в соответствии с оператором пользователя, и если вы укажете диапазон IP-адресов, IP-адрес будет выбран случайным образом из этого диапазона.\n"
+"Используйте <a target='_blank' href='https://ip-format.hiddify.com'>эту ссылку</a>, чтобы установить личные IP-адреса"
+
+msgid "config.cdn_forced_host.label"
+msgstr "🔂 Принудительная настройка для использования следующих IP-адресов"
+
+msgid "config.cloudflare.description"
+msgstr ""
+"Следуйте <a href='https://github.com/hiddify/hiddify-config/wiki/Get-"
+"Cloudflare-API' target='_blank'>инструкции</a> и вставьте ключ API "
+"Cloudflare."
+
+msgid "config.cloudflare.label"
+msgstr "🔑 API Cloudflare"
+
+msgid "config.core_type.description"
+msgstr ""
+"☢️ XRay: хорошее ядро\n"
+"<br>\n"
+"📦 Singbox: разработан SagerNet. Это также хорошее ядро"
+
+msgid "config.core_type.label"
+msgstr "🎛️ Ядро"
+
+msgid "config.country.description"
+msgstr ""
+"Применяются соответствующие настройки для каждой страны в соответствии с "
+"условиями фильтрации этой страны."
+
+msgid "config.country.label"
+msgstr "🌍 Страна"
+
+msgid "config.create_easysetup_link.description"
+msgstr "config.create_easysetup_link.description"
+
+msgid "config.create_easysetup_link.label"
+msgstr "config.create_easysetup_link.label"
+
+msgid "config.db_version.description"
+msgstr "Описание версии базы данных"
+
+msgid "config.db_version.label"
+msgstr "Label версии базы данных"
+
+msgid "config.dbvalues.description"
+msgstr "config.dbvalues.description"
+
+msgid "config.dbvalues.label"
+msgstr "config.dbvalues.label"
+
+msgid "config.decoy_domain.description"
+msgstr ""
+"Поддельный сайт: имитирует сайт, когда кто-то напрямую посещает ваш домен.<br>\n"
+"⚠️ Не используйте финансовые, иранские и известные сайты или сайты с авторизацией, такие как Google, Yahoo, Wikipedia, PayPal.<br>\n"
+"⛔ Обязательно проверьте сайт и убедитесь, что это правильный сайт, иначе вы можете получить предупреждение о фишинге.<br>\n"
+"⛔⛔ Проверьте этот домен еще раз, чтобы не было проблем в будущем"
+
+msgid "config.decoy_domain.label"
+msgstr "📺 Сайт-приманка"
+
+msgid "config.default_useragent_string.description"
+msgstr ""
+
+msgid "config.default_useragent_string.label"
+msgstr ""
+
+msgid "config.dns_server.description"
+msgstr ""
+"✳️ По умолчанию 1.1.1.1 <br>\n"
+"🚧 Блокировать вредоносное ПО 1.1.1.2 <br>\n"
+"🔞 Блокировать порно 1.1.1.3"
+
+msgid "config.dns_server.label"
+msgstr "🖥 DNS-сервер"
+
+msgid "config.domain_fronting.description"
+msgstr ""
+"Это используется для имитации другого веб-сайта вместо вашего в SNI. поэтому GTW не может фильтровать ваш домен\n"
+"<a href='https://github.com/hiddify/hiddify-config/wiki/%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87- %D8%A7%D8%B2-%D8%AF%D8%A7%D9%85%DB%8C%D9%86-%D9%81%D8%B1%D8%A7%D9%86%D8%AA %DB%8C%D9%86%DA%AF'>Руководство</a>. ⚠️CloudFlare не поддерживает фронтирование домена."
+
+msgid "config.domain_fronting.label"
+msgstr "🔒 Включение TLS Domain Fronting"
+
+msgid "config.domain_fronting_domain.description"
+msgstr ""
+"Это используется для имитации другого веб-сайта вместо вашего в SNI. поэтому"
+" GTW не может фильтровать ваш домен"
+
+msgid "config.domain_fronting_domain.label"
+msgstr "ℹ️ Фронтирование домена"
+
+msgid "config.domain_fronting_http_enable.description"
+msgstr ""
+"Включение HTTP Domain Fronting приводит к быстрой блокировке вашего  "
+"основного домена."
+
+msgid "config.domain_fronting_http_enable.label"
+msgstr "Включить фронтирование домена HTTP"
+
+msgid "config.domain_fronting_tls_enable.description"
+msgstr ""
+"В CloudFlare TLS Domain Fronting не поддерживается он будет использовать "
+"порт 443 для подключения к CDN"
+
+msgid "config.domain_fronting_tls_enable.label"
+msgstr "🔒 Включить фронтирование домена TLS"
+
+msgid "config.firewall.description"
+msgstr ""
+"Включение Firewall откроет используемые порты (минимум 22,443,80 и SSH) и "
+"закроет все остальные порты."
+
+msgid "config.firewall.label"
+msgstr "🛡️ Firewall"
+
+msgid "config.first_setup.description"
+msgstr "config.first_setup.description"
+
+msgid "config.first_setup.label"
+msgstr "config.first_setup.label"
+
+msgid "config.general.description"
+msgstr "Это общие настройки системы."
+
+msgid "config.general.label"
+msgstr "Общие настройки"
+
+msgid "config.grpc_enable.description"
+msgstr ""
+"gRPC — это современная высокопроизводительная платформа удаленного вызова "
+"процедур (RPC) с открытым исходным кодом. Его можно использовать в "
+"поддерживаемых CDN."
+
+msgid "config.grpc_enable.label"
+msgstr "➿ Включить gRPC"
+
+msgid "config.h2_enable.description"
+msgstr "Включить протокол HTTP/2"
+
+msgid "config.h2_enable.label"
+msgstr "🔵 h2"
+
+msgid "config.hidden.description"
+msgstr "config.hidden.description"
+
+msgid "config.hidden.label"
+msgstr "config.hidden.label"
+
+msgid "config.hiddifycli_enable.description"
+msgstr "config.hiddifycli_enable.description"
+
+msgid "config.hiddifycli_enable.label"
+msgstr "config.hiddifycli_enable.label"
+
+msgid "config.http.description"
+msgstr "Конфигурации HTTP можно установить в этом разделе"
+
+msgid "config.http.label"
+msgstr "конфигурация HTTP"
+
+msgid "config.http_ports.description"
+msgstr ""
+"Целые числа, разделенные запятыми, обозначающие порты, которые будут "
+"использоваться в качестве незашифрованных соединений (в любом случае будет "
+"использоваться порт 80)."
+
+msgid "config.http_ports.label"
+msgstr "🔎 HTTP-порты"
+
+msgid "config.http_proxy_enable.description"
+msgstr ""
+"Ваши пользователи смогут подключаться к системе через незашифрованный HTTP-"
+"порт. (Не рекомендуется)"
+
+msgid "config.http_proxy_enable.label"
+msgstr "☑️ Разрешить соединение по HTTP"
+
+msgid "config.httpupgrade_enable.description"
+msgstr ""
+"HTTPUpgrade завершает запрос и ответ на обновление HTTP 1.1, прежде чем использовать соединение напрямую. Он похож на WebSocket тем, что создает канал направления, который может пересылаться многими обратными прокси-серверами и CDN, без необходимости решать все проблемы, связанные с самим протоколом WebSocket.\n"
+"⚠️ Недоступно в клиентах на базе Xray. Поддерживаются только клиенты <a href=\"https://app.hiddify.com\" target=\"_blank\">Hiddify</a>, Singbox и V2fly."
+
+msgid "config.httpupgrade_enable.label"
+msgstr "🆙 Включить Метод HTTP Обновления"
+
+msgid "config.hysteria.description"
+msgstr ""
+"Hysteria — это многофункциональный инструмент прокси и ретрансляции, "
+"оптимизированный для нестабильных соединений с потерями (например, "
+"спутниковые сети, перегруженный общедоступный Wi-Fi, подключение к "
+"зарубежным серверам из Китая)"
+
+msgid "config.hysteria.label"
+msgstr "Hysteria"
+
+msgid "config.hysteria_down_mbps.description"
+msgstr "Hysteria Максимальная Скорость Входящей Загрузки"
+
+msgid "config.hysteria_down_mbps.label"
+msgstr "⬇️ Hysteria Входящая Загрузка (mbps)"
+
+msgid "config.hysteria_enable.description"
+msgstr "Включение протокола Hysteria на основе UDP"
+
+msgid "config.hysteria_enable.label"
+msgstr "⚪️ Включить Hysteria"
+
+msgid "config.hysteria_obfs_enable.description"
+msgstr "Включить Hysteria Obfuscation (Salamander)"
+
+msgid "config.hysteria_obfs_enable.label"
+msgstr "🎛 Hysteria OBFS"
+
+msgid "config.hysteria_port.description"
+msgstr "Hysteria UDP-порт например 5678"
+
+msgid "config.hysteria_port.label"
+msgstr "Hysteria Порт"
+
+msgid "config.hysteria_up_mbps.description"
+msgstr "Hysteria Максимальная Скорость Исходящей Загрузки"
+
+msgid "config.hysteria_up_mbps.label"
+msgstr "⬆️ Hysteria Исходящая Загрузка (mbps)"
+
+msgid "config.invalid-pattern-for-warp-sites"
+msgstr "⚠️ Сайт, введенный в Варп, не соответствует указанному шаблону."
+
+msgid "config.invalid_uuid"
+msgstr ""
+"Неверный UUID пользователя. пример: 6098ea35-8cb2-4a08-ba15-2be25bc49cb6"
+
+msgid "config.is_parent.description"
+msgstr "config.is_parent.description"
+
+msgid "config.is_parent.label"
+msgstr "Главная панель"
+
+msgid "config.kcp.description"
+msgstr "В этом разделе можно настроить KCP."
+
+msgid "config.kcp.label"
+msgstr "KCP"
+
+msgid "config.kcp_enable.description"
+msgstr "Это протокол на базе UDP."
+
+msgid "config.kcp_enable.label"
+msgstr "KCP"
+
+msgid "config.kcp_ports.description"
+msgstr ""
+"Целые числа, разделенные запятыми, обозначающие порты, которые будут "
+"использоваться в качестве соединения KCP."
+
+msgid "config.kcp_ports.label"
+msgstr "Порты KCP"
+
+msgid "config.lang.description"
+msgstr ""
+"Выберите язык пользовательского интерфейса, чтобы персонализировать свой "
+"опыт использования пользовательской зоны."
+
+msgid "config.lang.label"
+msgstr "🗺️ Язык раздела пользователя"
+
+msgid "config.last_hash.description"
+msgstr "config.last_hash.description"
+
+msgid "config.last_hash.label"
+msgstr "config.last_hash.label"
+
+msgid "config.last_priodic_usage_check.description"
+msgstr "config.last_priodic_usage_check.description"
+
+msgid "config.last_priodic_usage_check.label"
+msgstr "config.last_priodic_usage_check.label"
+
+msgid "config.license.description"
+msgstr ""
+"Для коммерческого использования этого продукта вам необходимо приобрести его"
+" лицензию."
+
+msgid "config.license.label"
+msgstr "License  Code"
+
+msgid "config.log_level.description"
+msgstr "config.log_level.description"
+
+msgid "config.log_level.label"
+msgstr "config.log_level.label"
+
+msgid "config.mux.description"
+msgstr "Настройки конфигурации MUX (Multiplex)"
+
+msgid "config.mux.label"
+msgstr "Настройки MUX"
+
+msgid "config.mux_brutal_down_mbps.description"
+msgstr "TCP-Brutal Максимальная Скорость Входящей Загрузки"
+
+msgid "config.mux_brutal_down_mbps.label"
+msgstr "⬇️ MUX Brutal Входящая Загрузка (mbps)"
+
+msgid "config.mux_brutal_enable.description"
+msgstr "Включить алгоритм управления перегрузкой TCP-Brutal"
+
+msgid "config.mux_brutal_enable.label"
+msgstr "☣️ MUX Brutal"
+
+msgid "config.mux_brutal_up_mbps.description"
+msgstr "TCP-Brutal Максимальная Скорость Исходящей Загрузки"
+
+msgid "config.mux_brutal_up_mbps.label"
+msgstr "⬆️  MUX Brutal Исходящая Загрузка (mbps)"
+
+msgid "config.mux_enable.description"
+msgstr ""
+"MUX требует совместимые клиенты. MUX в <a href=\"https://app.hiddify.com\" "
+"target=\"_blank\">Hiddify</a> и Singbox несовместимы с XRay"
+
+msgid "config.mux_enable.label"
+msgstr "Ⓜ️ MUX (⚠️ Несовместимо с некоторыми клиентами)"
+
+msgid "config.mux_max_connections.description"
+msgstr ""
+"Максимальное количество подключений. Конфликтует с максимальным количеством "
+"потоков"
+
+msgid "config.mux_max_connections.label"
+msgstr "⛓ Максимальное количество подключений MUX"
+
+msgid "config.mux_max_streams.description"
+msgstr ""
+"Максимальное количество мультиплексированных потоков в соединении перед "
+"открытием нового соединения"
+
+msgid "config.mux_max_streams.label"
+msgstr "↗️ Максимальное количество потоков MUX"
+
+msgid "config.mux_min_streams.description"
+msgstr ""
+"Минимальное количество мультиплексированных потоков в соединении перед "
+"открытием нового соединения"
+
+msgid "config.mux_min_streams.label"
+msgstr "↘️ Минимальное количество потоков MUX"
+
+msgid "config.mux_padding_enable.description"
+msgstr "Описание MUX Padding"
+
+msgid "config.mux_padding_enable.label"
+msgstr "⟹ MUX Padding"
+
+msgid "config.mux_protocol.description"
+msgstr ""
+"ℹ️Мультиплексный протокол. «sMux» используется по умолчанию<inlang-LineFeed><br>\n"
+"➖ sMux: мультиплексирование потоков<inlang-LineFeed><br>\n"
+"➖ YaMux: еще один мультиплексор<inlang-LineFeed><br>\n"
+"➖ h2Mux: мультиплексирование потоков через HTTP/2"
+
+msgid "config.mux_protocol.label"
+msgstr "♍️ Протокол MUX"
+
+msgid "config.netdata.description"
+msgstr ""
+"Для отображения ресурсов, используется процессор вашего сервера, но нагрузка"
+" не слишком высокая"
+
+msgid "config.netdata.label"
+msgstr "Netdata"
+
+msgid "config.not_found.description"
+msgstr "Конфигурация не найдена"
+
+msgid "config.not_found.label"
+msgstr "Конфигурация не найдена"
+
+msgid "config.only_ipv4.description"
+msgstr "Это отключит IPv6"
+
+msgid "config.only_ipv4.label"
+msgstr "ℹ️ Только IPv4"
+
+msgid "config.package_mode.description"
+msgstr ""
+"Укажите, хотите ли вы релиз версию пакета или версию в стадии разработки."
+
+msgid "config.package_mode.label"
+msgstr "🔄 Режим обновления пакетов"
+
+msgid "config.panel_mode.description"
+msgstr "config.panel_mode.description"
+
+msgid "config.panel_mode.label"
+msgstr "config.panel_mode.label"
+
+msgid "config.parent_admin_proxy_path.description"
+msgstr "config.parent_admin_proxy_path.description"
+
+msgid "config.parent_admin_proxy_path.label"
+msgstr "config.parent_admin_proxy_path.label"
+
+msgid "config.parent_domain.description"
+msgstr "config.parent_domain.description"
+
+msgid "config.parent_domain.label"
+msgstr "config.parent_domain.label"
+
+msgid "config.parent_panel.description"
+msgstr ""
+"Вы можете подключиться к главной панели, чтобы добавить пользователя в одном"
+" месте, а использование всех серверов будет добавлено автоматически. "
+
+msgid "config.parent_panel.label"
+msgstr "Главная панель (мультисервер)"
+
+msgid "config.path_grpc.description"
+msgstr "Путь gRPC в конфигурации"
+
+msgid "config.path_grpc.label"
+msgstr "ℹ️ Путь gRPC"
+
+msgid "config.path_httpupgrade.description"
+msgstr "должен быть случайным"
+
+msgid "config.path_httpupgrade.label"
+msgstr "ℹ️ Путь обновления HTTP"
+
+msgid "config.path_ss.description"
+msgstr "Путь Shadowsocks в ссылках"
+
+msgid "config.path_ss.label"
+msgstr "Путь Shadowsocks"
+
+msgid "config.path_tcp.description"
+msgstr "Для ссылок Proxy"
+
+msgid "config.path_tcp.label"
+msgstr "ℹ️ Путь конфигурации TCP"
+
+msgid "config.path_trojan.description"
+msgstr "Для ссылок Trojan"
+
+msgid "config.path_trojan.label"
+msgstr "ℹ️ Trojan путь"
+
+msgid "config.path_v2ray.description"
+msgstr "Установить путь к конфигурации V2Ray"
+
+msgid "config.path_v2ray.label"
+msgstr "Путь для V2Ray"
+
+msgid "config.path_vless.description"
+msgstr "Для пути VLess"
+
+msgid "config.path_vless.label"
+msgstr "ℹ️ Путь VLess"
+
+msgid "config.path_vmess.description"
+msgstr "Для ссылок VMess"
+
+msgid "config.path_vmess.label"
+msgstr "ℹ️ Путь VMess"
+
+msgid "config.path_ws.description"
+msgstr "Укажите путь для Websocket"
+
+msgid "config.path_ws.label"
+msgstr "ℹ️ Путь запросов к веб-сокетам"
+
+msgid "config.path_xhttp.description"
+msgstr "Эта опция определяет путь для XHTTP."
+
+msgid "config.path_xhttp.label"
+msgstr "ℹ️ Путь для XHTTP"
+
+msgid "config.proxies.description"
+msgstr "Определите специфичные настройки прокси"
+
+msgid "config.proxies.label"
+msgstr "Настройки прокси"
+
+msgid "config.proxy_path.description"
+msgstr ""
+"Мы используем секретный путь прокси, чтобы скрыть наши прокси от обнаружения"
+
+msgid "config.proxy_path.label"
+msgstr "ℹ️ Секретный путь прокси"
+
+msgid "config.proxy_path_admin.description"
+msgstr ""
+"Мы используем секретный путь прокси, чтобы скрыть наши прокси для "
+"правительств и ботов."
+
+msgid "config.proxy_path_admin.label"
+msgstr "🔐 Путь прокси для администраторов"
+
+msgid "config.proxy_path_client.description"
+msgstr "Секретный путь прокси скрывает прокси от правительств и ботов"
+
+msgid "config.proxy_path_client.label"
+msgstr "🔏 Путь прокси для клиентов"
+
+msgid "config.quic_enable.description"
+msgstr "Включить протокол QUIC"
+
+msgid "config.quic_enable.label"
+msgstr "🟡 QUIC"
+
+msgid "config.reality.description"
+msgstr "REALITY функция устранения TLS Fingerprint со стороны севрера"
+
+msgid "config.reality.label"
+msgstr "Reality"
+
+msgid "config.reality_enable.description"
+msgstr "Включить протокол Reality"
+
+msgid "config.reality_enable.label"
+msgstr "🔴 Reality"
+
+msgid "config.reality_fallback_domain.description"
+msgstr ""
+"При попытке контролирующих органов посетить сайт вытащенный из запроса, он "
+"будет перенаправлен на этот домен."
+
+msgid "config.reality_fallback_domain.label"
+msgstr "🌍 Резервный домен Reality"
+
+msgid "config.reality_port.description"
+msgstr ""
+
+msgid "config.reality_port.label"
+msgstr ""
+
+msgid "config.reality_private_key.description"
+msgstr "Не меняйте это"
+
+msgid "config.reality_private_key.label"
+msgstr "🔑 Private Key"
+
+msgid "config.reality_public_key.description"
+msgstr "Не меняйте это"
+
+msgid "config.reality_public_key.label"
+msgstr "🔑 Public Key"
+
+msgid "config.reality_server_names.description"
+msgstr "Вы можете добавить несколько имен серверов, разделяя их запятыми "
+
+msgid "config.reality_server_names.label"
+msgstr "🌎 Имена серверов Reality"
+
+msgid "config.reality_short_ids.description"
+msgstr "Не меняйте это"
+
+msgid "config.reality_short_ids.label"
+msgstr "🆔 Short IDs"
+
+msgid "config.restls.description"
+msgstr "config.restls.description"
+
+msgid "config.restls.label"
+msgstr "RestTLS"
+
+msgid "config.restls1_2_domain.description"
+msgstr "config.restls1_2_domain.description"
+
+msgid "config.restls1_2_domain.label"
+msgstr "config.restls1_2_domain.label"
+
+msgid "config.restls1_3_domain.description"
+msgstr "config.restls1_3_domain.description"
+
+msgid "config.restls1_3_domain.label"
+msgstr "config.restls1_3_domain.label"
+
+msgid "config.shadowsocks.description"
+msgstr ""
+"Shadowsocks - это быстрый прокси-туннель, который помогает вам обходить "
+"фаерволы"
+
+msgid "config.shadowsocks.label"
+msgstr "Shadowsocks"
+
+msgid "config.shadowsocks2022_enable.description"
+msgstr ""
+"Shadowsocks 2022 - это защищенный протокол прокси для трафика TCP и UDP. "
+"Прокси-трафик неотличим от случайного потока байтов и, следовательно, может "
+"обходить фаерволы и интернет-цензоров, которые полагаются на DPI (глубокий "
+"анализ пакетов)."
+
+msgid "config.shadowsocks2022_enable.label"
+msgstr "⭕️ Shadowsocks 2022"
+
+msgid "config.shadowsocks2022_method.description"
+msgstr "Этот метод также использвуется в ShadowTLS и SSFakeTLS"
+
+msgid "config.shadowsocks2022_method.label"
+msgstr "🔐 Метод шифрования Shadowsocks"
+
+msgid "config.shadowsocks2022_port.description"
+msgstr "Требуются открытый порт как и TCP, так и UDP"
+
+msgid "config.shadowsocks2022_port.label"
+msgstr "↔️ Порт Shadowsocks 2022"
+
+msgid "config.shadowtls.description"
+msgstr ""
+"Прокси-сервер для предоставления брандмауэру настоящего рукопожатия tls.\n"
+"\n"
+"Он работает как Trojan, но не требует подписания сертификата. брандмауэр увидит настоящее рукопожатие tls с действительным сертификатом, который вы выберете."
+
+msgid "config.shadowtls.label"
+msgstr "ShadowTLS"
+
+msgid "config.shadowtls_enable.description"
+msgstr ""
+"ShadowTLS — это новый протокол, помогающий скрыть трафик от DPI с помощью "
+"FakeTLS"
+
+msgid "config.shadowtls_enable.label"
+msgstr "☑️ ShadowTLS"
+
+msgid "config.shadowtls_fakedomain.description"
+msgstr ""
+"Пожалуйста, используйте хорошо известный домен в своем центре обработки "
+"данных. Например, если вы находитесь в центре обработки данных Azure, "
+"хороший пример — microsoft-update.com"
+
+msgid "config.shadowtls_fakedomain.label"
+msgstr "🌍 Поддельный домен ShadowTLS"
+
+msgid "config.shared_secret.description"
+msgstr ""
+"Некоторые прокси в настоящее время не поддерживают учет, поэтому нам "
+"придется использовать для них секретный ключ"
+
+msgid "config.shared_secret.label"
+msgstr "🔐 Общий секретный ключ"
+
+msgid "config.show_usage_in_sublink.description"
+msgstr ""
+"Этот параметр создает поддельную конфигурацию в дополнительной ссылке "
+"пользователя, которая показывает оставшийся объем трафика для пользователя."
+
+msgid "config.show_usage_in_sublink.label"
+msgstr "👁️‍🗨️ Показать использование в доп.ссылке"
+
+msgid "config.special_port.description"
+msgstr ""
+"Вы можете установить индивидуальный порт для вашего сервера Reality, чтобы "
+"снизить нагрузку на систему. (Разрешить прямое подключение к прокси должно "
+"быть да)"
+
+msgid "config.special_port.label"
+msgstr "↔️ Порт Direct Reality"
+
+msgid "config.speed_test.description"
+msgstr ""
+"Разрешите вашим пользователям выполнять тест скорости. Это помогает им "
+"определить качество связи."
+
+msgid "config.speed_test.label"
+msgstr "🚀 Тест скорости"
+
+msgid "config.ssfaketls.description"
+msgstr ""
+"Shadowsocks FakeTLS — это простой инструмент для запутывания, который "
+"инкапсулирует данные в пакете tls."
+
+msgid "config.ssfaketls.label"
+msgstr "Shadowsocks FakeTLS"
+
+msgid "config.ssfaketls_enable.description"
+msgstr "Простой протокол OBFS не рекомендуется"
+
+msgid "config.ssfaketls_enable.label"
+msgstr "🆎 Shadowsocks FakeTLS (Простой OBFS)"
+
+msgid "config.ssfaketls_fakedomain.description"
+msgstr ""
+"Пожалуйста, используйте хорошо известный домен в своем центре обработки "
+"данных. например, если вы находитесь в центре обработки данных Azure, "
+"хороший пример — microsoft-update.com"
+
+msgid "config.ssfaketls_fakedomain.label"
+msgstr "🌍 SS FakeTLS FakeDomain"
+
+msgid "config.ssh.description"
+msgstr ""
+"SSH Proxy, также известный как SSH tunnel или переадресация портов SSH, "
+"представляет собой метод создания безопасного канала связи между двумя "
+"компьютерами в незащищенной сети. У нас есть отдельное приложение, которое "
+"полностью отличается от стандартногно ssh-сервера и не может выполнять "
+"какие-либо команды."
+
+msgid "config.ssh.label"
+msgstr "SSH Proxy"
+
+msgid "config.ssh_host_dsa_pk.description"
+msgstr ""
+
+msgid "config.ssh_host_dsa_pk.label"
+msgstr ""
+
+msgid "config.ssh_host_dsa_pub.description"
+msgstr ""
+
+msgid "config.ssh_host_dsa_pub.label"
+msgstr ""
+
+msgid "config.ssh_host_ecdsa_pk.description"
+msgstr ""
+
+msgid "config.ssh_host_ecdsa_pk.label"
+msgstr ""
+
+msgid "config.ssh_host_ecdsa_pub.description"
+msgstr ""
+
+msgid "config.ssh_host_ecdsa_pub.label"
+msgstr ""
+
+msgid "config.ssh_host_ed25519_pk.description"
+msgstr ""
+
+msgid "config.ssh_host_ed25519_pk.label"
+msgstr ""
+
+msgid "config.ssh_host_ed25519_pub.description"
+msgstr ""
+
+msgid "config.ssh_host_ed25519_pub.label"
+msgstr ""
+
+msgid "config.ssh_host_rsa_pk.description"
+msgstr ""
+
+msgid "config.ssh_host_rsa_pk.label"
+msgstr ""
+
+msgid "config.ssh_host_rsa_pub.description"
+msgstr ""
+
+msgid "config.ssh_host_rsa_pub.label"
+msgstr ""
+
+msgid "config.ssh_server_enable.description"
+msgstr "SSH Proxy полностью отличается от оригинального SSH Server"
+
+msgid "config.ssh_server_enable.label"
+msgstr "✔️ Включить SSH Poxy"
+
+msgid "config.ssh_server_port.description"
+msgstr "Это не ваш  SSH-сервер. Это отдельная программа"
+
+msgid "config.ssh_server_port.label"
+msgstr "↔️ SSHproxy-порт"
+
+msgid "config.ssh_server_redis_url.description"
+msgstr "Не используется"
+
+msgid "config.ssh_server_redis_url.label"
+msgstr "Адрес базы данных пользователей SSH"
+
+msgid "config.ssr.description"
+msgstr ""
+"ShadowsocksR — это форк оригинального проекта Shadowsocks, который считается"
+" превосходным с точки зрения безопасности и стабильности."
+
+msgid "config.ssr.label"
+msgstr "SSR"
+
+msgid "config.ssr_enable.description"
+msgstr ""
+"ShadowsocksR — это форк оригинального проекта Shadowsocks, который считается"
+" превосходным с точки зрения безопасности и стабильности. Не испытано. Не "
+"поддерживает accounting"
+
+msgid "config.ssr_enable.label"
+msgstr "SSR"
+
+msgid "config.ssr_fakedomain.description"
+msgstr ""
+"Пожалуйста, используйте хорошо известный домен в своем центре обработки "
+"данных или хостинге. например, если вы находитесь в центре обработки данных "
+"Azure, хороший пример — microsoft-update.com"
+
+msgid "config.ssr_fakedomain.label"
+msgstr "Поддельный домен SSR"
+
+msgid "config.sub_full_clash_enable.description"
+msgstr "config.sub_full_clash_enable.description"
+
+msgid "config.sub_full_clash_enable.label"
+msgstr "config.sub_full_clash_enable.label"
+
+msgid "config.sub_full_clash_meta_enable.description"
+msgstr "config.sub_full_clash_meta_enable.description"
+
+msgid "config.sub_full_clash_meta_enable.label"
+msgstr "config.sub_full_clash_meta_enable.label"
+
+msgid "config.sub_full_links_b64_enable.description"
+msgstr "config.sub_full_links_b64_enable.description"
+
+msgid "config.sub_full_links_b64_enable.label"
+msgstr "config.sub_full_links_b64_enable.label"
+
+msgid "config.sub_full_links_enable.description"
+msgstr "config.sub_full_links_enable.description"
+
+msgid "config.sub_full_links_enable.label"
+msgstr "config.sub_full_links_enable.label"
+
+msgid "config.sub_full_singbox_enable.description"
+msgstr "config.sub_full_singbox_enable.description"
+
+msgid "config.sub_full_singbox_enable.label"
+msgstr "config.sub_full_singbox_enable.label"
+
+msgid "config.sub_full_xray_json_enable.description"
+msgstr ""
+"Полная ссылка XRay предоставляет комплексные возможности настройки "
+"параметров, специфичных для XRay. Сюда входит пользовательская фрагментация "
+"и мультиплексирование (мультиплексирование) в таких приложениях, как "
+"v2rayNG, которые поддерживают протоколы XRay для точного управления "
+"настройкой прокси-сервера XRay."
+
+msgid "config.sub_full_xray_json_enable.label"
+msgstr "⚙️ Ссылка на полную конфигурацию XRay"
+
+msgid "config.sub_singbox_ssh_enable.description"
+msgstr "config.sub_singbox_ssh_enable.description"
+
+msgid "config.sub_singbox_ssh_enable.label"
+msgstr "config.sub_singbox_ssh_enable.label"
+
+msgid "config.tcp_enable.description"
+msgstr "Включает протокол TCP"
+
+msgid "config.tcp_enable.label"
+msgstr "🟠 TCP"
+
+msgid "config.telegram.description"
+msgstr ""
+"Прокси-сервер, разработанный для Telegram для обхода фильтрации Telegram"
+
+msgid "config.telegram.label"
+msgstr "Конфигурации Telegram "
+
+msgid "config.telegram_adtag.description"
+msgstr ""
+"Это используется для отображения спонсируемого канала в списке чатов клиента. Для рекламы канала получите тег от @MTProxybot.\n"
+"введите в этот бот код 0123456789ABCDEF0123456789ABCDEF."
+
+msgid "config.telegram_adtag.label"
+msgstr "📍 Тег Telegram AD"
+
+msgid "config.telegram_bot_token.description"
+msgstr ""
+"Чтобы добавить функцию бота Telegram вам нужно создать бота с @BotFather и "
+"ввести в это поле код API"
+
+msgid "config.telegram_bot_token.label"
+msgstr "🔐 Токен Telegram bot"
+
+msgid "config.telegram_enable.description"
+msgstr ""
+"Telegram MTProto используется для инкапсуляции Telegram Proxy в качестве "
+"обычного tls-трафика<br>⚠️<span style=\"color:#d32f2f;\"><strong> Этот "
+"протокол требует прямого домена</strong></span>"
+
+msgid "config.telegram_enable.label"
+msgstr "✔️ Включить Telegram MTProto"
+
+msgid "config.telegram_fakedomain.description"
+msgstr ""
+"Пожалуйста, используйте хорошо известный домен в своем ДЦ или Хостинге. "
+"Например, если вы находитесь в центре обработки данных Azure, хорошим "
+"примером будет microsoft-update.com"
+
+msgid "config.telegram_fakedomain.label"
+msgstr "📺 Поддельный домен Telegram"
+
+msgid "config.telegram_lib.description"
+msgstr ""
+"Вы можете переключаться между различными библиотеками Telegram. Обратите "
+"внимание, что на всех серверах работает только Python, на других могут "
+"возникнуть проблемы. Проверьте прокси после его изменения"
+
+msgid "config.telegram_lib.label"
+msgstr "🔢 Библиотека Telegram Proxy"
+
+msgid "config.tls.description"
+msgstr "В этом разделе можно установить конфигурации TLS"
+
+msgid "config.tls.label"
+msgstr "Настройки TLS"
+
+msgid "config.tls_fragment_enable.description"
+msgstr ""
+"При некоторых обстоятельствах, это позволяет обойти систему черного списка "
+"SNI. <a href=\"https://hiddify.com/manager/basic-concepts-and-"
+"troubleshooting/How-the-TLS-Trick-works-and-its-usage/\" "
+"target=\"_blank\">(подробнее)</a>"
+
+msgid "config.tls_fragment_enable.label"
+msgstr "⏯ TLS Fragment"
+
+msgid "config.tls_fragment_size.description"
+msgstr "Размер каждого пакета"
+
+msgid "config.tls_fragment_size.label"
+msgstr "🎚 Размер TLS Fragment"
+
+msgid "config.tls_fragment_sleep.description"
+msgstr "Временная задержка между фрагментами"
+
+msgid "config.tls_fragment_sleep.label"
+msgstr "⏱ Спящий режим TLS Fragment "
+
+msgid "config.tls_mixed_case.description"
+msgstr "Включает фрагментацию смешанного регистра SNI по протоколу TLS"
+
+msgid "config.tls_mixed_case.label"
+msgstr "🔠 Включить смешанный случай SNI по протоколу TLS"
+
+msgid "config.tls_padding_enable.description"
+msgstr ""
+"Включает заполнение для фрагментации TLS. <a "
+"href=\"https://hiddify.com/manager/basic-concepts-and-troubleshooting/How-"
+"the-TLS-Trick-works-and-its-usage/#tls-padding\" "
+"target=\"_blank\">(подробнее)</a>"
+
+msgid "config.tls_padding_enable.label"
+msgstr "♒️ TLS Padding"
+
+msgid "config.tls_padding_length.description"
+msgstr "Длина отступа для TLS Padding"
+
+msgid "config.tls_padding_length.label"
+msgstr "📏 TLS Padding"
+
+msgid "config.tls_ports.description"
+msgstr ""
+"Целые числа, разделенные запятыми, указывающие порты для использования в "
+"качестве TLS-соединения (в любом случае будет использоваться порт 443)"
+
+msgid "config.tls_ports.label"
+msgstr "🔎 TLS-порты"
+
+msgid "config.tls_trick.description"
+msgstr "Конфигурации фрагментации TLS можно настроить в этом разделе"
+
+msgid "config.tls_trick.label"
+msgstr "TLS Trick"
+
+msgid "config.too_advanced.description"
+msgstr ""
+"Укажите путь для Proxy. Это особенно важно, если вы используете HTTP и "
+"VMess."
+
+msgid "config.too_advanced.label"
+msgstr "Очень расширенные настройки"
+
+msgid "config.torrent_block.description"
+msgstr "В этом разделе можно настроить блокировку Torrent"
+
+msgid "config.torrent_block.label"
+msgstr "Конфигурация блокировки Torrent"
+
+msgid "config.trojan_enable.description"
+msgstr "Включить Trojan протокол"
+
+msgid "config.trojan_enable.label"
+msgstr "🟤 Trojan"
+
+msgid "config.tuic.description"
+msgstr ""
+"Delicately-TUICed высокопроизводительный прокси работающий поверх протокола QUIC.\n"
+"\n"
+"Цель TUIC — максимально минимизировать задержку рукопожатия."
+
+msgid "config.tuic.label"
+msgstr "TUIC"
+
+msgid "config.tuic_enable.description"
+msgstr "Это протокол на базе UDP, аналогичный QUIC"
+
+msgid "config.tuic_enable.label"
+msgstr "⚫️ TUIC"
+
+msgid "config.tuic_port.description"
+msgstr "Используйте запятую для разделения портов, например,( 63000,60000 )"
+
+msgid "config.tuic_port.label"
+msgstr "Порты TUIС"
+
+msgid "config.unique_id.description"
+msgstr "config.unique_id.description"
+
+msgid "config.unique_id.label"
+msgstr "config.unique_id.label"
+
+msgid "config.use_ip_in_config.description"
+msgstr ""
+
+msgid "config.use_ip_in_config.label"
+msgstr ""
+
+msgid "config.utls.description"
+msgstr ""
+"Эта опция будет имитировать разные браузеры, поэтому GFW не сможет "
+"обнаружить ваш браузер"
+
+msgid "config.utls.label"
+msgstr "❇️ uTLS"
+
+msgid "config.v2ray_enable.description"
+msgstr "V2ray не поддерживает учет и не предлагается к использованию"
+
+msgid "config.v2ray_enable.label"
+msgstr "♈️ V2Ray"
+
+msgid "config.validation-error"
+msgstr "В одном из полей ошибка."
+
+msgid "config.validation-success"
+msgstr ""
+"Конфигурации успешно изменены. Нажмите %(link)s, чтобы применить их. Это "
+"может занять 2 минуты"
+
+msgid "config.validation-success-no-reset"
+msgstr "✅ Конфигурации успешно изменены"
+
+msgid "config.vless_enable.description"
+msgstr "Включить протокол VLess"
+
+msgid "config.vless_enable.label"
+msgstr "⚫️ VLess"
+
+msgid "config.vmess_enable.description"
+msgstr ""
+"Несколько человек сообщили, что VMess позволляет правительствам обнаруживать"
+" систему.  Не рекомендуется"
+
+msgid "config.vmess_enable.label"
+msgstr "🟣 VMess"
+
+msgid "config.warp-https-domain-for-warp-site"
+msgstr "config.warp-https-домен-для-варп-сайта"
+
+msgid "config.warp.description"
+msgstr ""
+"Warp — это инструмент, который скрывает IP-адрес вашего сервера от сайтов, которые посещают ваши пользователи.\n"
+"<br>\n"
+"Например, если у вас возникла проблема с Google, ее можно исправить."
+
+msgid "config.warp.label"
+msgstr "WARP➕"
+
+msgid "config.warp_enable.description"
+msgstr "WARP поможет вам обойти блокировку Google, Spotify и Netflix"
+
+msgid "config.warp_enable.label"
+msgstr "Включение WARP+"
+
+msgid "config.warp_mode.description"
+msgstr ""
+"✴️ Все: все сайты удалены из WARP.\n"
+"<br>\n"
+"☑️ Только отечественные и заблокированные сайты: только иранские сайты и\n"
+"Google, Spotify, Netflix, OpenAi, IPinfo.io\n"
+"Они используют WARP+"
+
+msgid "config.warp_mode.label"
+msgstr "✴️ Режим WARP+"
+
+msgid "config.warp_plus_code.description"
+msgstr ""
+"🔝 Увеличивает скорость просмотра. Чтобы получить ключ, перейдите по адресу <a href='https://t.me/hiddify_board'> здесь </a>.\n"
+"Отправить сообщение\n"
+"<br>\n"
+"⚠️ Если в этом Ключе есть ошибка, WARP будет отключен"
+
+msgid "config.warp_plus_code.label"
+msgstr "🔑 WARP Plus Key"
+
+msgid "config.warp_sites.description"
+msgstr ""
+"Добавление дополнительных сайтов для направления через WARP (только если "
+"Warp включен)"
+
+msgid "config.warp_sites.label"
+msgstr "🆚 Дополнительные сайты WARP"
+
+msgid "config.wireguard.description"
+msgstr ""
+"WireGuard - это легковесный UDP-протокол, известный своей простотой, "
+"эффективностью и высокой безопасност. Он предлагает простоту, "
+"кроссплатформенность, быструю настройку и прозрачный код."
+
+msgid "config.wireguard.label"
+msgstr "WireGuard"
+
+msgid "config.wireguard_enable.description"
+msgstr ""
+"WireGuard - это UDP-протокол. (⚠️ Работает на <a "
+"href=\"https://app.hiddify.com/\" target=\"_blank\">Hiddify</a>)"
+
+msgid "config.wireguard_enable.label"
+msgstr "🐉 WireGuard"
+
+msgid "config.wireguard_ipv4.description"
+msgstr "Включает IPv4 в WireGuard"
+
+msgid "config.wireguard_ipv4.label"
+msgstr " IPv4 в WireGuard"
+
+msgid "config.wireguard_ipv6.description"
+msgstr "Включает IPv6 в WireGuard"
+
+msgid "config.wireguard_ipv6.label"
+msgstr "IPv6 в WireGuard"
+
+msgid "config.wireguard_noise_trick.description"
+msgstr ""
+"Noise Trick создает дополнительные мусорные данные для предотвращения "
+"обнаужения и блокировки цензором"
+
+msgid "config.wireguard_noise_trick.label"
+msgstr "💥 Шумовая уловка WireGuard"
+
+msgid "config.wireguard_port.description"
+msgstr "Определяет порт для WireGuard "
+
+msgid "config.wireguard_port.label"
+msgstr "↔️ Порт WireGuard"
+
+msgid "config.wireguard_private_key.description"
+msgstr "Для WireGuard указан закрытый ключ."
+
+msgid "config.wireguard_private_key.label"
+msgstr "Закрытый ключ WireGuard"
+
+msgid "config.wireguard_public_key.description"
+msgstr "Для WireGuard указан открытый ключ."
+
+msgid "config.wireguard_public_key.label"
+msgstr "Открытый ключ WireGuard"
+
+msgid "config.ws_enable.description"
+msgstr ""
+"Websocket создает туннель поверх HTTP, который будет полезно использовать в "
+"CDN"
+
+msgid "config.ws_enable.label"
+msgstr "🔰 Websocket"
+
+msgid "config.xhttp_enable.description"
+msgstr ""
+"Этот протокол отправляет и получает информацию по отдельным каналам<br />\n"
+"⚠️ <strong>Не поддерживается в клиентах на базе SignBox. Поддерживаются только приложения <a href=\"https://app.hiddify.com\" target=\"_blank\">Hiddify</a> и клиенты на базе XRay</strong>"
+
+msgid "config.xhttp_enable.label"
+msgstr "🈁 XHTTP"
+
+msgid "config.xtls_enable.description"
+msgstr "Включает протокол XTLS"
+
+msgid "config.xtls_enable.label"
+msgstr "🟢XTLS"
+
+msgid "copy"
+msgstr "Копировать"
+
+msgid "daily"
+msgstr "⏰ Ежедневно"
+
+msgid "days"
+msgstr "Дни"
+
+msgid "desktop"
+msgstr "ПК"
+
+msgid "direct"
+msgstr "➡️ На прямую"
+
+msgid "domain.cdn"
+msgstr "CDN"
+
+msgid "domain.changed_in_domain_warning"
+msgstr ""
+"⚠️ Ваши домены изменились. пожалуйста, не забудьте скопировать ссылки "
+"администратора, иначе вы больше не сможете получить доступ к панели "
+"управления"
+
+msgid "domain.description"
+msgstr ""
+"Пожалуйста, внимательно и правильно заполните это поле. В противном случае у"
+" прокси могут возникнуть проблемы. Посетите <a "
+"href='https://github.com/hiddify/hiddify-config/wiki/راهنمای-تنظیم-دامنه-و-"
+"نهایی-کردن-نصب#آموزش-ساخت-زیردام نه'> Помогите</a> Узнайте, как создать "
+"subdomain."
+
+msgid "domain.domain"
+msgstr "Домен"
+
+msgid "domain.domain_fronting.description"
+msgstr ""
+"Он используется для имитации другого веб-сайта вместо вашего веб-сайта в SNI следовательно, GTW не может отфильтровать ваш домен\n"
+"<<a href='https://github.com/hibbity/hibbity-config/wiki/Guide-for-domain-fronting '>Руководство</a>. ⚠CloudFlare не поддерживает подключение к домену."
+
+msgid "domain.domain_fronting.label"
+msgstr "🔒 Фронтирование домена TLS"
+
+msgid "domain.empty.allowed_for_fake_only"
+msgstr "domain.empty.allowed_for_fake_only"
+
+msgid "domain.intro"
+msgstr ""
+"1️⃣ В этом разделе вы можете добавить свой Домен.<inlang-LineFeed><br>\n"
+"2. Если вы хотите уменьшить вероятность использования грязного IP-адреса, вы можете добавить сервер с несколькими ретрансляторами. <a href='https://github.com/hiddify/hiddify-config/discussions/129'>Подробнее</a> .<inlang-LineFeed><br>\n"
+"3. Если у вас в Panel несколько IPv4 или IPv6, вам необходимо добавить указанный на них домен в качестве ретранслятора."
+
+msgid "domain.ip"
+msgstr "IP"
+
+msgid "domain.mode"
+msgstr "Режим"
+
+msgid "domain.reality.asn_issue"
+msgstr ""
+"Выбранный домен для REALITY не находится в том же ASN. Для более "
+"эффективного использования протокола лучше найти Домен в том же ASN"
+
+msgid "domain.resolveip.description"
+msgstr ""
+
+msgid "domain.resolveip.label"
+msgstr ""
+
+msgid "domain.show_domains_description"
+msgstr ""
+"Для посетителей пользовательской области с этим доменом, укажите, какие домены они могут видеть.\n"
+"<br>\n"
+"Предложение: Для домена с IP-адресом не попадащим под фильтры, отличного от других, выберите все остальные домены (кроме текущего). В результате, поскольку этот IP-адрес используется не для прокси-сервера, а для простого веб-сайта, этот домен и IP-адрес никогда не будут заблокированы, и ваши пользователи смогут легко обновлять свои профили."
+
+msgid "download"
+msgstr "Direct Download"
+
+msgid "download_domain.description"
+msgstr ""
+
+msgid "download_domain.label"
+msgstr ""
+
+msgid "fake"
+msgstr "🆎 Поддельный сайт"
+
+msgid "gRPC"
+msgstr "➿ gRPC"
+
+msgid "grpc-proxy.description"
+msgstr ""
+"ℹ️ gRPC — это протокол на основе HTTP 2. Возможно, в вашей ситуации он будет"
+" быстрее!"
+
+msgid "in parent panel"
+msgstr "В центральной панели"
+
+msgid "install from google play"
+msgstr "<i class='fa-brands fa-google-play'></i> Google Play"
+
+msgid "ios"
+msgstr "iOS"
+
+msgid "items"
+msgstr "элементы"
+
+msgid "lang.en"
+msgstr "🇺🇸 Английский - English "
+
+msgid "lang.fa"
+msgstr "🇮🇷 Персидский - فارسی"
+
+msgid "lang.my"
+msgstr "🇲🇲 Бирманский язык - မြန်မာဘာသာ"
+
+msgid "lang.pt"
+msgstr "🇵🇹 Португальский - Portugal "
+
+msgid "lang.ru"
+msgstr "🇷🇺 Русский"
+
+msgid "lang.zh"
+msgstr "🇨🇳 Chinese - 简体中文"
+
+msgid "lib.telegram.erlang"
+msgstr "✴️ Erlang: хорошая производительность"
+
+msgid "lib.telegram.go"
+msgstr "✅ Go: Нормальный функционал – без поддержки рекламы"
+
+msgid "lib.telegram.python"
+msgstr "☑️ Python: низкая производительность"
+
+msgid "log"
+msgstr "📄 Log"
+
+msgid "login.button"
+msgstr "Авторизоваться"
+
+msgid "login.password.description"
+msgstr "Для дополнительной безопасности вам необходимо ввести свой пароль."
+
+msgid "login.password.label"
+msgstr "Пароль"
+
+msgid "login.secret.description"
+msgstr ""
+"Для получения доступа к этой странице введите свой секретный код (UUID)"
+
+msgid "login.secret.label"
+msgstr "Секретный код (UUID)"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "master.page-title"
+msgstr "HiddifyManager"
+
+msgid "monthly"
+msgstr "🗓️ Ежемесячно"
+
+msgid "move_to_new_link"
+msgstr ""
+"Страница перемещена по новой ссылке. Пожалуйста, скопируйте и сохраните "
+"новую ссылку."
+
+msgid "next"
+msgstr "Следующий"
+
+msgid "no_reset"
+msgstr "⭐️ Без сброса"
+
+msgid "node.diff-version"
+msgstr "node.diff-version"
+
+msgid "node.mode.dscr"
+msgstr "Это поле определяет режим для узла."
+
+msgid "node.mode.label"
+msgstr "Режим Node "
+
+msgid "node.name.dscr"
+msgstr "Это поле определяет имя для Node."
+
+msgid "node.name.label"
+msgstr "Имя Node "
+
+msgid "node.uuid.dscr"
+msgstr "Это поле определяет UUID для узла."
+
+msgid "node.uuid.label"
+msgstr "UUID Node "
+
+msgid "old_xtls_direct"
+msgstr "🔙 Старый прямой режим (для Torjan TCP, VLess XTLS)"
+
+msgid "open"
+msgstr "Открыть"
+
+msgid "outdated_panel"
+msgstr ""
+"⚠️ Эта версия Hiddify Panel устарела. пожалуйста, обновите его из панели "
+"управления администратора."
+
+msgid "package days?"
+msgstr "пакетные дни?"
+
+msgid "package size?"
+msgstr "Размер посылки?"
+
+msgid "parent.invalid-parent-url"
+msgstr "parent.invalid-parent-url"
+
+msgid "parent.sync-req-failed"
+msgstr "parent.sync-req-failed"
+
+msgid "previous"
+msgstr "Предыдущий"
+
+msgid "quicksetup.cdn_domain.description"
+msgstr ""
+"Настройка домена CDN не является обязательной. Используйте его только в том "
+"случае, если вы уже настроили CDN."
+
+msgid "quicksetup.cdn_domain.label"
+msgstr "CDN-домен"
+
+msgid "quicksetup.proxy_cat.description"
+msgstr ""
+"Последний шаг: выберите нужные прокси. Пожалуйста, выберите минимум, "
+"насколько это возможно."
+
+msgid "quicksetup.setlang.success"
+msgstr "Изменение языка прошло успешно."
+
+msgid "reality"
+msgstr "🔂 Reality"
+
+msgid "relay"
+msgstr "♾️ Relay (подключение через промежуточный узел)"
+
+msgid "search"
+msgstr "Поиск"
+
+msgid "see the log in the bellow screen"
+msgstr "📑 Логи отображаются на экране ниже."
+
+msgid "serverssh.password-login.warning"
+msgstr ""
+"Ваш сервер уязвим для злоупотреблений, поскольку в вашем SSH включена "
+"проверка подлинности пароля. Чтобы защитить свой сервер, переключитесь на "
+"механизм аутентификации по ключу и отключите аутентификацию по паролю. <a "
+"href='https://github.com/hiddify/Hiddify-Manager/wiki/Disable-SSH-Password-"
+"Authentication'>читать далее...</a>"
+
+msgid "singbox: ssh"
+msgstr "SingBox: SSH"
+
+msgid "special_reality_grpc"
+msgstr "Reality gRPC"
+
+msgid "special_reality_tcp"
+msgstr "Reality TCP"
+
+msgid "special_reality_xhttp"
+msgstr "Reality xHTTP"
+
+msgid "ssh"
+msgstr "SSH"
+
+msgid "sub_link_only"
+msgstr "📳 Только для ссылки на подписку (может быть Direct, Relay или CDN)"
+
+msgid "telegram"
+msgstr "Telegram"
+
+msgid "test"
+msgstr "Тест"
+
+msgid "update"
+msgstr "Обновлять"
+
+msgid "user.UUID"
+msgstr "UUID"
+
+msgid "user.current_usage_GB"
+msgstr "Текущее использование (GB)"
+
+msgid "user.define_mode"
+msgstr ""
+"Режим пакета для пользователя - должно ли использование сбрасываться каждый "
+"месяц, неделю и т. д."
+
+msgid "user.expiry_time"
+msgstr "Срок действия (дней)"
+
+msgid "user.home.all_configs"
+msgstr "Все конфигурации"
+
+msgid "user.home.allconfig.clash-configs"
+msgstr "Конфликтующие Clash "
+
+msgid "user.home.allconfig.hiddify-managers"
+msgstr "Все настройки администраторов HiddifyManager"
+
+msgid "user.home.allconfig.link-configs"
+msgstr "Ссылка на подписку"
+
+msgid "user.home.allconfig.name"
+msgstr "Имя и ссылка"
+
+msgid "user.home.allconfig.protocol"
+msgstr "Протокол"
+
+msgid "user.home.allconfig.security"
+msgstr "Безопасность"
+
+msgid "user.home.allconfig.transport"
+msgstr "Транспорт"
+
+msgid "user.home.allconfig.type"
+msgstr "Тип"
+
+msgid "user.home.allconfigs.expect_vless"
+msgstr "Исключить VLess"
+
+msgid "user.home.android.intro"
+msgstr ""
+"Пожалуйста, установите Hiddify Android из %(dl_link)s %(play_link)s.\n"
+"\n"
+"<!--\n"
+"<div class='выноска-опасность'>\n"
+"    <b>Обновить Hiddify Android до версии 0.14</b>\n"
+"</div>-->\n"
+"<details>\n"
+"<summary>Зачем Hiddify Android?</summary>\n"
+"<div class='выноска-информация-выноска'>\n"
+"\n"
+"        Hiddify Android — это форк Clash с открытым исходным кодом, который поддерживает больше протоколов.\n"
+"        <br>\n"
+"        Его исходные коды существуют в\n"
+"        <a href='https://github.com/hiddify/HiddifyProxyAndroid'>GitHub</a>.\n"
+"        \n"
+"        <br>\n"
+"        Поэтому это безопасно.\n"
+"\n"
+"        <details>\n"
+"            <summary>Альтернатива: обычное приложение Clash</summary>\n"
+"            <div class='btn-group'>\n"
+"                <a href='https://play.google.com/store/apps/details?id=com.github.kr328.clash'\n"
+"                    class='btn btn-warning orig-link'>Clash в Google Play</a>\n"
+"            </div>\n"
+"            <div class='btn-group'>\n"
+"                <a href='/{{hconfigs[ConfigEnum.proxy_path]}}/gh/Kr328/ClashForAndroid/releases/download/v2.5.12/cfa-2.5.12-premium-universal-release.apk'\n"
+"                    class='btn btn-warning orig-link'>Прямая загрузка</a>\n"
+"            </div>\n"
+"\n"
+"            <div class='alert alert-danger'>\n"
+"            Clash не поддерживает протокол VLess. поэтому нам нужно добавить для него еще одну ссылку.\n"
+"            </div>\n"
+"            \n"
+"\n"
+"        </details>\n"
+"    </div>\n"
+"</details>"
+
+msgid "user.home.branding.linktitle"
+msgstr "Ссылка на страницу поддержки"
+
+msgid "user.home.branding.title"
+msgstr "Поддержка"
+
+msgid "user.home.clash_configs.all_sites.btn"
+msgstr "Установите прокси для всех сайтов"
+
+msgid "user.home.clash_configs.all_sites.description"
+msgstr ""
+"Используйте прокси для всех веб-сайтов, даже для локальных.\n"
+"<div class='выноска-опасность'>\n"
+"    Загрузка локальных сайтов будет медленнее и поставит под угрозу вашу конфиденциальность\n"
+"</div>"
+
+msgid "user.home.clash_configs.all_sites.title"
+msgstr "Прокси для всех сайтов"
+
+msgid "user.home.clash_configs.alternative_for_normal_clash"
+msgstr "Альтернативная ссылка для Clash"
+
+msgid "user.home.clash_configs.foreign_sites.btn"
+msgstr "Установка для зарубежных сайтов"
+
+msgid "user.home.clash_configs.foreign_sites.description"
+msgstr ""
+"Используйте прокси для всех зарубежных сайтов (даже не заблокированных).\n"
+"<div class='выноска-предупреждение'>\n"
+"Этот режим полезен для доступа к некоторым заблокированным сайтам.\n"
+"</div>"
+
+msgid "user.home.clash_configs.foreign_sites.title"
+msgstr "Прокси для зарубежных сайтов"
+
+msgid "user.home.clash_configs.intro"
+msgstr ""
+"Используйте одну из следующих ссылок, в зависимости от ваших потребностей\n"
+"<br />"
+
+msgid "user.home.clash_configs.link_for_normal_clash"
+msgstr "Установить Clash"
+
+msgid "user.home.clash_configs.only_for_blocked_sites.btn"
+msgstr "Установить только для заблокированных сайтов"
+
+msgid "user.home.clash_configs.only_for_blocked_sites.description"
+msgstr ""
+"Предлагается этот режим. Он пересылает заблокированные сайты только через прокси.\n"
+"            <div class='вызов выноски-успех'>\n"
+"                В этом режиме вы не почувствуете изменения скорости\n"
+"            </div>"
+
+msgid "user.home.clash_configs.only_for_blocked_sites.title"
+msgstr "Только для заблокированных сайтов"
+
+msgid "user.home.doh"
+msgstr "DNS по протоколу HTTPS"
+
+msgid "user.home.ios.others.intro"
+msgstr ""
+"Сначала установите одно из следующих приложений:\n"
+"\n"
+"<div class='btn-group'>\n"
+"\n"
+"<a href='https://apps.apple.com/us/app/foxray/id6448898396'\n"
+"        class='btn btn-primary orig-link'>FoXray</a>\n"
+"\n"
+"</div>\n"
+"\n"
+"<div class='btn-group'>\n"
+"\n"
+"<a href='https://apps.apple.com/us/app/fair-vpn/id1533873488'\n"
+"        class='btn btn-primary orig-link'>Честный VPN</a>\n"
+"</div>\n"
+"\n"
+"<br />\n"
+"Затем примените следующие конфигурации:\n"
+"<br />"
+
+msgid "user.home.ios.others.title"
+msgstr "FoXray и Fair VPN"
+
+msgid "user.home.ios.stash.intro"
+msgstr ""
+"Stash & Shadowrocket — отличные приложения. Мы считаем, что стоит купить.\n"
+"<br>\n"
+"<br />\n"
+"  <div class='btn-group'>\n"
+"        <a href='https://apps.apple.com/us/app/stash-rule-based-proxy/id1596063349' target='_blank' class='btn btn-success orig-link'>Загрузить тайник</ а>\n"
+"        </div>\n"
+"  <div class='btn-group'>\n"
+"        <a href='https://apps.apple.com/us/app/shadowrocket/id932747118' target='_blank' class='btn btn-primary orig-link'>Загрузить Shadowrocket</a>\n"
+"        </div><br>\n"
+"<br />"
+
+msgid "user.home.ios.stash.title"
+msgstr ""
+"<button class='btn btn-sm btn-default' onclick='show_video('ios-stash')'><i class='fa-solid fa-question'></i> Stash</button>\n"
+"          <button class='btn btn-sm btn-default' onclick='show_video('ios-shadowrocket')'><i class='fa-solid fa-question'></i> Shadowrocket</button>\n"
+" <span class='badge Badge-success'>Рекомендуем</span>"
+
+msgid "user.home.link.manual-copy"
+msgstr "Копировать в буфер обмена: Ctrl+C, Enter"
+
+msgid "user.home.link.success-copy"
+msgstr "Ссылка скопирована в буфер обмена"
+
+msgid "user.home.qr-code.description"
+msgstr ""
+"Чтобы скопировать ссылки или поделиться ими, щелкните серое поле <i "
+"class='fa-solid fa-qrcode'></i>, чтобы показать его QR-код."
+
+msgid "user.home.qr-code.display"
+msgstr "Отобразить QR-код"
+
+msgid "user.home.select_os"
+msgstr "Пожалуйста, выберите вашу операционную систему"
+
+msgid "user.home.select_tool"
+msgstr "Пожалуйста, выберите"
+
+msgid "user.home.share-title"
+msgstr "Поделиться в социальных сетях"
+
+msgid "user.home.speedtest.download"
+msgstr "Скачать"
+
+msgid "user.home.speedtest.intro"
+msgstr ""
+"Сначала проверьте скорость <b>без</b> прокси. Если скорость плохая, это значит, что этот ip вам не подходит.\n"
+"Если без прокси скорость была низкой, не тратьте время на тестирование этого прокси.\n"
+"В противном случае протестируйте разные прокси этого сайта и если скорость аналогична скорости без прокси, то вы нашли лучший протокол.\n"
+"<br />"
+
+msgid "user.home.speedtest.title"
+msgstr "Тест скорости (обнаружение грязного IP-адреса)"
+
+msgid "user.home.speedtest.two_ways"
+msgstr "Оба способа"
+
+msgid "user.home.speedtest.upload"
+msgstr "Загрузить"
+
+msgid "user.home.telegram.clickbtn"
+msgstr "Telegram прокси"
+
+msgid "user.home.telegram.description"
+msgstr ""
+"Нажмите на одну из следующих ссылок, затем в телеграмме вы увидите окно, содержащее <b>Connect Proxy</b>. Нажмите на него, и все заработает\n"
+"<br />"
+
+msgid "user.home.title"
+msgstr "HiddifyManager"
+
+msgid "user.home.tool.all-configs"
+msgstr "Все конфигурации"
+
+msgid "user.home.tool.doh.help"
+msgstr ""
+"<h4>Настройте DoH в вашем браузере</h4>\n"
+"    Существует несколько браузеров, совместимых с DNS по протоколу HTTPS (DoH). Этот протокол позволяет    зашифровать ваше соединение в соответствии с версией 1.1.1.1, чтобы защитить ваши DNS-запросы от вторжения в частную жизнь и несанкционированного доступа.\n"
+"\n"
+"    Возможно, в некоторых браузерах этот параметр уже включен.\n"
+"<br />\n"
+"    <h5>​​Mozilla Firefox</h5>\n"
+"    Выберите нужный <b>Выберите нужный</b> кнопка > <b>Настройки</b>.В общем меню, прокрутите вниз, чтобы получить доступ <b>Сетевые настройки</b>. Выбрать <b>Настройки</b>. Выбрать <b>Включить DNS по протоколу HTTPS</b>.\n"
+"<br />\n"
+"    ​<h5>​Google Chrome</h5>\n"
+"    Выберите нужный <b>three-dot</b> меню в вашем браузере > <b>Настройки</b>.\n"
+"    Выбрать <b>Конфиденциальность и безопасность</b> > <b>Безопасность</b>.\n"
+"    Прокрутите вниз и включите <b>Используйте безопасный DNS</b>.\n"
+"<br />\n"
+"    <h5>​​Microsoft Edge</h5>\n"
+"    Выберите нужный <b>three-dot?</b> меню в вашем браузере > <b>Настройки</b>.\n"
+"    Выбрать <b>Конфиденциальность, поиск и услуги</b>, и прокрутите вниз до <b>Безопасность</b>.\n"
+"    Включить <b>Use secure DNS</b>.\n"
+"   Выберите пункт Выбрать поставщика услуг."
+
+msgid "user.home.tool.doh.title"
+msgstr "DNS через HTTPS"
+
+msgid "user.home.usage.details"
+msgstr "Показать статистику использования"
+
+msgid "user.home.usage.expire"
+msgstr "Срок действия:"
+
+msgid "user.home.usage.from"
+msgstr "Из"
+
+msgid "user.home.usage.monthly"
+msgstr "Ежемесячно"
+
+msgid "user.home.usage.title"
+msgstr "⏳ Использование трафика"
+
+msgid "user.home.windows.intro"
+msgstr ""
+"Сначала загрузите и установите программное обеспечение Hiddify Desktop в соответствии с вашей операционной системой.\n"
+"<br />\n"
+"%(hiddify_desktop_links)s\n"
+"\n"
+"<подробности>\n"
+"<summary>Почему Hiddify Desktop?</summary>\n"
+"<div class='callout callout-info'>\n"
+"\n"
+"        Hiddify Desktop — это безопасная версия Clash с открытым исходным кодом, которая поддерживает больше отпечатков пальцев VLESS и UTLS.\n"
+"        <br>\n"
+"<br />\n"
+"        Его исходные коды существуют в\n"
+"        <a href='https://github.com/hiddify/HiddifyDesktop'>GitHub</a>.\n"
+"        \n"
+"\n"
+"        <подробности>\n"
+"            <summary>Альтернатива: обычное столкновение</summary>\n"
+"            %(normal_clash_link)s\n"
+"\n"
+"            <div class='alert alert-danger'>\n"
+"            Clash не поддерживает снятие отпечатков пальцев браузером и протокол VLESS. Поэтому нам нужно добавить для него еще одну ссылку.\n"
+"            </div>\n"
+"            \n"
+"\n"
+"        </подробнее>\n"
+"</div>\n"
+"        </подробнее>\n"
+"<br />\n"
+"Теперь, по вашему желанию, вы можете нажать на одну из кнопок. Просматривая окно в браузере, просто нажмите кнопку <b>Открыть</b>, чтобы автоматически добавить ссылку на сервер в Hiddify Desktop."
+
+msgid "user.last_reset_time"
+msgstr "Сброс даты последнего использования"
+
+msgid "user.name"
+msgstr "Имя"
+
+msgid "user.password.description"
+msgstr ""
+"Пароль будет использоваться для дополнительной безопасности. Вы сможете "
+"войти в HiddifyManager только после ввода пароля."
+
+msgid "user.password.title"
+msgstr "Пароль"
+
+msgid "user.password.validation-lenght"
+msgstr ""
+"Для повышения безопасности ваш пароль должен содержать не менее 8 символов."
+
+msgid "user.password.validation-required"
+msgstr "Требуется пароль. Введите пароль, чтобы продолжить."
+
+msgid "user.usage_limit_GB"
+msgstr "⌛️ Лимит (GB)"
+
+msgid "user.user_links"
+msgstr "Ссылки пользователей"
+
+msgid "vpn.notallowed"
+msgstr ""
+"Пожалуйста, посетите эту страницу без использования VPN. Вам нужно получить "
+"к ней доступ из страны %(expected_country)s, но в данный момент вы получаете"
+" к ней доступ из %(your_country)s."
+
+msgid "weekly"
+msgstr "📅 Еженедельно"
+
+msgid "worker"
+msgstr "✴️ Cloudflare Worker"
