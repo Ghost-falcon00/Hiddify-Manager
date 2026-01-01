@@ -301,8 +301,8 @@
 {{ super() }}
 <script>
     const userId = {{ user.id }};
-    const apiBaseUrl = '{{ hurl_for("admin.UserLogAdmin:api_logs", user_id=user.id) }}';
-    const statsUrl = '{{ hurl_for("admin.UserLogAdmin:api_stats", user_id=user.id) }}';
+    const apiBaseUrl = '{{ hurl_for("flask.UserLogAdmin.api_logs", user_id=user.id) }}';
+    const statsUrl = '{{ hurl_for("flask.UserLogAdmin.api_stats", user_id=user.id) }}';
     let autoRefreshInterval = null;
     let latestLogId = {{ logs[0].id if logs else 0 }};
 
