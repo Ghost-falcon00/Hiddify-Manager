@@ -57,9 +57,16 @@ function main() {
       update_progress "HiddifyPanel" "Reading Configs from Panel..." 5
       set_config_from_hpanel
 
-      update_progress "Applying Configs" "..." 8
-
+      update_progress "Applying Configs" "Rendering templates..." 8
+      
+      # Ensure venv is activated for jinja.py template rendering
+      activate_python_venv
       bash common/replace_variables.sh
+      
+      # Explicitly run jinja.py to ensure all templates are rendered
+      if [ -f "common/jinja.py" ]; then
+          python common/jinja.py $MODE
+      fi
     fi
     
     if [ "$MODE" != "apply_users" ]; then
