@@ -6,6 +6,8 @@
                         "error": "none",
                         "access": "none",
                         "dnsLog": false,
+                {%else%}
+                        "access": "/opt/hiddify-manager/log/system/xray.access.log",
                 {%endif%}
                 "logid": true,
                 "header": true,
