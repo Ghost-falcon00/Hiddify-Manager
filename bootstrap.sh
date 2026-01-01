@@ -52,10 +52,14 @@ git clone -b "$BRANCH" "$REPO_URL" "$INSTALL_DIR"
 # Navigate to install directory
 cd "$INSTALL_DIR"
 
-# Make scripts executable
-echo -e "${GREEN}Setting permissions...${NC}"
-chmod +x install.sh
+# Make ALL scripts executable (including .sh and .py files)
+echo -e "${GREEN}Setting permissions on all scripts...${NC}"
 find . -name "*.sh" -exec chmod +x {} \;
+find . -name "*.py" -exec chmod +x {} \;
+chmod +x install.sh apply_configs.sh status.sh restart.sh update.sh
+
+# Set proper permissions on common utilities
+chmod +x common/*.sh common/*.py 2>/dev/null || true
 
 # Run install script
 echo -e "${GREEN}Starting installation...${NC}"
@@ -66,3 +70,4 @@ echo "╔═══════════════════════�
 echo "║                    Installation Complete!                    ║"
 echo "╚══════════════════════════════════════════════════════════════╝"
 echo -e "${NC}"
+
