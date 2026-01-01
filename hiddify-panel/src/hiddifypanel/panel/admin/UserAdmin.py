@@ -204,7 +204,7 @@ class UserAdmin(AdminLTEModelView):
 
     def _log_formatter(view, context, model, name):
         """Formatter for the Logs column - shows a button to view user connection logs."""
-        log_url = hurl_for('admin.UserLogAdmin:view_logs', user_id=model.id)
+        log_url = hurl_for('flask.UserLogAdmin.view_logs', user_id=model.id)
         return Markup(f'''<a href="{log_url}" class="btn btn-xs btn-info" title="{__('View Logs')}"> 
             <i class="fa-solid fa-file-lines"></i> {__('Log')}
         </a>''')
