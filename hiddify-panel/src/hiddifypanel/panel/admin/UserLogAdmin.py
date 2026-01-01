@@ -85,6 +85,7 @@ class UserLogAdmin(BaseView):
             total=total,
             per_page=per_page,
             hurl_for=hurl_for,
+            now=datetime.datetime.now(),
         )
     
     @expose('/api/logs')
